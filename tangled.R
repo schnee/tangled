@@ -18,3 +18,5 @@ ggraph(graph, layout = 'igraph', algorithm="kk" ) +
         axis.ticks = element_blank(),
         axis.text = element_blank(),
         axis.title = element_blank())
+
+ggsave("tangled.png", height=6, width = 10, dpi=100)

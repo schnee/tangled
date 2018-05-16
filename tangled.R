@@ -45,5 +45,5 @@ forceNetwork(Links = gd3$links,
              opacity = 1,
              fontSize = 20,
              linkColour = gd3$links$lc,
-             charge = -150)  %>% 
-  saveNetwork("tangled.html")
+             charge = -100)  %>% 
+  saveNetwork(file=paste0(normalizePath("./docs"),"/tangled.html"), selfcontained = TRUE)

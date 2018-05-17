@@ -26,7 +26,7 @@ ggraph(graph, layout = 'igraph', algorithm="nicely" ) +
         axis.text = element_blank(),
         axis.title = element_blank())
 
-ggsave("./docs/tangled.png", height=9, width = 15, dpi=150)
+ggsave("./docs/tangled-d3.png", height=9, width = 15, dpi=150)
 
 links <- graph %>% activate(edges) %>% as_tibble() %>% 
   mutate(from = from -1, to = to -1) %>% 

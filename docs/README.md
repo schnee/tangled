@@ -6,4 +6,4 @@ The source code is on [Github](https://github.com/schnee/tangled) - if you clone
 
 A static visual is [available](./tangled.png), as is a [d3.js](./tangled-d3.html) version.
 
-![A tangled web](./tangled.png)
+[![A tangled web](./tangled.png)](./tangled.png)

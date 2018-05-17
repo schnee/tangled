@@ -35,8 +35,8 @@ nodes <- graph %>% activate(nodes) %>% as_tibble()
 
 gd3 <- list(links = links, nodes = nodes)
 
-forceNetwork(Links = gd3$links,
-             Nodes = gd3$nodes,
+forceNetwork(Links = links,
+             Nodes = nodes,
              NodeID = 'name',
              Group = 'group',
              Source = 'from',
@@ -44,6 +44,6 @@ forceNetwork(Links = gd3$links,
              opacityNoHover = 1,
              opacity = 1,
              fontSize = 20,
-             linkColour = gd3$links$lc,
+             linkColour = links$lc,
              charge = -100)  %>% 
   saveNetwork(file=paste0(normalizePath("./docs"),"/tangled-d3.html"), selfcontained = TRUE)

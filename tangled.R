@@ -26,7 +26,7 @@ ggraph(graph, layout = 'igraph', algorithm="nicely" ) +
         axis.text = element_blank(),
         axis.title = element_blank())
 
-ggsave("./docs/tangled-d3.png", height=9, width = 15, dpi=150)
+ggsave("./docs/tangled.png", height=9, width = 15, dpi=150)
 
 links <- graph %>% activate(edges) %>% as_tibble() %>% 
   mutate(from = from -1, to = to -1) %>% 
@@ -46,4 +46,4 @@ forceNetwork(Links = gd3$links,
              fontSize = 20,
              linkColour = gd3$links$lc,
              charge = -100)  %>% 
-  saveNetwork(file=paste0(normalizePath("./docs"),"/tangled.html"), selfcontained = TRUE)
+  saveNetwork(file=paste0(normalizePath("./docs"),"/tangled-d3.html"), selfcontained = TRUE)

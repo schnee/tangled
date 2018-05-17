@@ -13,9 +13,9 @@ tangled <- tangled %>% mutate(note = if_else(is.na(note), "",note))
 tangled <- tangled %>% filter(type=="payment") %>% 
   mutate(amt = as.numeric(note)) %>%
   group_by(from, to) %>%
-  summarize(date = first(date),
+  summarize(date = last(date),
             sum = sum(amt),
-            note = if_else(is.na(sum), first(note), format(sum, scientific = F)),
+            note = if_else(is.na(sum), last(note), format(sum, scientific = F)),
             type = "payment"
   ) %>% bind_rows(
     tangled %>% filter(type=="association")

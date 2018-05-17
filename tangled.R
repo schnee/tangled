@@ -9,6 +9,18 @@ tangled <- read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSosbIjCD2K
 
 tangled <- tangled %>% mutate(note = if_else(is.na(note), "",note))
 
+# attempt to roll up the payments
+tangled <- tangled %>% filter(type=="payment") %>% 
+  mutate(amt = as.numeric(note)) %>%
+  group_by(from, to) %>%
+  summarize(date = first(date),
+            sum = sum(amt),
+            note = if_else(is.na(sum), first(note), format(sum, scientific = F)),
+            type = "payment"
+  ) %>% bind_rows(
+    tangled %>% filter(type=="association")
+  )
+
 graph <- as_tbl_graph(tangled) %>% mutate(group = as.character(group_walktrap()))
 
 ggraph(graph, layout = 'igraph', algorithm="nicely" ) +

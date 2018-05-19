@@ -5,6 +5,7 @@ library(tidygraph)
 library(networkD3)
 library(ggthemes)
 library(RColorBrewer)
+library(scales)
 
 
 tangled <- read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSosbIjCD2KyWJCm712HsEHCkSOdR75Gba5DbobZxlgNSeHjNutef7KkNHRiPU861sA10RfJwyQujuK/pub?gid=0&single=true&output=csv")

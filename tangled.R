@@ -3,6 +3,8 @@ library(ggraph)
 library(dplyr)
 library(tidygraph)
 library(networkD3)
+library(ggthemes)
+library(RColorBrewer)
 
 
 tangled <- read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSosbIjCD2KyWJCm712HsEHCkSOdR75Gba5DbobZxlgNSeHjNutef7KkNHRiPU861sA10RfJwyQujuK/pub?gid=0&single=true&output=csv")
@@ -23,15 +25,40 @@ tangled <- tangled %>% filter(type=="payment") %>%
 
 graph <- as_tbl_graph(tangled) %>% mutate(group = as.character(group_walktrap()))
 
+# the below few line will find the pagerank for all nodes, and use the 
+# max pagerank as the group label
+g<-graph %>% 
+  mutate(cent = centrality_pagerank()) %>% activate(nodes) %>% 
+  group_by(group) %>% mutate(g_max =  max(cent))
+
+
+max_cent <- g %>% activate(nodes) %>% as_tibble() %>% group_by(group) %>% summarize(g_max = max(cent))
+
+max_cent <- g %>% activate(nodes) %>% as_tibble()%>% 
+  filter(cent %in% max_cent$g_max)  %>% rename(group_label = name) %>% ungroup()
+
+graph <- g  %N>% inner_join(max_cent, by = c("group" = "group", c("g_max" = "cent"))) %>% select(-g_max.y)
+
+n_group <- graph %>% activate(nodes) %>% pull(group) %>% n_distinct
+
+my_pal <- c(few_pal(palette = "dark")(7), 
+            brewer_pal(palette = "Dark2")(8),
+            brewer_pal(type="qual")(8))
+
+# ensure I have enough colors for groups
+while(length(my_pal) < n_group) {
+  my_pal = c(my_pal, my_pal)
+}
+
 ggraph(graph, layout = 'igraph', algorithm="nicely" ) +
   geom_edge_fan(aes(linetype=type, color = type, label=note), edge_width=.65,
                 end_cap=circle(2,"mm"), spread = 3, start_cap = circle(2,"mm"), 
                 label_dodge = unit(2,"mm"), label_size = 3,
                 arrow = arrow(type="closed", length = unit(0.1, "inches"))) +
-  scale_edge_linetype_manual(values=c(5,1)) +
-  scale_edge_color_brewer(type="qual", palette = "Dark2") +
-  geom_node_point(aes(colour = group),size = 2) + geom_node_label(aes(label=name), size=3, repel = TRUE, alpha=0.75) + 
-  scale_color_discrete(guide=FALSE) +
+  scale_edge_linetype_manual(guide = "none", values=c(5,1)) +
+  scale_edge_color_brewer(name="Relationship", type="qual", palette = "Dark2") +
+  geom_node_point(aes(colour = group_label),size = 2) + geom_node_label(aes(label=name), size=3, repel = TRUE, alpha=0.75) + 
+  scale_color_manual(name = "Group Name", values = my_pal) +
   ggthemes::theme_few() +
   theme(panel.border = element_blank(),
         axis.ticks = element_blank(),

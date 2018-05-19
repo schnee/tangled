@@ -25,7 +25,7 @@ graph <- as_tbl_graph(tangled) %>% mutate(group = as.character(group_walktrap())
 
 ggraph(graph, layout = 'igraph', algorithm="nicely" ) +
   geom_edge_fan(aes(linetype=type, color = type, label=note), edge_width=.65,
-                end_cap=circle(2,"mm"), spread = 15, start_cap = circle(2,"mm"), 
+                end_cap=circle(2,"mm"), spread = 3, start_cap = circle(2,"mm"), 
                 label_dodge = unit(2,"mm"), label_size = 3,
                 arrow = arrow(type="closed", length = unit(0.1, "inches"))) +
   scale_edge_linetype_manual(values=c(5,1)) +

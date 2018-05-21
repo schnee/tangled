@@ -6,6 +6,7 @@ library(networkD3)
 library(ggthemes)
 library(RColorBrewer)
 library(scales)
+library(lubridate)
 
 
 tangled <- read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSosbIjCD2KyWJCm712HsEHCkSOdR75Gba5DbobZxlgNSeHjNutef7KkNHRiPU861sA10RfJwyQujuK/pub?gid=0&single=true&output=csv")
@@ -13,13 +14,12 @@ tangled <- read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSosbIjCD2K
 tangled <- tangled %>% mutate(note = if_else(is.na(note), "",note))
 
 # attempt to roll up the payments
-tangled <- tangled %>% filter(type=="payment") %>% 
+tangled <- tangled %>% filter(type %in% c("payment", "loan")) %>% 
   mutate(amt = as.numeric(note)) %>%
-  group_by(from, to) %>%
+  group_by(from, to, type) %>%
   summarize(date = last(date),
             sum = sum(amt),
-            note = if_else(is.na(sum), last(note), format(sum, scientific = F)),
-            type = "payment"
+            note = if_else(is.na(sum), last(note), format(sum, scientific = F))
   ) %>% bind_rows(
     tangled %>% filter(type=="association")
   )
@@ -29,17 +29,21 @@ graph <- as_tbl_graph(tangled) %>% mutate(group = as.character(group_walktrap())
 # the below few line will find the pagerank for all nodes, and use the 
 # max pagerank as the group label
 g<-graph %>% 
-  mutate(cent = centrality_pagerank()) %>% activate(nodes) %>% 
-  group_by(group) %>% mutate(g_max =  max(cent))
+  mutate(centrality = centrality_pagerank()) %>% activate(nodes) %>% 
+  group_by(group) %>% mutate(g_max =  max(centrality))
 
 
-max_cent <- g %>% activate(nodes) %>% as_tibble() %>% group_by(group) %>% summarize(g_max = max(cent))
+max_cent <- g %>% activate(nodes) %>% as_tibble() %>% group_by(group) %>% summarize(g_max = max(centrality))
 
 max_cent <- g %>% activate(nodes) %>% as_tibble()%>% 
-  filter(cent %in% max_cent$g_max)  %>% rename(group_label = name) %>% ungroup()
+  filter(centrality %in% max_cent$g_max)  %>% rename(group_label = name) %>% ungroup()
 
-graph <- g  %N>% inner_join(max_cent, by = c("group" = "group", c("g_max" = "cent"))) %>% select(-g_max.y)
+graph <- g  %>% activate(nodes) %>%
+  inner_join(max_cent, by = c("group" = "group", 
+                              "g_max" = "centrality")) %>% 
+  select(-g_max.y)
 
+# now handle some aesthetics
 n_group <- graph %>% activate(nodes) %>% pull(group) %>% n_distinct
 
 my_pal <- c(few_pal(palette = "dark")(7), 
@@ -56,16 +60,19 @@ ggraph(graph, layout = 'igraph', algorithm="nicely" ) +
                 end_cap=circle(2,"mm"), spread = 3, start_cap = circle(2,"mm"), 
                 label_dodge = unit(2,"mm"), label_size = 3,
                 arrow = arrow(type="closed", length = unit(0.1, "inches"))) +
-  scale_edge_linetype_manual(guide = "none", values=c(5,1)) +
+  scale_edge_linetype_manual(guide = "none", values=c(5,1,1)) +
   scale_edge_color_brewer(name="Relationship", type="qual", palette = "Dark2") +
   geom_node_point(aes(colour = group_label),size = 4) + geom_node_point(color = "white",size = 1)+
   geom_node_label(aes(label=name), size=3, repel = TRUE, alpha=0.75) + 
-  scale_color_manual(name = "Group Name", values = my_pal) +
+  scale_color_manual(name = "Community", values = my_pal) +
   ggthemes::theme_few() +
   theme(panel.border = element_blank(),
         axis.ticks = element_blank(),
         axis.text = element_blank(),
-        axis.title = element_blank())
+        axis.title = element_blank()) +
+  labs(
+    caption = now("UTC")
+  )
 
 ggsave("./docs/tangled.png", height=9, width = 15, dpi=150)
 

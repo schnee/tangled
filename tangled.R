@@ -33,10 +33,14 @@ g<-graph %>%
   group_by(group) %>% mutate(g_max =  max(centrality))
 
 
-max_cent <- g %>% activate(nodes) %>% as_tibble() %>% group_by(group) %>% summarize(g_max = max(centrality))
+max_cent_df <- g %>% activate(nodes) %>% as_tibble() %>% group_by(group) %>% summarize(g_max = max(centrality))
 
+# the last summarize there handles ties
 max_cent <- g %>% activate(nodes) %>% as_tibble()%>% 
-  filter(centrality %in% max_cent$g_max)  %>% rename(group_label = name) %>% ungroup()
+  filter(centrality %in% max_cent_df$g_max)  %>% rename(group_label = name) %>% ungroup() %>%
+  group_by(group) %>% summarize(group_label = first(group_label),
+                                centrality = first(centrality),
+                                g_max = first(g_max))
 
 graph <- g  %>% activate(nodes) %>%
   inner_join(max_cent, by = c("group" = "group", 

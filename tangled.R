@@ -78,7 +78,7 @@ ggraph(graph, layout = 'igraph', algorithm="nicely" ) +
     caption = paste(now("UTC"),"https://schnee.github.io/tangled",sep='\n')
   )
 
-ggsave("./docs/tangled.png", height=10, width = 20, dpi=300)
+ggsave("./docs/tangled.png", height=11, width = 22, dpi=200)
 
 links <- graph %>% activate(edges) %>% as_tibble() %>% 
   mutate(from = from -1, to = to -1) %>% 

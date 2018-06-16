@@ -75,7 +75,7 @@ ggraph(graph, layout = 'igraph', algorithm="nicely" ) +
         axis.text = element_blank(),
         axis.title = element_blank()) +
   labs(
-    caption = paste(now("UTC"),"https://schnee.github.io/tangled",sep='\n')
+    caption = paste(now("UTC"))
   )
 
 ggsave("./docs/tangled.png", height=11, width = 22, dpi=200)

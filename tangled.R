@@ -50,7 +50,7 @@ graph <- g  %>% activate(nodes) %>%
 # now handle some aesthetics
 n_group <- graph %>% activate(nodes) %>% pull(group) %>% n_distinct
 
-my_pal <- c(few_pal(palette = "dark")(7), 
+my_pal <- c(few_pal(palette = "Dark")(7), 
             brewer_pal(palette = "Dark2")(8),
             brewer_pal(type="qual")(8))
 

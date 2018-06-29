@@ -4,7 +4,6 @@ rscript ./tangled.R
 git commit -m "updated" ./docs/
 git push
 git checkout gh-pages
-git rebase -Xtheirs master
-git pull
+git merge master
 git push
 git checkout master

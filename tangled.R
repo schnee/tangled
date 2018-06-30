@@ -64,7 +64,7 @@ ggraph(graph, layout = 'igraph', algorithm="nicely" ) +
                 end_cap=circle(2,"mm"), spread = 3, start_cap = circle(2,"mm"), 
                 label_dodge = unit(2,"mm"), label_size = 3,
                 arrow = arrow(type="closed", length = unit(0.1, "inches"))) +
-  scale_edge_linetype_manual(guide = "none", values=c(5,1,1,1)) +
+  scale_edge_linetype_manual(guide = "none", values=c(5,1,1,1,1)) +
   scale_edge_color_brewer(name="Relationship", type="qual", palette = "Dark2") +
   geom_node_point(aes(colour = group_label),size = 4) + geom_node_point(color = "white",size = 1)+
   geom_node_label(aes(label=name), size=3, repel = TRUE, alpha=0.75) + 

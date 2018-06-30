@@ -11,6 +11,8 @@ library(lubridate)
 
 tangled <- read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSosbIjCD2KyWJCm712HsEHCkSOdR75Gba5DbobZxlgNSeHjNutef7KkNHRiPU861sA10RfJwyQujuK/pub?gid=0&single=true&output=csv")
 
+tangled %>% write_csv("./data/tangled.csv")
+
 tangled <- tangled %>% mutate(note = if_else(is.na(note), "",note))
 
 # attempt to roll up the payments

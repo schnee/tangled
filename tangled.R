@@ -14,7 +14,7 @@ tangled <- read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSosbIjCD2K
 tangled <- tangled %>% mutate(note = if_else(is.na(note), "",note))
 
 # attempt to roll up the payments
-tangled <- tangled %>% filter(type %in% c("payment", "loan", "investment")) %>% 
+tangled <- tangled %>% filter(type %in% c("payment", "loan", "investment", "fine")) %>% 
   mutate(amt = as.numeric(note)) %>%
   group_by(from, to, type) %>%
   summarize(date = last(date),

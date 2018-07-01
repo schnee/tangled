@@ -73,7 +73,7 @@ while(length(my_pal) < n_group) {
   my_pal = c(my_pal, my_pal)
 }
 
-ggraph(graph, layout = 'igraph', algorithm="nicely" ) +
+ggraph(graph, layout = 'igraph', algorithm="lgl" ) +
   geom_edge_fan(aes(linetype=type, color = type, label=note), edge_width=.65,
                 end_cap=circle(2,"mm"), spread = 3, start_cap = circle(2,"mm"), 
                 label_dodge = unit(2,"mm"), label_size = 3,
@@ -81,7 +81,7 @@ ggraph(graph, layout = 'igraph', algorithm="nicely" ) +
   scale_edge_linetype_manual(guide = "none", values=c(5,1,1,1,1)) +
   scale_edge_color_brewer(name="Relationship", type="qual", palette = "Dark2") +
   geom_node_point(aes(colour = group_label),size = 4) + geom_node_point(color = "white",size = 1)+
-  geom_node_label(aes(label=name), size=3, repel = TRUE, alpha=0.75) + 
+  geom_node_label(aes(label=name), size=4, repel = TRUE, alpha=0.75) + 
   scale_color_manual(name = "Community", values = my_pal) +
   ggthemes::theme_few() +
   theme(panel.border = element_blank(),
@@ -92,7 +92,7 @@ ggraph(graph, layout = 'igraph', algorithm="nicely" ) +
     caption = paste(now("UTC"))
   )
 
-ggsave("./docs/tangled.png", height=11, width = 22, dpi=200)
+ggsave("./docs/tangled.png", height=15, width = 20, dpi=200)
 
 links <- graph %>% activate(edges) %>% as_tibble() %>% 
   mutate(from = from -1, to = to -1) %>% 

@@ -73,7 +73,10 @@ while(length(my_pal) < n_group) {
   my_pal = c(my_pal, my_pal)
 }
 
-ggraph(graph, layout = 'igraph', algorithm="lgl" ) +
+num_nodes <- graph %>% activate(nodes) %>% as_tibble() %>% summarize(n=n()) %>% pull(n)
+the_layout <- create_layout(graph, layout = "igraph", algorithm="lgl", maxiter = 10*num_nodes)
+
+ggraph(the_layout ) +
   geom_edge_fan(aes(linetype=type, color = type, label=note), edge_width=.65,
                 end_cap=circle(2,"mm"), spread = 3, start_cap = circle(2,"mm"), 
                 label_dodge = unit(2,"mm"), label_size = 3,

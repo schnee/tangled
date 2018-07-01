@@ -8,18 +8,18 @@ date,from,to,type,note,source
 2017-06-15,Columbus Nova,Essential (FRB),payment,62500,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
 2017-07-15,Columbus Nova,Essential (FRB),payment,62500,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
 2017-08-15,Columbus Nova,Essential (FRB),payment,62500,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
-2017-01-01,Essential (FRB),Essential Consultants,association,NA,NA
-2017-01-01,Michael D Cohen,Essential Consultants,association,NA,NA
+2016-10-17,Essential (FRB),Essential Consultants,association,NA,assumed date
+2016-10-17,Michael D Cohen,Essential Consultants,association,founded,https://en.wikipedia.org/wiki/Stormy_Daniels%E2%80%93Donald_Trump_scandal
 2016-01-15,Renova Group,Columbus Nova,investment,15000000,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
 2016-01-20,Columbus Nova,Gawker Media,investment,15000000,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
 2000-01-15,Andrew Intrater,Columbus Nova,association,runs,https://web.archive.org/web/20180509003139/http://www.columbusnova.com/andrew_intrater.html
 2017-01-09,Andrew Intrater,Michael D Cohen,association,met,https://themoscowproject.org/collusion/new-york-times-reveals-meeting-between-cohen-vekselberg-intrater/
 2016-01-01,Andrew Intrater,Trump Inaguration,payment,250000,NA
-2017-01-01,Viktor Vekselberg,Renova Group,association,NA,NA
+1990-01-01,Viktor Vekselberg,Renova Group,association,owner,https://en.wikipedia.org/wiki/Renova_Group
 2017-01-01,Andrew Intrater,Viktor Vekselberg,association,cousin,NA
-2017-01-15,Viktor Vekselberg,Andrew Intrater,association,cousin,NA
-2017-01-20,Viktor Vekselberg,Trump Inaguration,association,attended,NA
-2017-01-20,Andrew Intrater,Trump Inaguration,association,attended,NA
+2017-01-01,Viktor Vekselberg,Andrew Intrater,association,cousin,NA
+2017-01-20,Viktor Vekselberg,Trump Inaguration,association,attended,https://www.nbcnews.com/politics/donald-trump/meet-nice-russian-oligarch-linked-trump-lawyer-michael-cohen-n872716
+2017-01-20,Andrew Intrater,Trump Inaguration,association,attended,https://nypost.com/2018/05/11/mueller-probing-foreign-donations-to-trumps-inauguration-committee/
 2018-05-01,US Govt,Viktor Vekselberg,association,sanctioned for poisoning,https://www.washingtonpost.com/politics/michael-cohen-payments-put-spotlight-on-new-york-investment-firm-linked-to-russian-billionaire/2018/05/20/8a5eb570-59df-11e8-8836-a4a123c359ab_story.html?utm_term=.5c8be031d280
 2006-06-01,Michael D Cohen,Donald J Trump,association,works for,https://www.usnews.com/news/national-news/articles/2018-04-16/10-things-you-didnt-know-about-michael-cohen
 2017-10-05,Novartis,Essential (FRB),payment,99980,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
@@ -28,14 +28,14 @@ date,from,to,type,note,source
 2018-01-05,Novartis,Essential (FRB),payment,99980,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
 2018-01-30,Novartis,Essential (FRB),payment,800080,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
 2017-12-10,ATT,Essential (FRB),payment,600000,https://www.theatlantic.com/technology/archive/2018/05/the-strange-case-of-atts-payments-to-michael-cohen/559994/
-2017-01-01,Keith M Davidson,Davidson (CNB),association,NA,NA
-2017-01-01,Stormy Daniels,Davidson (CNB),association,NA,NA
-2017-01-01,Stormy Daniels,Keith M Davidson,association,NA,NA
-2017-01-01,Viktor Vekselberg,Vladimir Putin,association,NA,NA
+2011-05-01,Keith M Davidson,Davidson (CNB),association,NA,https://www.haaretz.co.il/embeds/pdf_upload/2018/20180509-144555.pdf
+2011-05-01,Stormy Daniels,Davidson (CNB),association,NA,https://www.cnn.com/2018/04/04/politics/stormy-daniels-karen-mcdougal-deals-keith-davidson-invs/index.html
+2011-05-01,Stormy Daniels,Keith M Davidson,association,NA,https://www.cnn.com/2018/04/04/politics/stormy-daniels-karen-mcdougal-deals-keith-davidson-invs/index.html
+2015-12-01,Viktor Vekselberg,Vladimir Putin,association,dines with,https://www.nbcnews.com/politics/donald-trump/meet-nice-russian-oligarch-linked-trump-lawyer-michael-cohen-n872716
 2017-11-27,Korea Aerospace,Essential (FRB),payment,150000,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
 2017-04-03,Elliott Broidy,Republican National Committee,association,Finance Committee,https://gop.com/rnc-announces-additions-to-rnc-finance-leadership-team/
-2017-01-01,Elliott Broidy,Elliott Broidy Capital Management,association,NA,NA
-2017-01-01,Elliott Broidy,Circinus,association,NA,NA
+1991-01-01,Elliott Broidy,Elliott Broidy Capital Management,association,founded,https://en.wikipedia.org/wiki/Elliott_Broidy
+2001-01-01,Elliott Broidy,Circinus,association,owns,https://www.bloomberg.com/profiles/companies/0136784D:US-circinus-llc
 2017-11-30,Bank of America,REAG (CNB),payment,200000,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
 2017-01-01,Elliott Broidy,Bank of America,association,NA,NA
 2017-12-05,REAG (CNB),Davidson (CNB),payment,200000,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records

@@ -54,21 +54,21 @@ date,from,to,type,note,source
 2006-07-15,Stormy Daniels,Donald J Trump,association,Spanked,NA
 2006-06-01,Michael D Cohen,Trump Organization,association,NA,NA
 2017-04-03,Michael D Cohen,Republican National Committee,association,Finance Committee,https://gop.com/rnc-announces-additions-to-rnc-finance-leadership-team/
-2017,Essential (FRB),Demeter Direct,payment,NA,NA
-2017,Mark S Ko,Demeter Direct,association,NA,NA
-2017,Mark S Ko,PK2 Entertainment,association,NA,NA
-2017,Mark S Ko,Michael D Cohen,association,NA,NA
-2017,Mark S Ko,Korea Aerospace,association,NA,NA
-2006,Donald J Trump,Trump Organization,association,NA,NA
+2017-06-01,Essential (FRB),Demeter Direct,payment,NA,assumed date
+2017-06-01,Mark S Ko,Demeter Direct,association,NA,NA
+2017-06-01,Mark S Ko,PK2 Entertainment,association,NA,NA
+2017-06-01,Mark S Ko,Michael D Cohen,association,NA,assumed date
+2017-06-01,Mark S Ko,Korea Aerospace,association,NA,assumed date
+1971-01-01,Donald J Trump,Trump Organization,association,runs,NA
 2016-12-12,Michael D Cohen,Trump Tower Elevator,association,NA,NA
 2016-12-12,Michael Flynn,Trump Tower Elevator,association,NA,NA
 2016-12-12,Ahmed al Rumaihi,Trump Tower Elevator,association,NA,NA
-2017,Ahmed al Rumaihi,Jeff Kwatinetz,association,Approached,NA
-2017,Jeff Kwatinetz,Ahmed al Rumaihi,association,Rejected,NA
-2017,Ice Cube,BIG3,association,NA,NA
-2003,Jeff Kwatinetz,The Firm,association,NA,NA
-2017,Jeff Kwatinetz,BIG3,association,NA,NA
-2003,Steve Bannon,The Firm,association,NA,NA
+2017-07-01,Ahmed al Rumaihi,Jeff Kwatinetz,association,Approached,http://www.dailymail.co.uk/news/article-5711031/Steve-Bannon-target-bribery-plot-Ice-Cubes-basketball-league-rapper-claims.html
+2017-07-01,Jeff Kwatinetz,Ahmed al Rumaihi,association,Rejected,http://www.dailymail.co.uk/news/article-5711031/Steve-Bannon-target-bribery-plot-Ice-Cubes-basketball-league-rapper-claims.html
+2017-01-11,Ice Cube,BIG3,association,founded,https://en.wikipedia.org/wiki/BIG3
+1997-01-01,Jeff Kwatinetz,The Firm,association,founded,https://en.wikipedia.org/wiki/Jeff_Kwatinetz
+2017-01-11,Jeff Kwatinetz,BIG3,association,founded,https://en.wikipedia.org/wiki/BIG3
+1998-01-01,Steve Bannon,The Firm,association,NA,https://www.biography.com/people/steve-bannon-022417
 2017,Ahmed al Rumaihi,Qatari Gov't,association,NA,NA
 2016,Ahmed al Rumaihi,Michael Flynn,association,Allegedly Bribed,NA
 2017,Ajit Pai,ATT,association,Net Neutrality,NA

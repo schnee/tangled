@@ -69,97 +69,97 @@ date,from,to,type,note,source
 1997-01-01,Jeff Kwatinetz,The Firm,association,founded,https://en.wikipedia.org/wiki/Jeff_Kwatinetz
 2017-01-11,Jeff Kwatinetz,BIG3,association,founded,https://en.wikipedia.org/wiki/BIG3
 1998-01-01,Steve Bannon,The Firm,association,NA,https://www.biography.com/people/steve-bannon-022417
-2017,Ahmed al Rumaihi,Qatari Gov't,association,NA,NA
-2016,Ahmed al Rumaihi,Michael Flynn,association,Allegedly Bribed,NA
-2017,Ajit Pai,ATT,association,Net Neutrality,NA
-2017,Ajit Pai,Donald J Trump,association,reports to,NA
-2017,Ajit Pai,FCC,association,runs,NA
-2017,ATT,Ajit Pai,association,met with,NA
-2016,Donald J Trump,Michael D Cohen,payment,100000-250000,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
+2015-01-01,Ahmed al Rumaihi,Qatari Gov't,association,NA,NA
+2016-12-12,Ahmed al Rumaihi,Michael Flynn,association,Allegedly Bribed,NA
+2017-02-27,Ajit Pai,ATT,association,Net Neutrality,https://gizmodo.com/at-t-deeply-regrets-paying-the-presidents-lawyer-to-hel-1825958845
+2017-10-02,Ajit Pai,Donald J Trump,association,reports to,NA
+2017-10-02,Ajit Pai,FCC,association,runs,NA
+2017-02-27,ATT,Ajit Pai,association,met with,https://gizmodo.com/at-t-deeply-regrets-paying-the-presidents-lawyer-to-hel-1825958845
+2016-06-01,Donald J Trump,Michael D Cohen,payment,100000-250000,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
 2016-07-14,KCS Outsourcing,Michael D Cohen,payment,700,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
 2017-02-22,KCS Outsourcing,Michael D Cohen,payment,2998,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
-2018,KOBE EVA KERESKEDELMI,Michael D Cohen,payment,10980,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
-2018,Michael D Cohen,Bank of America,payment,675,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
-2016,Steve Bannon,The White House,association,advises,NA
+2018-01-01,KOBE EVA KERESKEDELMI,Michael D Cohen,payment,10980,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
+2018-01-01,Michael D Cohen,Bank of America,payment,675,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
+2017-01-20,Steve Bannon,The White House,association,advises,NA
 NA,Elliott Broidy,George Nader,association,NA,NA
 NA,George Nader,Steve Bannon,association,NA,NA
 NA,George Nader,Jared Kushner,association,NA,NA
-NA,Jared Kushner,The White House,association,employed by,NA
+2017-01-20,Jared Kushner,The White House,association,employed by,NA
 2009-10-25,Jared Kushner,Ivanka Trump,association,married,NA
 2009-10-25,Ivanka Trump,Jared Kushner,association,married,NA
 1981-10-31,Ivanka Trump,Donald J Trump,association,daughter of,NA
-2016,Michael D Cohen,Qatari Gov't,association,pitched,NA
-2016,Qatari Gov't,Michael D Cohen,association,declined,NA
+2016-12-12,Michael D Cohen,Qatari Gov't,association,pitched,https://www.washingtonpost.com/world/national-security/trumps-personal-attorney-solicited-1-million-from-government-of-qatar/2018/05/16/e787e716-592c-11e8-858f-12becb4d6067_story.html?utm_term=.a6f5f82799e9
+2016-12-12,Qatari Gov't,Michael D Cohen,association,declined,https://www.washingtonpost.com/world/national-security/trumps-personal-attorney-solicited-1-million-from-government-of-qatar/2018/05/16/e787e716-592c-11e8-858f-12becb4d6067_story.html?utm_term=.a6f5f82799e9
 2016-09-01,Trump Organization,Daily Caller,payment,150000,http://observer.com/2017/06/trump-tucker-carlson-daily-caller/
-2010,Tucker Carlson,Daily Caller,association,founded,NA
-2016,Tucker Carlson,Fox News,association,anchor for,NA
+2010-01-11,Tucker Carlson,Daily Caller,association,founded,https://en.wikipedia.org/wiki/The_Daily_Caller
+2009-05-01,Tucker Carlson,Fox News,association,anchor for,https://en.wikipedia.org/wiki/Tucker_Carlson#Fox_News_Channel
 2016-08-03,George Nader,Erik Prince,association,meets with,https://www.nytimes.com/2018/05/19/us/politics/trump-jr-saudi-uae-nader-prince-zamel.html
 2016-08-03,Donald Trump Jr,Erik Prince,association,meets with,https://www.nytimes.com/2018/05/19/us/politics/trump-jr-saudi-uae-nader-prince-zamel.html
 2016-08-03,Joel Zamel,Erik Prince,association,meets with,https://www.nytimes.com/2018/05/19/us/politics/trump-jr-saudi-uae-nader-prince-zamel.html
-2010,Erik Prince,Blackwater,association,founded,https://www.nytimes.com/2018/05/19/us/politics/trump-jr-saudi-uae-nader-prince-zamel.html
-2016,George Nader,Mohammed bin Zayed al-Nahyan,association,represents,https://www.nytimes.com/2018/05/19/us/politics/trump-jr-saudi-uae-nader-prince-zamel.html
-2016,George Nader,Mohammed bin Salman,association,represents,https://www.nytimes.com/2018/05/19/us/politics/trump-jr-saudi-uae-nader-prince-zamel.html
-NA,Mohammed bin Salman,Saudi Arabia,association,crown prince,https://www.nytimes.com/2018/05/19/us/politics/trump-jr-saudi-uae-nader-prince-zamel.html
-NA,Mohammed bin Zayed al-Nahyan,United Arab Emirates,association,crown prince,https://www.nytimes.com/2018/05/19/us/politics/trump-jr-saudi-uae-nader-prince-zamel.html
+1997-06-01,Erik Prince,Blackwater,association,founded,https://en.wikipedia.org/wiki/Academi
+2016-06-01,George Nader,Mohammed bin Zayed al-Nahyan,association,represents,https://www.nytimes.com/2018/05/19/us/politics/trump-jr-saudi-uae-nader-prince-zamel.html
+2016-06-01,George Nader,Mohammed bin Salman,association,represents,https://www.nytimes.com/2018/05/19/us/politics/trump-jr-saudi-uae-nader-prince-zamel.html
+2010-01-01,Mohammed bin Salman,Saudi Arabia,association,crown prince,https://www.nytimes.com/2018/05/19/us/politics/trump-jr-saudi-uae-nader-prince-zamel.html
+2010-01-01,Mohammed bin Zayed al-Nahyan,United Arab Emirates,association,crown prince,https://www.nytimes.com/2018/05/19/us/politics/trump-jr-saudi-uae-nader-prince-zamel.html
 2016-08-03,Erik Prince,Stephen Miller,association,meets with,https://www.nytimes.com/2018/05/19/us/politics/trump-jr-saudi-uae-nader-prince-zamel.html
-NA,Stephen Miller,The White House,association,advises,https://www.nytimes.com/2018/05/19/us/politics/trump-jr-saudi-uae-nader-prince-zamel.html
-NA,Joel Zamel,Psy-Group,association,founded,https://www.nytimes.com/2018/05/19/us/politics/trump-jr-saudi-uae-nader-prince-zamel.html
+2017-01-20,Stephen Miller,The White House,association,advises,https://www.nytimes.com/2018/05/19/us/politics/trump-jr-saudi-uae-nader-prince-zamel.html
+2012-01-01,Joel Zamel,Psy-Group,association,founded,https://www.nytimes.com/2018/05/19/us/politics/trump-jr-saudi-uae-nader-prince-zamel.html
 2016-12-01,George Nader,Joel Zamel,payment,2000000,https://www.nytimes.com/2018/05/19/us/politics/trump-jr-saudi-uae-nader-prince-zamel.html
-NA,George Nader,Michael Flynn,association,meets with,https://www.nytimes.com/2018/05/19/us/politics/trump-jr-saudi-uae-nader-prince-zamel.html
-2016,George Nader,Iran,association,attempted destabilization,https://www.nytimes.com/2018/05/19/us/politics/trump-jr-saudi-uae-nader-prince-zamel.html
+2016-12-15,George Nader,Michael Flynn,association,meets with,http://nymag.com/daily/intelligencer/2018/05/understanding-the-new-trump-campaign-collusion-story.html
+1905-07-08,George Nader,Iran,association,attempted destabilization,https://www.nytimes.com/2018/05/19/us/politics/trump-jr-saudi-uae-nader-prince-zamel.html
 1977-12-31,Donald Trump Jr,Donald J Trump,association,son of,NA
-NA,Erik Prince,Betsy DeVos,association,sibling,NA
-NA,Betsy DeVos,Erik Prince,association,sibling,NA
+2010-01-01,Erik Prince,Betsy DeVos,association,sibling,NA
+2010-01-01,Betsy DeVos,Erik Prince,association,sibling,NA
 2017-02-07,Betsy DeVos,Dept of Education,association,runs,NA
 2017-02-07,Betsy DeVos,Donald J Trump,association,reports to,NA
-2018,Metallurgical Corporation of China,MNC Land,loan,500000000,https://www.nationalreview.com/news/china-contributing-500-million-trump-linked-project-indonesia/
-2018,Trump Organization,MNC Land,association,branding,NA
-2018,Metallurgical Corporation of China,China,association,state-owned,NA
-2017-06,Petro Poroshenko,Donald J Trump,association,photo-op,NA
-2017,Petro Poroshenko,Ukranian Aid,payment,400000,http://www.bbc.com/news/world-us-canada-44215656
-2017,Ukranian Aid,Michael D Cohen,payment,400000,NA
-2017,Petro Poroshenko,Ukraine,association,president,NA
+2018-05-14,Metallurgical Corporation of China,MNC Land,loan,500000000,https://www.nationalreview.com/news/china-contributing-500-million-trump-linked-project-indonesia/
+2018-05-14,Trump Organization,MNC Land,association,branding,NA
+2018-05-14,Metallurgical Corporation of China,China,association,state-owned,NA
+2017-06-01,Petro Poroshenko,Donald J Trump,association,photo-op,NA
+2017-05-01,Petro Poroshenko,Ukranian Aid,payment,400000,http://www.bbc.com/news/world-us-canada-44215656
+2017-05-01,Ukranian Aid,Michael D Cohen,payment,400000,NA
+2014-06-07,Petro Poroshenko,Ukraine,association,president,NA
 2017-01-11,Michael D Cohen,Trump Tower,association,meeting,NA
 2017-01-11,Viktor Vekselberg,Trump Tower,association,meeting,NA
 2017-01-11,Viktor Vekselberg,Michael D Cohen,association,"""Russia's relations""",https://www.nytimes.com/2018/05/25/us/politics/michael-cohen-viktor-vekselberg-trump-tower.html
 1983-02-14,Trump Tower Elevator,Trump Tower,association,inside of,https://en.wikipedia.org/wiki/Trump_Tower
-2017-01,Richard Gerson,Seychelles,association,visits,https://www.nbcnews.com/politics/national-security/jared-kushner-close-friend-rick-gerson-now-under-scrutiny-mueller-n876361
-2017-01,Richard Gerson,Mohammed bin Zayed al-Nahyan,association,meets,https://www.nbcnews.com/politics/national-security/jared-kushner-close-friend-rick-gerson-now-under-scrutiny-mueller-n876362
-2017-01,Richard Gerson,George Nader,association,communicates,https://www.nbcnews.com/politics/national-security/jared-kushner-close-friend-rick-gerson-now-under-scrutiny-mueller-n876363
-2016-12,Richard Gerson,Four Seasons,association,meeting,https://www.nbcnews.com/politics/national-security/jared-kushner-close-friend-rick-gerson-now-under-scrutiny-mueller-n876364
-2016-12,George Nader,Four Seasons,association,meeting,https://www.nbcnews.com/politics/national-security/jared-kushner-close-friend-rick-gerson-now-under-scrutiny-mueller-n876365
-2016-12,Mohammed bin Zayed al-Nahyan,Four Seasons,association,meeting,https://www.nbcnews.com/politics/national-security/jared-kushner-close-friend-rick-gerson-now-under-scrutiny-mueller-n876366
-2016-12,Michael Flynn,Four Seasons,association,meeting,https://www.nbcnews.com/politics/national-security/jared-kushner-close-friend-rick-gerson-now-under-scrutiny-mueller-n876367
-2016-12,Steve Bannon,Four Seasons,association,meeting,https://www.nbcnews.com/politics/national-security/jared-kushner-close-friend-rick-gerson-now-under-scrutiny-mueller-n876368
-2016-12,Yousef Otaiba,Four Seasons,association,meeting,https://www.nbcnews.com/politics/national-security/jared-kushner-close-friend-rick-gerson-now-under-scrutiny-mueller-n876369
-2016-12,Yousef Otaiba,United Arab Emirates,association,Ambassador to US,https://www.nbcnews.com/politics/national-security/jared-kushner-close-friend-rick-gerson-now-under-scrutiny-mueller-n876370
-2015-11,Ivanka Trump,Michael D Cohen,association,introduced,https://www.buzzfeed.com/anthonycormier/ivanka-trump-putin-moscow-meeting-michael-cohen-tower?utm_term=.qkK5GJmQz#.unr7kjg6w
-2015-11,Ivanka Trump,Dmitry Klokov,association,introduced,https://www.buzzfeed.com/anthonycormier/ivanka-trump-putin-moscow-meeting-michael-cohen-tower?utm_term=.qkK5GJmQz#.unr7kjg6w
-2015-11,Dmitry Klokov,Michael D Cohen,association,offered to broker,https://www.buzzfeed.com/anthonycormier/ivanka-trump-putin-moscow-meeting-michael-cohen-tower?utm_term=.qkK5GJmQz#.unr7kjg6w
-2015-11,Dmitry Klokov,Vladimir Putin,association,"""knows""",https://www.buzzfeed.com/anthonycormier/ivanka-trump-putin-moscow-meeting-michael-cohen-tower?utm_term=.qkK5GJmQz#.unr7kjg6w
-2018-06,Stormy Daniels,Keith M Davidson,association,sues,https://www.cnn.com/2018/06/06/politics/stormy-daniels-new-lawsuit/index.html
+2017-01-01,Richard Gerson,Seychelles,association,visits,https://www.nbcnews.com/politics/national-security/jared-kushner-close-friend-rick-gerson-now-under-scrutiny-mueller-n876361
+2017-01-01,Richard Gerson,Mohammed bin Zayed al-Nahyan,association,meets,https://www.nbcnews.com/politics/national-security/jared-kushner-close-friend-rick-gerson-now-under-scrutiny-mueller-n876362
+2017-01-01,Richard Gerson,George Nader,association,communicates,https://www.nbcnews.com/politics/national-security/jared-kushner-close-friend-rick-gerson-now-under-scrutiny-mueller-n876363
+2016-12-01,Richard Gerson,Four Seasons,association,meeting,https://www.nbcnews.com/politics/national-security/jared-kushner-close-friend-rick-gerson-now-under-scrutiny-mueller-n876364
+2016-12-01,George Nader,Four Seasons,association,meeting,https://www.nbcnews.com/politics/national-security/jared-kushner-close-friend-rick-gerson-now-under-scrutiny-mueller-n876365
+2016-12-01,Mohammed bin Zayed al-Nahyan,Four Seasons,association,meeting,https://www.nbcnews.com/politics/national-security/jared-kushner-close-friend-rick-gerson-now-under-scrutiny-mueller-n876366
+2016-12-01,Michael Flynn,Four Seasons,association,meeting,https://www.nbcnews.com/politics/national-security/jared-kushner-close-friend-rick-gerson-now-under-scrutiny-mueller-n876367
+2016-12-01,Steve Bannon,Four Seasons,association,meeting,https://www.nbcnews.com/politics/national-security/jared-kushner-close-friend-rick-gerson-now-under-scrutiny-mueller-n876368
+2016-12-01,Yousef Otaiba,Four Seasons,association,meeting,https://www.nbcnews.com/politics/national-security/jared-kushner-close-friend-rick-gerson-now-under-scrutiny-mueller-n876369
+2016-12-01,Yousef Otaiba,United Arab Emirates,association,Ambassador to US,https://www.nbcnews.com/politics/national-security/jared-kushner-close-friend-rick-gerson-now-under-scrutiny-mueller-n876370
+2015-11-01,Ivanka Trump,Michael D Cohen,association,introduced,https://www.buzzfeed.com/anthonycormier/ivanka-trump-putin-moscow-meeting-michael-cohen-tower?utm_term=.qkK5GJmQz#.unr7kjg6w
+2015-11-02,Ivanka Trump,Dmitry Klokov,association,introduced,https://www.buzzfeed.com/anthonycormier/ivanka-trump-putin-moscow-meeting-michael-cohen-tower?utm_term=.qkK5GJmQz#.unr7kjg6w
+2015-11-03,Dmitry Klokov,Michael D Cohen,association,offered to broker,https://www.buzzfeed.com/anthonycormier/ivanka-trump-putin-moscow-meeting-michael-cohen-tower?utm_term=.qkK5GJmQz#.unr7kjg6w
+2015-11-04,Dmitry Klokov,Vladimir Putin,association,"""knows""",https://www.buzzfeed.com/anthonycormier/ivanka-trump-putin-moscow-meeting-michael-cohen-tower?utm_term=.qkK5GJmQz#.unr7kjg6w
+2018-06-06,Stormy Daniels,Keith M Davidson,association,sues,https://www.cnn.com/2018/06/06/politics/stormy-daniels-new-lawsuit/index.html
 2018-06-06,Stormy Daniels,Michael D Cohen,association,sues,NA
-2018-01,Michael D Cohen,Keith M Davidson,association,collude,NA
-2018-01,Keith M Davidson,Michael D Cohen,association,collude,NA
-2018-06,Konstantin Kilimnik,Hapsburg Group,association,works with,https://www.cnbc.com/2018/06/08/special-counsel-robert-mueller-files-new-indictment-against-paul-manafort-nbc-news.html?utm_source=fark&utm_medium=website&utm_content=link&ICID=ref_fark
-2018,Hapsburg Group,Ukraine,association,lobbies for,https://www.cnbc.com/2018/06/08/special-counsel-robert-mueller-files-new-indictment-against-paul-manafort-nbc-news.html?utm_source=fark&utm_medium=website&utm_content=link&ICID=ref_fark
-2018-06,Konstantin Kilimnik,Paul Manafort,association,works with,https://www.cnbc.com/2018/06/08/special-counsel-robert-mueller-files-new-indictment-against-paul-manafort-nbc-news.html?utm_source=fark&utm_medium=website&utm_content=link&ICID=ref_fark
-2018-06,Paul Manafort,Russia,association,lobbies for,https://www.cnbc.com/2018/06/08/special-counsel-robert-mueller-files-new-indictment-against-paul-manafort-nbc-news.html?utm_source=fark&utm_medium=website&utm_content=link&ICID=ref_fark
-2018-06,Vladimir Putin,Russia,association,president,NA
-2016-05,Paul Manafort,Donald J Trump,association,campaign manager,NA
-2016-01,Konstantin Kilimnik,Russia,association,former spy,https://www.bloomberg.com/news/articles/2018-06-09/mueller-s-latest-charges-bring-together-trump-campaign-russia
+2011-06-01,Michael D Cohen,Keith M Davidson,association,collude,NA
+2011-06-01,Keith M Davidson,Michael D Cohen,association,collude,NA
+2018-06-01,Konstantin Kilimnik,Hapsburg Group,association,works with,https://www.cnbc.com/2018/06/08/special-counsel-robert-mueller-files-new-indictment-against-paul-manafort-nbc-news.html?utm_source=fark&utm_medium=website&utm_content=link&ICID=ref_fark
+2018-05-01,Hapsburg Group,Ukraine,association,lobbies for,https://www.cnbc.com/2018/06/08/special-counsel-robert-mueller-files-new-indictment-against-paul-manafort-nbc-news.html?utm_source=fark&utm_medium=website&utm_content=link&ICID=ref_fark
+2018-06-01,Konstantin Kilimnik,Paul Manafort,association,works with,https://www.cnbc.com/2018/06/08/special-counsel-robert-mueller-files-new-indictment-against-paul-manafort-nbc-news.html?utm_source=fark&utm_medium=website&utm_content=link&ICID=ref_fark
+2018-06-01,Paul Manafort,Russia,association,lobbies for,https://www.cnbc.com/2018/06/08/special-counsel-robert-mueller-files-new-indictment-against-paul-manafort-nbc-news.html?utm_source=fark&utm_medium=website&utm_content=link&ICID=ref_fark
+2018-06-01,Vladimir Putin,Russia,association,president,NA
+2016-05-19,Paul Manafort,Donald J Trump,association,campaign manager,NA
+2016-01-01,Konstantin Kilimnik,Russia,association,former spy,https://www.bloomberg.com/news/articles/2018-06-09/mueller-s-latest-charges-bring-together-trump-campaign-russia
 2018-06-15,Paul Manafort,Jail,association,remanded,https://www.cnn.com/2018/06/15/politics/judge-sends-paul-manafort-to-jail-pending-trial
-06/06/2016,Paul Manafort,Trump Tower,association,meeting,http://www.newsweek.com/paul-manafort-indictment-timeline-russia-probe-charges-696226
-06/06/2016,Donald Trump Jr,Trump Tower,association,meeting,NA
-06/06/2016,Jared Kushner,Trump Tower,association,meeting,NA
-06/06/2016,Natalia Veselnitskaya,Trump Tower,association,meeting,NA
-04/27/2018,Natalia Veselnitskaya,Russia,association,Informant,https://www.nbcnews.com/nightly-news/video/russian-lawyer-who-met-with-kushner-don-jr-admits-to-being-an-informant-1221063235886
-2012,Viktor Yanukovych,Paul Manafort,payment,12700000,http://www.newsweek.com/paul-manafort-indictment-timeline-russia-probe-charges-696226
-2012,Viktor Yanukovych,Ukraine,association,Former President,NA
-2015,Oleg Deripaska,Paul Manafort,loan,10000000,http://www.businessinsider.com/court-document-shows-oleg-deripaska-loaned-paul-manafort-10-million-2018-6
-2015,Oleg Deripaska,Russia,association,close ties,NA
-2016,Paul Manafort,Konstantin Kilimnik,association,emails re: campaign,http://www.businessinsider.com/court-document-shows-oleg-deripaska-loaned-paul-manafort-10-million-2018-6
-2016,Konstantin Kilimnik,Oleg Deripaska,association,emails re: campaign,http://www.businessinsider.com/court-document-shows-oleg-deripaska-loaned-paul-manafort-10-million-2018-6
+2016-06-06,Paul Manafort,Trump Tower,association,meeting,http://www.newsweek.com/paul-manafort-indictment-timeline-russia-probe-charges-696226
+2016-06-06,Donald Trump Jr,Trump Tower,association,meeting,NA
+2016-06-06,Jared Kushner,Trump Tower,association,meeting,NA
+2016-06-06,Natalia Veselnitskaya,Trump Tower,association,meeting,NA
+2018-04-27,Natalia Veselnitskaya,Russia,association,Informant,https://www.nbcnews.com/nightly-news/video/russian-lawyer-who-met-with-kushner-don-jr-admits-to-being-an-informant-1221063235886
+1905-07-04,Viktor Yanukovych,Paul Manafort,payment,12700000,http://www.newsweek.com/paul-manafort-indictment-timeline-russia-probe-charges-696226
+1905-07-04,Viktor Yanukovych,Ukraine,association,Former President,NA
+1905-07-07,Oleg Deripaska,Paul Manafort,loan,10000000,http://www.businessinsider.com/court-document-shows-oleg-deripaska-loaned-paul-manafort-10-million-2018-6
+1905-07-07,Oleg Deripaska,Russia,association,close ties,NA
+1905-07-08,Paul Manafort,Konstantin Kilimnik,association,emails re: campaign,http://www.businessinsider.com/court-document-shows-oleg-deripaska-loaned-paul-manafort-10-million-2018-6
+1905-07-08,Konstantin Kilimnik,Oleg Deripaska,association,emails re: campaign,http://www.businessinsider.com/court-document-shows-oleg-deripaska-loaned-paul-manafort-10-million-2018-6
 2018-06-25,Donald J Trump,Chuck Rettig,association,nominates for IRS,https://www.rawstory.com/2018/06/trumps-irs-nominee-failed-disclose-crucial-information-report/
 2006-01-01,Chuck Rettig,Trump Organization,association,owns branded property,https://www.marketwatch.com/story/trumps-irs-nominee-owns-units-at-trump-branded-property-in-hawaii-2018-06-27
 2018-06-20,Michael D Cohen,Republican National Committee,association,resigns,https://www.politico.com/story/2018/06/20/michael-cohen-resigns-from-rnc-657334

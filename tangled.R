@@ -78,16 +78,16 @@ while(length(my_pal) < n_group) {
 }
 
 num_nodes <- graph %>% activate(nodes) %>% as_tibble() %>% summarize(n=n()) %>% pull(n)
-the_layout <- create_layout(graph, layout = "igraph", algorithm="lgl", maxiter = 10*num_nodes)
+the_layout <- create_layout(graph, layout = "igraph", algorithm="lgl", maxiter = 20*num_nodes)
 
 ggraph(the_layout ) +
   geom_edge_fan(aes(linetype=type, color = type, label=note), edge_width=.65,
-                end_cap=circle(2,"mm"), spread = 3, start_cap = circle(2,"mm"), 
+                end_cap=circle(3,"mm"), spread = 3, start_cap = circle(3,"mm"), 
                 label_dodge = unit(2,"mm"), label_size = 3,
                 arrow = arrow(type="closed", length = unit(0.1, "inches"))) +
   scale_edge_linetype_manual(guide = "none", values=c(5,1,1,1,1)) +
   scale_edge_color_brewer(name="Relationship", type="qual", palette = "Dark2") +
-  geom_node_point(aes(colour = group_label),size = 4) + geom_node_point(color = "white",size = 1)+
+  geom_node_point(aes(colour = group_label),size = 6) + geom_node_point(color = "white",size = 2)+
   geom_node_label(aes(label=name), size=4, repel = TRUE, alpha=0.75) + 
   scale_color_manual(name = "Community", values = my_pal) +
   ggthemes::theme_few() +

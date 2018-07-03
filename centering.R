@@ -24,8 +24,8 @@ group_order <- max_cent %>% arrange(desc(centrality)) %>% arrange_centered()
 node_df <- g %>% activate(nodes) %>% as_tibble()
 node_df$group <- factor(x = node_df$group,levels = group_order$group )
 
-# group the nodes by group, and arrange the /grouped/ centralities. THEN created
-# a bunch on centered group data frames, which will be bind_rowed coming up
+# group the nodes by group, and arrange the /grouped/ centralities. THEN create
+# a bunch of centered group data frames, which will be bind_rowed coming up
 centered_groups <- node_df %>% group_by(group) %>% arrange(desc(centrality), .by_group=TRUE) %>% do(
   centered_group = arrange_centered(.)
 )

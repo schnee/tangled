@@ -35,5 +35,9 @@ centered_groups[2,]$centered_group
 # this has all the nodes in a by-group centering, with the most central group in
 # the middle, and the most central node in the middle of that. This should form
 # the basis of the bump chart
-the_ordered_nodes <- bind_rows(centered_groups$centered_group)
+the_ordered_nodes <- bind_rows(centered_groups$centered_group) %>% mutate(the_centered_order = row_number())
+
+g2<-g %>% activate(nodes) %>% inner_join(the_ordered_nodes)
+
+ggraph(g2, layout="linear", sort.by = "centrality") + geom_edge_arc(aes(colour=type), arrow = arrow(type="closed", length = unit(0.5, "mm")))
 

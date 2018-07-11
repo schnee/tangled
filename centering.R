@@ -39,5 +39,5 @@ the_ordered_nodes <- bind_rows(centered_groups$centered_group) %>% mutate(the_ce
 
 g2<-g %>% activate(nodes) %>% inner_join(the_ordered_nodes)
 
-ggraph(g2, layout="linear", sort.by = "centrality") + geom_edge_arc(aes(colour=type), arrow = arrow(type="closed", length = unit(0.5, "mm")))
+ggraph(g2, layout="linear", sort.by = "the_centered_order") + geom_edge_arc(aes(colour=type), arrow = arrow(type="closed", length = unit(0.5, "mm")))
 

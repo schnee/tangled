@@ -3,7 +3,7 @@
 # set -e will bail out on any error, such as in the tangled.R script
 set -e
 git checkout master
-rscript ./tangled.R
+Rscript ./tangled.R
 git commit -m "updated" ./docs/ ./data/
 git push
 git checkout gh-pages

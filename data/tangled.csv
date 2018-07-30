@@ -149,11 +149,11 @@ NA,George Nader,Jared Kushner,association,NA,NA
 2016-05-19,Paul Manafort,Donald J Trump,association,campaign manager,NA
 2016-01-01,Konstantin Kilimnik,Russia,association,former spy,https://www.bloomberg.com/news/articles/2018-06-09/mueller-s-latest-charges-bring-together-trump-campaign-russia
 2018-06-15,Paul Manafort,Jail,association,remanded,https://www.cnn.com/2018/06/15/politics/judge-sends-paul-manafort-to-jail-pending-trial
-2016-06-06,Paul Manafort,Trump Tower,association,meeting,http://www.newsweek.com/paul-manafort-indictment-timeline-russia-probe-charges-696226
-2016-06-06,Donald Trump Jr,Trump Tower,association,meeting,NA
-2016-06-06,Jared Kushner,Trump Tower,association,meeting,NA
-2016-06-06,Rinat Akhmetshin,Trump Tower,association,meeting,https://medium.com/@wsiegelman/us-person-2-in-the-case-of-alleged-russian-agent-maria-butina-is-george-o-neill-his-daughter-bb569202cf06
-2016-06-06,Natalia Veselnitskaya,Trump Tower,association,meeting,NA
+2016-06-09,Paul Manafort,Trump Tower,association,meeting,http://www.newsweek.com/paul-manafort-indictment-timeline-russia-probe-charges-696226
+2016-06-09,Donald Trump Jr,Trump Tower,association,meeting,NA
+2016-06-09,Jared Kushner,Trump Tower,association,meeting,NA
+2016-06-09,Rinat Akhmetshin,Trump Tower,association,meeting,https://medium.com/@wsiegelman/us-person-2-in-the-case-of-alleged-russian-agent-maria-butina-is-george-o-neill-his-daughter-bb569202cf06
+2016-06-09,Natalia Veselnitskaya,Trump Tower,association,meeting,NA
 2018-04-27,Natalia Veselnitskaya,Russia,association,informant,https://www.nbcnews.com/nightly-news/video/russian-lawyer-who-met-with-kushner-don-jr-admits-to-being-an-informant-1221063235886
 1905-07-04,Viktor Yanukovych,Paul Manafort,payment,12700000,http://www.newsweek.com/paul-manafort-indictment-timeline-russia-probe-charges-696226
 1905-07-04,Viktor Yanukovych,Ukraine,association,Former President,NA
@@ -205,9 +205,11 @@ NA,George Nader,Jared Kushner,association,NA,NA
 2016-05-21,Alexander Torshin,NRA,association,attends,https://www.thedailybeast.com/kremlin-used-nra-to-help-trump-in-2016-says-senate-intelligence-committee
 2016-11-01,NRA,Donald J Trump,investment,30000000,https://www.thedailybeast.com/kremlin-used-nra-to-help-trump-in-2016-says-senate-intelligence-committee
 2015-01-01,Alexander Torshin,Russia,association,senator,https://en.wikipedia.org/wiki/Aleksandr_Torshin
-2017-02-07,Alexander Torshin,George ONeill Jr,association,dining,https://abcnews.go.com/Politics/russia-bistro-bis-calif-congressman-dined-accused-russian/story?id=56839486&utm_source=fark&utm_medium=website&utm_content=link&ICID=ref_fark
-2017-02-07,Maria Butina,George ONeill Jr,association,dining,http://time.com/4696424/moscow-right-kremlin-republicans/
-2017-02-07,Dana Rohrabacher,George ONeill Jr,association,dining,http://time.com/4696424/moscow-right-kremlin-republicans/
-2017-02-07,Paul Erickson,George ONeill Jr,association,dining,http://time.com/4696424/moscow-right-kremlin-republicans/
-2017-01-01,Catharine ONeill,George ONeill Jr,association,daughter of,https://medium.com/@wsiegelman/us-person-2-in-the-case-of-alleged-russian-agent-maria-butina-is-george-o-neill-his-daughter-bb569202cf06
-2016-09-30,Catharine ONeill,Dana Rohrabacher,association,interned for,https://medium.com/@wsiegelman/us-person-2-in-the-case-of-alleged-russian-agent-maria-butina-is-george-o-neill-his-daughter-bb569202cf07
+2017-02-01,Alexander Torshin,George O'Neill Jr,association,dining,https://abcnews.go.com/Politics/russia-bistro-bis-calif-congressman-dined-accused-russian/story?id=56839486&utm_source=fark&utm_medium=website&utm_content=link&ICID=ref_fark
+2017-02-01,Maria Butina,George O'Neill Jr,association,dining,http://time.com/4696424/moscow-right-kremlin-republicans/
+2017-02-01,Dana Rohrabacher,George O'Neill Jr,association,dining,http://time.com/4696424/moscow-right-kremlin-republicans/
+2017-02-01,Paul Erickson,George O'Neill Jr,association,dining,http://time.com/4696424/moscow-right-kremlin-republicans/
+2017-01-01,Catharine O'Neill,George O'Neill Jr,association,daughter of,https://medium.com/@wsiegelman/us-person-2-in-the-case-of-alleged-russian-agent-maria-butina-is-george-o-neill-his-daughter-bb569202cf06
+2016-09-30,Catharine O'Neill,Dana Rohrabacher,association,interned for,https://medium.com/@wsiegelman/us-person-2-in-the-case-of-alleged-russian-agent-maria-butina-is-george-o-neill-his-daughter-bb569202cf07
+2017-04-11,Rinat Akhmetshin,Dana Rohrabacher,association,meeting in Berlin,https://en.m.wikipedia.org/wiki/Rinat_Akhmetshin
+2017-02-01,George O'Neill Jr,Bistro Bis,association,dining,http://time.com/4696424/moscow-right-kremlin-republicans/

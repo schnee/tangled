@@ -30,7 +30,7 @@ date,from,to,type,note,source
 2017-12-10,ATT,Essential (FRB),payment,600000,https://www.theatlantic.com/technology/archive/2018/05/the-strange-case-of-atts-payments-to-michael-cohen/559994/
 2011-05-01,Keith M Davidson,Davidson (CNB),association,NA,https://www.haaretz.co.il/embeds/pdf_upload/2018/20180509-144555.pdf
 2011-05-01,Stormy Daniels,Davidson (CNB),association,NA,https://www.cnn.com/2018/04/04/politics/stormy-daniels-karen-mcdougal-deals-keith-davidson-invs/index.html
-2011-05-01,Stormy Daniels,Keith M Davidson,association,NA,https://www.cnn.com/2018/04/04/politics/stormy-daniels-karen-mcdougal-deals-keith-davidson-invs/index.html
+2011-05-01,Stormy Daniels,Keith M Davidson,association,represented by,https://www.cnn.com/2018/04/04/politics/stormy-daniels-karen-mcdougal-deals-keith-davidson-invs/index.html
 2015-12-01,Viktor Vekselberg,Vladimir Putin,association,dines with,https://www.nbcnews.com/politics/donald-trump/meet-nice-russian-oligarch-linked-trump-lawyer-michael-cohen-n872716
 2017-11-27,Korea Aerospace,Essential (FRB),payment,150000,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
 2017-04-03,Elliott Broidy,Republican National Committee,association,Finance Committee,https://gop.com/rnc-announces-additions-to-rnc-finance-leadership-team/
@@ -213,3 +213,13 @@ NA,George Nader,Jared Kushner,association,NA,NA
 2016-09-30,Catharine O'Neill,Dana Rohrabacher,association,interned for,https://medium.com/@wsiegelman/us-person-2-in-the-case-of-alleged-russian-agent-maria-butina-is-george-o-neill-his-daughter-bb569202cf07
 2017-04-11,Rinat Akhmetshin,Dana Rohrabacher,association,meeting in Berlin,https://en.m.wikipedia.org/wiki/Rinat_Akhmetshin
 2017-02-01,George O'Neill Jr,Bistro Bis,association,dining,http://time.com/4696424/moscow-right-kremlin-republicans/
+2017-09-01,Elliott Broidy,Shera Bechard,association,impregnated,https://www.thedailybeast.com/elliott-broidys-mistress-i-was-pregnant-when-my-lawyer-recruited-michael-cohen-to-solve-problem
+2017-10-01,Shera Bechard,Keith M Davidson,association,represented by,https://www.thedailybeast.com/elliott-broidys-mistress-i-was-pregnant-when-my-lawyer-recruited-michael-cohen-to-solve-problem
+2017-10-02,Elliott Broidy,Shera Bechard,payment,1600000,https://www.thedailybeast.com/elliott-broidys-mistress-i-was-pregnant-when-my-lawyer-recruited-michael-cohen-to-solve-problem
+2017-10-03,Keith M Davidson,Michael D Cohen,association,negotiated payment,https://www.thedailybeast.com/elliott-broidys-mistress-i-was-pregnant-when-my-lawyer-recruited-michael-cohen-to-solve-problem
+2016-10-01,JD Gordon,Maria Butina,association,policy emails,https://www.msn.com/en-us/news/politics/trump-associate-socialized-with-alleged-russian-agent-maria-butina-in-final-weeks-of-2016-campaign/ar-BBLsZYe?ocid=spartanntp&utm_source=fark&utm_medium=website&utm_content=link&ICID=ref_fark
+2016-03-01,JD Gordon,Trump Organization,association,National Security Group,https://www.msn.com/en-us/news/politics/trump-associate-socialized-with-alleged-russian-agent-maria-butina-in-final-weeks-of-2016-campaign/ar-BBLsZYe?ocid=spartanntp&utm_source=fark&utm_medium=website&utm_content=link&ICID=ref_fark
+2016-08-01,JD Gordon,Trump Organization,association,Presidential Transition,https://www.msn.com/en-us/news/politics/trump-associate-socialized-with-alleged-russian-agent-maria-butina-in-final-weeks-of-2016-campaign/ar-BBLsZYe?ocid=spartanntp&utm_source=fark&utm_medium=website&utm_content=link&ICID=ref_fark
+2016-09-29,Paul Erickson,Maria Butina,association,Email Intro to JD Gordon,https://www.msn.com/en-us/news/politics/trump-associate-socialized-with-alleged-russian-agent-maria-butina-in-final-weeks-of-2016-campaign/ar-BBLsZYe?ocid=spartanntp&utm_source=fark&utm_medium=website&utm_content=link&ICID=ref_fark
+2016-09-29,Paul Erickson,JD Gordon,association,Email Intro to Maria Butina,https://www.msn.com/en-us/news/politics/trump-associate-socialized-with-alleged-russian-agent-maria-butina-in-final-weeks-of-2016-campaign/ar-BBLsZYe?ocid=spartanntp&utm_source=fark&utm_medium=website&utm_content=link&ICID=ref_fark
+2016-10-15,JD Gordon,Maria Butina,association,Invite to Styx Concert,https://www.msn.com/en-us/news/politics/trump-associate-socialized-with-alleged-russian-agent-maria-butina-in-final-weeks-of-2016-campaign/ar-BBLsZYe?ocid=spartanntp&utm_source=fark&utm_medium=website&utm_content=link&ICID=ref_fark

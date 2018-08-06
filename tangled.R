@@ -66,6 +66,17 @@ graph <- g  %>% activate(nodes) %>%
                               "g_max" = "centrality")) %>% 
   select(-g_max.y)
 
+# for FR layouts, let's set an edge weight: in group = 2, out of group = 1
+get_group <- function(node, graph) {
+  graph %>% activate(nodes) %>% as_tibble() %>% filter(row_number() == node) %>% pull(group)
+}
+
+weights <- graph %>% activate(edges) %>% as_tibble() %>% rowwise() %>% 
+  mutate(weight = if_else(get_group(to,graph) == get_group(from,graph),2,1)) %>% pull(weight)
+
+graph <- graph %>% activate(edges) %>% mutate(weight = weights)
+
+
 # now handle some aesthetics
 n_group <- graph %>% activate(nodes) %>% pull(group) %>% n_distinct
 
@@ -79,7 +90,9 @@ while(length(my_pal) < n_group) {
 }
 
 num_nodes <- graph %>% activate(nodes) %>% as_tibble() %>% summarize(n=n()) %>% pull(n)
-the_layout <- create_layout(graph, layout = "igraph", algorithm="lgl", maxiter = 200*num_nodes)
+#the_layout <- create_layout(graph, layout = "igraph", algorithm="lgl", maxiter = 200*num_nodes)
+
+the_layout <- create_layout(graph, layout = "igraph", algorithm = "drl", options = igraph::drl_defaults$final)#, maxiter = 200*num_nodes)
 
 ggraph(the_layout ) +
   geom_edge_fan(aes(linetype=type, color = type, label=note), edge_width=.65,

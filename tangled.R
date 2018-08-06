@@ -72,7 +72,7 @@ get_group <- function(node, graph) {
 }
 
 weights <- graph %>% activate(edges) %>% as_tibble() %>% rowwise() %>% 
-  mutate(weight = if_else(get_group(to,graph) == get_group(from,graph),2,1)) %>% pull(weight)
+  mutate(weight = if_else(get_group(to,graph) == get_group(from,graph),2,.5)) %>% pull(weight)
 
 graph <- graph %>% activate(edges) %>% mutate(weight = weights)
 

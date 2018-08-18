@@ -81,7 +81,8 @@ date,from,to,type,note,source
 2018-01-01,KOBE EVA KERESKEDELMI,Michael D Cohen,payment,10980,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
 2018-01-01,Michael D Cohen,Bank of America,payment,675,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
 2017-01-20,Steve Bannon,The White House,association,advises,NA
-NA,Elliott Broidy,George Nader,association,NA,NA
+NA,Elliott Broidy,George Nader,association,conspired to remove TIllerson,https://www.nytimes.com/2018/03/21/us/politics/george-nader-elliott-broidy-uae-saudi-arabia-white-house-influence.html
+NA,George Nader,Elliott Broidy,association,groomed for influence,https://www.nytimes.com/2018/03/21/us/politics/george-nader-elliott-broidy-uae-saudi-arabia-white-house-influence.html
 NA,George Nader,Steve Bannon,association,NA,NA
 NA,George Nader,Jared Kushner,association,NA,NA
 2017-01-20,Jared Kushner,The White House,association,employed by,NA

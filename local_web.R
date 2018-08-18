@@ -1,8 +1,8 @@
-node_name <- 'Stormy Daniels'
+node_name <- 'Paul Manafort'
 node_id <- graph %>% activate(nodes) %>% mutate(node_id = row_number()) %>%
   filter(name == node_name) %>% pull(node_id)
 
-local_graph <- to_local_neighborhood(graph, node=node_id, order=2)
+local_graph <- graph %>% to_local_neighborhood(node=node_id, order=2)
 
 
 ggraph(local_graph$neighborhood, layout = "auto" ) +
@@ -13,7 +13,7 @@ ggraph(local_graph$neighborhood, layout = "auto" ) +
   scale_edge_linetype_manual(guide = "none", values=c(5,1,1,1,1)) +
   scale_edge_color_brewer(name="Relationship", type="qual", palette = "Dark2") +
   geom_node_point(aes(colour = group_label),size = 6) + geom_node_point(color = "white",size = 2)+
-  geom_node_label(aes(label=name), size=4, repel = TRUE, alpha=0.75) + 
+  geom_node_label(aes(label=name), size=4, repel = TRUE, alpha=0.75, show.legend = FALSE) + 
   scale_color_manual(name = "Community", values = my_pal) +
   ggthemes::theme_few() +
   theme(panel.border = element_blank(),
@@ -23,4 +23,6 @@ ggraph(local_graph$neighborhood, layout = "auto" ) +
   labs(
     caption = paste(node_name,now("UTC"),sep='\n')
   )
+
+ggsave("./docs/tangled2.png", height=8, width = 12, dpi=100)
 

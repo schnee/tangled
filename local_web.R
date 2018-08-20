@@ -1,4 +1,4 @@
-node_name <- 'Elliott Broidy'
+node_name <- 'Michael D Cohen'
 node_id <- graph %>% activate(nodes) %>% mutate(node_id = row_number()) %>%
   filter(name == node_name) %>% pull(node_id)
 

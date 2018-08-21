@@ -20,7 +20,7 @@ date,from,to,type,note,source
 2017-01-01,Viktor Vekselberg,Andrew Intrater,association,cousin,NA
 2017-01-20,Viktor Vekselberg,Trump Inaguration,association,attended,https://www.nbcnews.com/politics/donald-trump/meet-nice-russian-oligarch-linked-trump-lawyer-michael-cohen-n872716
 2017-01-20,Andrew Intrater,Trump Inaguration,association,attended,https://nypost.com/2018/05/11/mueller-probing-foreign-donations-to-trumps-inauguration-committee/
-2018-05-01,US Govt,Viktor Vekselberg,association,sanctioned for poisoning,https://www.washingtonpost.com/politics/michael-cohen-payments-put-spotlight-on-new-york-investment-firm-linked-to-russian-billionaire/2018/05/20/8a5eb570-59df-11e8-8836-a4a123c359ab_story.html?utm_term=.5c8be031d280
+2018-04-06,US Govt,Viktor Vekselberg,association,sanctioned for meddling,http://time.com/5271000/michael-cohen-essential-consultants-novartis-vekselberg-att/
 2006-06-01,Michael D Cohen,Donald J Trump,association,works for,https://www.usnews.com/news/national-news/articles/2018-04-16/10-things-you-didnt-know-about-michael-cohen
 2017-10-05,Novartis,Essential (FRB),payment,99980,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
 2017-11-03,Novartis,Essential (FRB),payment,99980,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
@@ -250,3 +250,5 @@ NA,Elliott Broidy,Steve Wynn,association,influence peddling,https://www.washingt
 2017-10-21,China,Steve Wynn,association,alleged letter,https://foreignpolicy.com/2017/10/23/the-chinese-have-cracked-the-code-for-communicating-with-trump-guo-wengui-beijing/
 2018-02-18,Anastasia Vashukevich,Oleg Deripaska,association,provided proof of election meddling,https://apnews.com/78eef0ecec49412b816ac5169d63279a
 2018-02-18,Oleg Deripaska,Anastasia Vashukevich,association,promised a little something,https://apnews.com/78eef0ecec49412b816ac5169d63279a
+2015-12-10,Viktor Vekselberg,Michael Flynn,association,dinner,http://time.com/5271000/michael-cohen-essential-consultants-novartis-vekselberg-att/
+2016-10-22,Donald J Trump,ATT,association,criticizes,http://time.com/5271000/michael-cohen-essential-consultants-novartis-vekselberg-att/

@@ -1,14 +1,13 @@
 date,from,to,type,note,source
-2016-10-27,Essential (FRB),Davidson (CNB),payment,130000,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
-2017-01-15,Columbus Nova,Essential (FRB),payment,62500,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
-2017-02-15,Columbus Nova,Essential (FRB),payment,62500,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
-2017-03-15,Columbus Nova,Essential (FRB),payment,62500,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
-2017-04-15,Columbus Nova,Essential (FRB),payment,62500,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
-2017-05-15,Columbus Nova,Essential (FRB),payment,62500,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
-2017-06-15,Columbus Nova,Essential (FRB),payment,62500,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
-2017-07-15,Columbus Nova,Essential (FRB),payment,62500,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
-2017-08-15,Columbus Nova,Essential (FRB),payment,62500,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
-2016-10-17,Essential (FRB),Essential Consultants,association,NA,assumed date
+2016-10-27,Essential Consultants,Stormy Daniels,payment,130000,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
+2017-01-15,Columbus Nova,Essential Consultants,payment,62500,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
+2017-02-15,Columbus Nova,Essential Consultants,payment,62500,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
+2017-03-15,Columbus Nova,Essential Consultants,payment,62500,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
+2017-04-15,Columbus Nova,Essential Consultants,payment,62500,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
+2017-05-15,Columbus Nova,Essential Consultants,payment,62500,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
+2017-06-15,Columbus Nova,Essential Consultants,payment,62500,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
+2017-07-15,Columbus Nova,Essential Consultants,payment,62500,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
+2017-08-15,Columbus Nova,Essential Consultants,payment,62500,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
 2016-10-17,Michael D Cohen,Essential Consultants,association,founded,https://en.wikipedia.org/wiki/Stormy_Daniels%E2%80%93Donald_Trump_scandal
 2016-01-15,Renova Group,Columbus Nova,investment,15000000,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
 2016-01-20,Columbus Nova,Gawker Media,investment,15000000,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
@@ -22,39 +21,36 @@ date,from,to,type,note,source
 2017-01-20,Andrew Intrater,Trump Inaguration,association,attended,https://nypost.com/2018/05/11/mueller-probing-foreign-donations-to-trumps-inauguration-committee/
 2018-04-06,US Govt,Viktor Vekselberg,association,sanctioned for meddling,http://time.com/5271000/michael-cohen-essential-consultants-novartis-vekselberg-att/
 2006-06-01,Michael D Cohen,Donald J Trump,association,works for,https://www.usnews.com/news/national-news/articles/2018-04-16/10-things-you-didnt-know-about-michael-cohen
-2017-10-05,Novartis,Essential (FRB),payment,99980,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
-2017-11-03,Novartis,Essential (FRB),payment,99980,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
-2017-12-01,Novartis,Essential (FRB),payment,99980,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
-2018-01-05,Novartis,Essential (FRB),payment,99980,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
-2018-01-30,Novartis,Essential (FRB),payment,800080,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
-2017-12-10,ATT,Essential (FRB),payment,600000,https://www.theatlantic.com/technology/archive/2018/05/the-strange-case-of-atts-payments-to-michael-cohen/559994/
-2011-05-01,Keith M Davidson,Davidson (CNB),association,NA,https://www.haaretz.co.il/embeds/pdf_upload/2018/20180509-144555.pdf
-2011-05-01,Stormy Daniels,Davidson (CNB),association,NA,https://www.cnn.com/2018/04/04/politics/stormy-daniels-karen-mcdougal-deals-keith-davidson-invs/index.html
+2017-10-05,Novartis,Essential Consultants,payment,99980,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
+2017-11-03,Novartis,Essential Consultants,payment,99980,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
+2017-12-01,Novartis,Essential Consultants,payment,99980,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
+2018-01-05,Novartis,Essential Consultants,payment,99980,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
+2018-01-30,Novartis,Essential Consultants,payment,800080,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
+2017-12-10,ATT,Essential Consultants,payment,600000,https://www.theatlantic.com/technology/archive/2018/05/the-strange-case-of-atts-payments-to-michael-cohen/559994/
 2011-05-01,Stormy Daniels,Keith M Davidson,association,represented by,https://www.cnn.com/2018/04/04/politics/stormy-daniels-karen-mcdougal-deals-keith-davidson-invs/index.html
 2015-12-01,Viktor Vekselberg,Vladimir Putin,association,dines with,https://www.nbcnews.com/politics/donald-trump/meet-nice-russian-oligarch-linked-trump-lawyer-michael-cohen-n872716
-2017-11-27,Korea Aerospace,Essential (FRB),payment,150000,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
+2017-11-27,Korea Aerospace,Essential Consultants,payment,150000,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
 2017-04-03,Elliott Broidy,Republican National Committee,association,Finance Committee,https://gop.com/rnc-announces-additions-to-rnc-finance-leadership-team/
 1991-01-01,Elliott Broidy,Elliott Broidy Capital Management,association,founded,https://en.wikipedia.org/wiki/Elliott_Broidy
 2001-01-01,Elliott Broidy,Circinus,association,owns,https://www.bloomberg.com/profiles/companies/0136784D:US-circinus-llc
-2017-11-30,Bank of America,REAG (CNB),payment,200000,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
-2017-01-01,Elliott Broidy,Bank of America,association,NA,NA
-2017-12-05,REAG (CNB),Davidson (CNB),payment,200000,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
-2017-12-29,Bank of America,REAG (CNB),payment,62500,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
-2018-01-02,REAG (CNB),Essential (FRB),payment,62500,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
-2018-01-31,Bank of America,REAG (CNB),payment,62500,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
-2018-01-31,REAG (CNB),Essential (FRB),payment,62500,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
-2018-03-01,Bank of America,REAG (CNB),payment,62500,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
-2018-03-01,REAG (CNB),Essential (FRB),payment,62500,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
+2017-11-30,Elliot Broidy,REAG (CNB),payment,200000,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
+2017-12-05,REAG (CNB),Stormy Daniels,payment,200000,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
+2017-12-29,Elliot Broidy,REAG (CNB),payment,62500,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
+2018-01-02,REAG (CNB),Essential Consultants,payment,62500,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
+2018-01-31,Elliot Broidy,REAG (CNB),payment,62500,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
+2018-01-31,REAG (CNB),Essential Consultants,payment,62500,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
+2018-03-01,Elliot Broidy,REAG (CNB),payment,62500,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
+2018-03-01,REAG (CNB),Essential Consultants,payment,62500,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
 2017-01-01,Michael D Cohen,Morgan Stanley,association,NA,NA
-2017-07-13,Essential (FRB),Morgan Stanley,payment,505000,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
-2017-09-08,Essential (FRB),Morgan Stanley,payment,250000,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
-2017-08-15,Essential (FRB),Morgan Stanley,payment,250000,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
+2017-07-13,Essential Consultants,Morgan Stanley,payment,505000,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
+2017-09-08,Essential Consultants,Morgan Stanley,payment,250000,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
+2017-08-15,Essential Consultants,Morgan Stanley,payment,250000,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
 2017-01-20,Donald J Trump,The White House,association,lives at,NA
 2006-07-15,Donald J Trump,Stormy Daniels,association,Shark Week,NA
 2006-07-15,Stormy Daniels,Donald J Trump,association,Spanked,NA
 2006-06-01,Michael D Cohen,Trump Organization,association,NA,NA
 2017-04-03,Michael D Cohen,Republican National Committee,association,Finance Committee,https://gop.com/rnc-announces-additions-to-rnc-finance-leadership-team/
-2017-06-01,Essential (FRB),Demeter Direct,payment,NA,assumed date
+2017-06-01,Essential Consultants,Demeter Direct,payment,NA,assumed date
 2017-06-01,Mark S Ko,Demeter Direct,association,NA,NA
 2017-06-01,Mark S Ko,PK2 Entertainment,association,NA,NA
 2017-06-01,Mark S Ko,Michael D Cohen,association,NA,assumed date
@@ -79,7 +75,7 @@ date,from,to,type,note,source
 2016-07-14,KCS Outsourcing,Michael D Cohen,payment,700,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
 2017-02-22,KCS Outsourcing,Michael D Cohen,payment,2998,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
 2018-01-01,KOBE EVA KERESKEDELMI,Michael D Cohen,payment,10980,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
-2018-01-01,Michael D Cohen,Bank of America,payment,675,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
+2018-01-01,Michael D Cohen,Elliot Broidy,payment,675,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
 2017-01-20,Steve Bannon,The White House,association,advises,NA
 NA,Elliott Broidy,George Nader,association,conspired to remove TIllerson,https://www.nytimes.com/2018/03/21/us/politics/george-nader-elliott-broidy-uae-saudi-arabia-white-house-influence.html
 NA,George Nader,Elliott Broidy,association,groomed for influence,https://www.nytimes.com/2018/03/21/us/politics/george-nader-elliott-broidy-uae-saudi-arabia-white-house-influence.html

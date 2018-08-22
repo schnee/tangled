@@ -55,23 +55,23 @@ date,from,to,type,note,source
 2017-06-01,Mark S Ko,PK2 Entertainment,association,NA,NA
 2017-06-01,Mark S Ko,Michael D Cohen,association,NA,assumed date
 2017-06-01,Mark S Ko,Korea Aerospace,association,NA,assumed date
-1971-01-01,Donald J Trump,Trump Organization,association,runs,NA
-2016-12-12,Michael D Cohen,Trump Tower Elevator,association,NA,NA
-2016-12-12,Michael Flynn,Trump Tower Elevator,association,NA,NA
-2016-12-12,Ahmed al Rumaihi,Trump Tower Elevator,association,NA,NA
+1971-01-01,Donald J Trump,Trump Organization,association,executive leader,NA
+2016-12-12,Michael D Cohen,Trump Tower Elevator,association,rode on,NA
+2016-12-12,Michael Flynn,Trump Tower Elevator,association,rode on,NA
+2016-12-12,Ahmed al Rumaihi,Trump Tower Elevator,association,road on,NA
 2017-07-01,Ahmed al Rumaihi,Jeff Kwatinetz,association,Approached,http://www.dailymail.co.uk/news/article-5711031/Steve-Bannon-target-bribery-plot-Ice-Cubes-basketball-league-rapper-claims.html
 2017-07-01,Jeff Kwatinetz,Ahmed al Rumaihi,association,Rejected,http://www.dailymail.co.uk/news/article-5711031/Steve-Bannon-target-bribery-plot-Ice-Cubes-basketball-league-rapper-claims.html
 2017-01-11,Ice Cube,BIG3,association,founded,https://en.wikipedia.org/wiki/BIG3
 1997-01-01,Jeff Kwatinetz,The Firm,association,founded,https://en.wikipedia.org/wiki/Jeff_Kwatinetz
 2017-01-11,Jeff Kwatinetz,BIG3,association,founded,https://en.wikipedia.org/wiki/BIG3
-1998-01-01,Steve Bannon,The Firm,association,NA,https://www.biography.com/people/steve-bannon-022417
-2015-01-01,Ahmed al Rumaihi,Qatari Gov't,association,NA,NA
-2016-12-12,Ahmed al Rumaihi,Michael Flynn,association,Allegedly Bribed,NA
+1998-01-01,Steve Bannon,The Firm,association,partner in,https://www.biography.com/people/steve-bannon-022417
+2015-01-01,Ahmed al Rumaihi,Qatari Gov't,association,former diplomat,https://en.wikipedia.org/wiki/Ahmed_Al-Rumaihi
+2016-12-12,Ahmed al Rumaihi,Michael Flynn,association,Allegedly Bribed,https://assets.documentcloud.org/documents/4456972/Jeff-Kwatinetz-Sworn-Declaration.pdf
 2017-02-27,Ajit Pai,ATT,association,Net Neutrality,https://gizmodo.com/at-t-deeply-regrets-paying-the-presidents-lawyer-to-hel-1825958845
 2017-10-02,Ajit Pai,Donald J Trump,association,reports to,NA
 2017-10-02,Ajit Pai,FCC,association,runs,NA
 2017-02-27,ATT,Ajit Pai,association,met with,https://gizmodo.com/at-t-deeply-regrets-paying-the-presidents-lawyer-to-hel-1825958845
-2017-06-01,Donald J Trump,Michael D Cohen,payment,420000,https://www.lawfareblog.com/document-michael-cohen-plea-agreement
+2017-06-01,Trump Organization,Michael D Cohen,payment,420000,https://www.lawfareblog.com/document-michael-cohen-plea-agreement
 2016-07-14,KCS Outsourcing,Michael D Cohen,payment,700,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
 2017-02-22,KCS Outsourcing,Michael D Cohen,payment,2998,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
 2018-01-01,KOBE EVA KERESKEDELMI,Michael D Cohen,payment,10980,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
@@ -116,8 +116,8 @@ NA,George Nader,Jared Kushner,association,NA,NA
 2017-05-01,Petro Poroshenko,Ukranian Aid,payment,400000,http://www.bbc.com/news/world-us-canada-44215656
 2017-05-01,Ukranian Aid,Michael D Cohen,payment,400000,NA
 2014-06-07,Petro Poroshenko,Ukraine,association,president,NA
-2017-01-11,Michael D Cohen,Trump Tower,association,meeting,NA
-2017-01-11,Viktor Vekselberg,Trump Tower,association,meeting,NA
+2017-01-11,Michael D Cohen,Trump Tower,association,meeting,https://www.nytimes.com/2018/05/25/us/politics/michael-cohen-viktor-vekselberg-trump-tower.html
+2017-01-11,Viktor Vekselberg,Trump Tower,association,meeting,https://www.nytimes.com/2018/05/25/us/politics/michael-cohen-viktor-vekselberg-trump-tower.html
 2017-01-11,Viktor Vekselberg,Michael D Cohen,association,"""Russia's relations""",https://www.nytimes.com/2018/05/25/us/politics/michael-cohen-viktor-vekselberg-trump-tower.html
 1983-02-14,Trump Tower Elevator,Trump Tower,association,inside of,https://en.wikipedia.org/wiki/Trump_Tower
 2017-01-01,Richard Gerson,Seychelles,association,visits,https://www.nbcnews.com/politics/national-security/jared-kushner-close-friend-rick-gerson-now-under-scrutiny-mueller-n876361
@@ -135,14 +135,14 @@ NA,George Nader,Jared Kushner,association,NA,NA
 2015-11-03,Dmitry Klokov,Michael D Cohen,association,offered to broker,https://www.buzzfeed.com/anthonycormier/ivanka-trump-putin-moscow-meeting-michael-cohen-tower?utm_term=.qkK5GJmQz#.unr7kjg6w
 2015-11-04,Dmitry Klokov,Vladimir Putin,association,"""knows""",https://www.buzzfeed.com/anthonycormier/ivanka-trump-putin-moscow-meeting-michael-cohen-tower?utm_term=.qkK5GJmQz#.unr7kjg6w
 2018-06-06,Stormy Daniels,Keith M Davidson,association,sues,https://www.cnn.com/2018/06/06/politics/stormy-daniels-new-lawsuit/index.html
-2018-06-06,Stormy Daniels,Michael D Cohen,association,sues,NA
-2011-06-01,Michael D Cohen,Keith M Davidson,association,collude,NA
-2011-06-01,Keith M Davidson,Michael D Cohen,association,collude,NA
+2018-06-06,Stormy Daniels,Michael D Cohen,association,sues,https://www.cnn.com/2018/06/06/politics/stormy-daniels-new-lawsuit/index.html
+2011-06-01,Michael D Cohen,Keith M Davidson,association,collude,https://www.cnn.com/2018/06/06/politics/stormy-daniels-new-lawsuit/index.html
+2011-06-01,Keith M Davidson,Michael D Cohen,association,collude,https://www.cnn.com/2018/06/06/politics/stormy-daniels-new-lawsuit/index.html
 2018-06-01,Konstantin Kilimnik,Hapsburg Group,association,works with,https://www.cnbc.com/2018/06/08/special-counsel-robert-mueller-files-new-indictment-against-paul-manafort-nbc-news.html?utm_source=fark&utm_medium=website&utm_content=link&ICID=ref_fark
 2018-05-01,Hapsburg Group,Ukraine,association,lobbies for,https://www.cnbc.com/2018/06/08/special-counsel-robert-mueller-files-new-indictment-against-paul-manafort-nbc-news.html?utm_source=fark&utm_medium=website&utm_content=link&ICID=ref_fark
 2018-06-01,Konstantin Kilimnik,Paul Manafort,association,works with,https://www.cnbc.com/2018/06/08/special-counsel-robert-mueller-files-new-indictment-against-paul-manafort-nbc-news.html?utm_source=fark&utm_medium=website&utm_content=link&ICID=ref_fark
 2018-06-01,Paul Manafort,Russia,association,lobbies for,https://www.cnbc.com/2018/06/08/special-counsel-robert-mueller-files-new-indictment-against-paul-manafort-nbc-news.html?utm_source=fark&utm_medium=website&utm_content=link&ICID=ref_fark
-2018-06-01,Vladimir Putin,Russia,association,president,NA
+2018-06-01,Vladimir Putin,Russia,association,president,https://en.wikipedia.org/wiki/Vladimir_Putin
 2016-05-19,Paul Manafort,Donald J Trump,association,campaign manager,https://en.wikipedia.org/wiki/Rick_Gates_(political_consultant)
 2016-01-01,Konstantin Kilimnik,Russia,association,former spy,https://www.bloomberg.com/news/articles/2018-06-09/mueller-s-latest-charges-bring-together-trump-campaign-russia
 2018-06-15,Paul Manafort,Jail,association,remanded,https://www.cnn.com/2018/06/15/politics/judge-sends-paul-manafort-to-jail-pending-trial
@@ -258,4 +258,5 @@ NA,Elliott Broidy,Steve Wynn,association,influence peddling,https://www.washingt
 2018-08-21,Individual-1,Michael D Cohen,association,directed 130000 payment,https://abcnews.go.com/Politics/michael-cohen-president-trumps-longtime-personal-attorney-reaches/story?id=57310974
 2017-01-21,Individual-1,The White House,association,becomes President,https://abcnews.go.com/Politics/michael-cohen-president-trumps-longtime-personal-attorney-reaches/story?id=57310974
 2018-08-21,Michael D Cohen,Woman-2,payment,130000,https://abcnews.go.com/Politics/michael-cohen-president-trumps-longtime-personal-attorney-reaches/story?id=57310974
-2017-06-01,Individual-1,Michael D Cohen,payment,420000,https://www.lawfareblog.com/document-michael-cohen-plea-agreement
+2017-06-01,Individual-1,Individual-1 Company,association,executive leader,https://www.lawfareblog.com/document-michael-cohen-plea-agreement
+2017-06-01,Individual-1 Company,Michael D Cohen,payment,420000,https://www.lawfareblog.com/document-michael-cohen-plea-agreement

@@ -1,4 +1,4 @@
-node_name <- 'Michael D Cohen'
+node_name <- 'AMI'
 node_id <- graph %>% activate(nodes) %>% mutate(node_id = row_number()) %>%
   filter(name == node_name) %>% pull(node_id)
 
@@ -24,5 +24,5 @@ ggraph(local_graph$neighborhood, layout = "auto" ) +
     caption = paste(node_name,now("UTC"),sep='\n')
   )
 
-ggsave("./docs/local.png", height=8, width = 12, dpi=100)
+ggsave("./docs/AMI.png", height=8, width = 12, dpi=100)
 

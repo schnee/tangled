@@ -1,3 +1,11 @@
+source("./function.R")
+
+
+tangled <- read_csv("./data/tangled.csv")
+graph <- make_graph(tangled)
+my_pal <- get_palette(graph)
+
+
 node_name <- 'AMI'
 node_id <- graph %>% activate(nodes) %>% mutate(node_id = row_number()) %>%
   filter(name == node_name) %>% pull(node_id)

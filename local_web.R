@@ -1,4 +1,4 @@
-source("./function.R")
+source("./functions.R")
 
 
 tangled <- read_csv("./data/tangled.csv")

@@ -55,7 +55,7 @@ make_graph <- function(tangled) {
   weights <- graph %>% activate(edges) %>% as_tibble() %>% rowwise() %>% 
     mutate(the_group = if_else(get_group(to,graph) == get_group(from,graph),get_group(from,graph),NULL)) %>%
     group_by(the_group) %>% mutate(n=n()) %>% ungroup() %>% 
-    mutate(max_n = max(n), weight = if_else(!is.na(the_group), 0.2, 0.1)) %>% pull(weight)
+    mutate(max_n = max(n), weight = if_else(!is.na(the_group), 0.3, 0.1)) %>% pull(weight)
   
   graph <- graph %>% activate(edges) %>% mutate(weight = weights)
   

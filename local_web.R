@@ -1,12 +1,23 @@
 source("./functions.R")
 
+args <- commandArgs(trailingOnly=TRUE)
+
+# test if there is at least one argument: if not, return an error
+if (length(args)==0) {
+  node_name <- 'Felix Sater'
+} else if (length(args)==1) {
+  # default output file
+  node_name <- args[1]
+}
+
+print(node_name)
 
 tangled <- read_csv("./data/tangled.csv")
 graph <- make_graph(tangled)
 my_pal <- get_palette(graph)
 
 
-node_name <- 'Felix Sater'
+#node_name <- 'Felix Sater'
 node_id <- graph %>% activate(nodes) %>% mutate(node_id = row_number()) %>%
   filter(name == node_name) %>% pull(node_id)
 

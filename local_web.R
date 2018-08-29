@@ -33,4 +33,3 @@ ggraph(local_graph$neighborhood, layout = "auto" ) +
   )
 
 ggsave("./docs/AMI.png", height=8, width = 12, dpi=100)
-

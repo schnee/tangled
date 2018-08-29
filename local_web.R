@@ -1,5 +1,9 @@
 source("./functions.R")
 
+# To call from a cmd line, do something like:
+# Rscript local_web.R "Donald J Trump"
+# the node name must be in quotes from the command line
+
 args <- commandArgs(trailingOnly=TRUE)
 
 # test if there is at least one argument: if not, return an error

@@ -1,12 +1,27 @@
 source("./functions.R")
 
+# To call from a cmd line, do something like:
+# Rscript local_web.R "Donald J Trump"
+# the node name must be in quotes from the command line
+
+args <- commandArgs(trailingOnly=TRUE)
+
+# test if there is at least one argument: if not, return an error
+if (length(args)==0) {
+  node_name <- 'Felix Sater'
+} else if (length(args)==1) {
+  # default output file
+  node_name <- args[1]
+}
+
+print(node_name)
 
 tangled <- read_csv("./data/tangled.csv")
 graph <- make_graph(tangled)
 my_pal <- get_palette(graph)
 
 
-node_name <- 'AMI'
+#node_name <- 'Felix Sater'
 node_id <- graph %>% activate(nodes) %>% mutate(node_id = row_number()) %>%
   filter(name == node_name) %>% pull(node_id)
 
@@ -29,7 +44,11 @@ ggraph(local_graph$neighborhood, layout = "auto" ) +
         axis.text = element_blank(),
         axis.title = element_blank()) +
   labs(
-    caption = paste(node_name,now("UTC"),sep='\n')
+    caption = paste(node_name,now("UTC"),"https://schnee.github.io/tangled",sep='\n')
   )
 
-ggsave("./docs/AMI.png", height=8, width = 12, dpi=100)
+fn <- tolower(node_name) %>% gsub('[^a-z]', '', .)
+
+fp <- paste0("./docs/", fn, ".png")
+
+ggsave(fp, height=8, width = 12, dpi=100)

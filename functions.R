@@ -21,6 +21,8 @@ make_graph <- function(tangled) {
               note = if_else(is.na(sum), last(note), format(sum, scientific = F))
     ) %>% bind_rows(
       tangled %>% filter(type=="association")
+    ) %>% bind_rows(
+      tangled %>% filter(type=="plea")
     )
   
   graph <- as_tbl_graph(tangled) %>% mutate(group = as.character(group_walktrap()))

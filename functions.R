@@ -47,15 +47,18 @@ make_graph <- function(tangled) {
                                 "g_max" = "centrality")) %>% 
     select(-g_max.y)
   
-  # for FR layouts, let's set an edge weight: in group = 2, out of group = 1
-  get_group <- function(node, graph) {
-    graph %>% activate(nodes) %>% as_tibble() %>% filter(row_number() == node) %>% pull(group) %>% as.numeric()
-  }
+
   
   graph
 }
 
 weight_graph <- function(graph, in_group, out_group) {
+  
+  # for FR layouts, let's set an edge weight: in group = 2, out of group = 1
+  get_group <- function(node, graph) {
+    graph %>% activate(nodes) %>% as_tibble() %>% filter(row_number() == node) %>% pull(group) %>% as.numeric()
+  }
+  
   weights <- graph %>% activate(edges) %>% as_tibble() %>% rowwise() %>% 
     mutate(the_group = if_else(get_group(to,graph) == get_group(from,graph),get_group(from,graph),NULL)) %>%
     group_by(the_group) %>% mutate(n=n()) %>% ungroup() %>% 

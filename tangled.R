@@ -32,7 +32,7 @@ if(file.exists(old_state_fn)){
 # continue on, update the old state.
 tangled %>% write_csv(old_state_fn)
 
-graph <- make_graph(tangled) %>% weight_graph(.5, 0.1)
+graph <- make_graph(tangled) %>% weight_graph(.5, 0.05)
 
 my_pal <- get_palette(graph)
 

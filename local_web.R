@@ -32,10 +32,10 @@ ggraph(local_graph$neighborhood, layout = "auto" ) +
   geom_edge_fan(aes(linetype=type, color = type, label=note), edge_width=.65,
                 end_cap=circle(3,"mm"), spread = 3, start_cap = circle(3,"mm"), 
                 label_dodge = unit(2,"mm"), label_size = 3,
-                arrow = arrow(type="closed", length = unit(0.1, "inches"))) +
+                arrow = arrow(type="closed", length = unit(1.25, "mm"))) +
   scale_edge_linetype_manual(guide = "none", values=c(5,1,1,1,1)) +
   scale_edge_color_brewer(name="Relationship", type="qual", palette = "Dark2") +
-  geom_node_point(aes(colour = group_label),size = 6) + geom_node_point(color = "white",size = 2)+
+  geom_node_point(aes(colour = group_label),size = 4) + geom_node_point(color = "white",size = 1)+
   geom_node_label(aes(label=name), size=4, repel = TRUE, alpha=0.75, show.legend = FALSE) + 
   scale_color_manual(name = "Community", values = my_pal) +
   ggthemes::theme_few() +

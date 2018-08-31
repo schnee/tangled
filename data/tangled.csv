@@ -51,10 +51,10 @@ date,from,to,type,note,source
 2006-06-01,Michael D Cohen,Trump Organization,association,NA,NA
 2017-04-03,Michael D Cohen,Republican National Committee,association,Finance Committee,https://gop.com/rnc-announces-additions-to-rnc-finance-leadership-team/
 2017-06-01,Essential Consultants,Demeter Direct,payment,NA,assumed date
-2017-06-01,Mark S Ko,Demeter Direct,association,NA,NA
-2017-06-01,Mark S Ko,PK2 Entertainment,association,NA,NA
-2017-06-01,Mark S Ko,Michael D Cohen,association,NA,assumed date
-2017-06-01,Mark S Ko,Korea Aerospace,association,NA,assumed date
+2017-06-01,Mark S Ko,Demeter Direct,association,head of,https://www.cnn.com/2018/05/11/politics/demeter-direct-michael-cohen/index.html
+2017-06-01,Mark S Ko,PK2 Entertainment,association,head of,https://www.businessinsider.com/demeter-direct-michael-cohen-essential-consultants-paid-money-2018-5
+2017-06-01,Mark S Ko,Michael D Cohen,association,translator,assumed date
+2017-06-01,Mark S Ko,Korea Aerospace,association,translator,assumed date
 1971-01-01,Donald J Trump,Trump Organization,association,executive leader,NA
 2016-12-12,Michael D Cohen,Trump Tower Elevator,association,rode on,NA
 2016-12-12,Michael Flynn,Trump Tower Elevator,association,rode on,NA

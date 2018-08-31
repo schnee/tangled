@@ -303,3 +303,10 @@ NA,Foreigner A,Sam Patten,association,lobbying,http://thehill.com/policy/nationa
 NA,Foreigner A,Russia,association,is citizen of,http://thehill.com/policy/national-security/404530-manafort-associate-charged-with-illegal-lobbying-report
 NA,Sam Patten,Cambridge Analytica,association,employed by,https://www.bloomberg.com/news/articles/2018-08-31/manafort-associate-sam-patten-is-charged-with-fara-violation
 NA,Sam Patten,Federal Court,plea,plead guilty,https://www.bloomberg.com/news/articles/2018-08-31/manafort-associate-sam-patten-is-charged-with-fara-violation
+NA,Konstantin Kilimnik,Begemot Ventures International,association,principal,https://www.washingtonpost.com/local/public-safety/washington-consultant-for-ukraine-party-set-to-plead-guilty-to-violating-lobbyist-disclosure-law/2018/08/31/172cf2c8-ad23-11e8-a8d7-0f63ab8b1370_story.html?utm_term=.a4b412b5de41
+NA,Sam Patten,Begemot Ventures International,association,executive,https://www.washingtonpost.com/local/public-safety/washington-consultant-for-ukraine-party-set-to-plead-guilty-to-violating-lobbyist-disclosure-law/2018/08/31/172cf2c8-ad23-11e8-a8d7-0f63ab8b1370_story.html?utm_term=.a4b412b5de41
+NA,Begemot Ventures International,NA,NA,NA,NA
+NA,Begemot Ventures International,US Citizen,payment,50000,https://www.bloomberg.com/news/articles/2018-08-31/patten-caused-foreign-money-to-be-paid-to-inaugural-committee
+NA,US Citizen,Trump Inaguration,payment,50000,https://www.bloomberg.com/news/articles/2018-08-31/patten-caused-foreign-money-to-be-paid-to-inaugural-committee
+NA,Foreigner B,Trump Inaguration,association,attends with Patten,https://www.washingtonpost.com/local/public-safety/washington-consultant-for-ukraine-party-set-to-plead-guilty-to-violating-lobbyist-disclosure-law/2018/08/31/172cf2c8-ad23-11e8-a8d7-0f63ab8b1370_story.html?utm_term=.a4b412b5de41
+NA,Sam Patten,Trump Inaguration,association,attends with Foreigner B,https://www.washingtonpost.com/local/public-safety/washington-consultant-for-ukraine-party-set-to-plead-guilty-to-violating-lobbyist-disclosure-law/2018/08/31/172cf2c8-ad23-11e8-a8d7-0f63ab8b1370_story.html?utm_term=.a4b412b5de41

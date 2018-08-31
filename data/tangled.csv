@@ -251,10 +251,10 @@ NA,Elliott Broidy,Steve Wynn,association,influence peddling,https://www.washingt
 2018-08-21,Federal Court,Paul Manafort,association,convicted of 8 counts verdict,http://www.foxnews.com/politics/2018/08/21/jury-announces-guilty-verdict-on-some-charges-in-manafort-trial-cannot-decide-on-other-counts.html
 2016-06-01,Rick Gates,Paul Manafort,association,reports to,https://en.wikipedia.org/wiki/Rick_Gates_(political_consultant)
 2016-06-01,Rick Gates,Trump Organization,association,works for,https://en.wikipedia.org/wiki/Rick_Gates_(political_consultant)
-2018-02-23,Rick Gates,Federal Court,association,plead guilty to conspiracy,https://en.wikipedia.org/wiki/Rick_Gates_(political_consultant)
+2018-02-23,Rick Gates,Federal Court,plea,plead guilty to conspiracy,https://en.wikipedia.org/wiki/Rick_Gates_(political_consultant)
 2018-08-09,Rick Gates,Paul Manafort,association,testifies against,https://en.wikipedia.org/wiki/Rick_Gates_(political_consultant)
-2017-12-01,Michael Flynn,Federal Court,association,plead guilty to falsehoods,https://en.wikipedia.org/wiki/Michael_Flynn#Plea_bargain_and_statement_of_offense
-2018-08-21,Michael D Cohen,Federal Court,association,plead guilty to 8 counts,http://thehill.com/regulation/administration/402906-cohen-pleads-guilty-to-federal-charges
+2017-12-01,Michael Flynn,Federal Court,plea,plead guilty to falsehoods,https://en.wikipedia.org/wiki/Michael_Flynn#Plea_bargain_and_statement_of_offense
+2018-08-21,Michael D Cohen,Federal Court,plea,plead guilty to 8 counts,http://thehill.com/regulation/administration/402906-cohen-pleads-guilty-to-federal-charges
 2016-10-01,Donald J Trump,Michael D Cohen,association,directed 130000 payment,https://www.cnn.com/2018/08/22/politics/michael-cohen-transcript-plea/index.html
 2016-06-01,Karen McDougal,Editor-1,association,offers to sell affair story,https://www.lawfareblog.com/document-michael-cohen-plea-agreement
 2016-06-01,Editor-1,National Enquirer,association,works for,https://www.washingtonpost.com/news/opinions/wp/2018/08/22/what-you-may-have-missed-in-the-cohen-plea/?utm_term=.756daf161c93
@@ -294,3 +294,12 @@ NA,Elliott Broidy,Steve Wynn,association,influence peddling,https://www.washingt
 2016-12-01,Trump-Russia Dossier,Vladimir Putin,association,alleges collusion,https://en.wikipedia.org/wiki/Trump%E2%80%93Russia_dossier
 2016-12-01,Trump-Russia Dossier,Mikhail Fridman,association,alleges collusion,https://en.wikipedia.org/wiki/Trump%E2%80%93Russia_dossier
 2018-08-01,Superior District Court,Mikhail Fridman,association,dismissed with predjudice,https://en.wikipedia.org/wiki/Mikhail_Fridman
+NA,Sam Patten,Paul Manafort,association,business associate,http://thehill.com/policy/national-security/404530-manafort-associate-charged-with-illegal-lobbying-report
+NA,Paul Manafort,Sam Patten,association,business associate,http://thehill.com/policy/national-security/404530-manafort-associate-charged-with-illegal-lobbying-report
+NA,Sam Patten,Opposition Bloc,association,foreign lobbyist,http://thehill.com/policy/national-security/404530-manafort-associate-charged-with-illegal-lobbying-report
+NA,Opposition Bloc,Ukraine,association,political party,http://thehill.com/policy/national-security/404530-manafort-associate-charged-with-illegal-lobbying-report
+NA,Sam Patten,Foreigner A,association,lobbying,http://thehill.com/policy/national-security/404530-manafort-associate-charged-with-illegal-lobbying-report
+NA,Foreigner A,Sam Patten,association,lobbying,http://thehill.com/policy/national-security/404530-manafort-associate-charged-with-illegal-lobbying-report
+NA,Foreigner A,Russia,association,is citizen of,http://thehill.com/policy/national-security/404530-manafort-associate-charged-with-illegal-lobbying-report
+NA,Sam Patten,Cambridge Analytica,association,employed by,https://www.bloomberg.com/news/articles/2018-08-31/manafort-associate-sam-patten-is-charged-with-fara-violation
+NA,Sam Patten,US Federal Court,plea,plead guilty,https://www.bloomberg.com/news/articles/2018-08-31/manafort-associate-sam-patten-is-charged-with-fara-violation

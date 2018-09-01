@@ -2,7 +2,7 @@ Initially, an attempt to visualize the Michael D Cohen / Essential Consulting fi
 
 The source of the visual is on a [Google spreadsheet](https://docs.google.com/spreadsheets/d/119L80r1ZVgBgN0qDI-ovMb6s40iVFg3TWW15uqsxfBk/edit?usp=sharing) which you are invited to contribute to. The main rule _was_ that it has to link through Cohen somehow, but that's no longer in force (see the Tucker Carlson branch for example). I sort of expect that everything will tie in through Cohen in the end. If you want to contribute to the project, going through the spreadsheet and checking dates would be awesome, as would ensuring consistency in edge directions. That is, keeping a consistent sense of "reports to" versus "manages", if that makes sense (it is important for group names).
 
-The "group" membership is found by using a random walk through the network, and applying the ["walktrap"](https://arxiv.org/abs/physics/0512106) algorithm. Group names are the name of the node in the group with the greatest pagerank in the whole network.
+The "group" membership is found by using simmulated annealing oh the network, and applying the ["spin glass"](http://arxiv.org/abs/cond-mat/0603718) algorithm. Group names are the name of the node in the group with the greatest [pagerank](http://infolab.stanford.edu/~backrub/google.html) over the whole network.
 
 The source code is on [Github](https://github.com/schnee/tangled) - if you clone that repo, you can run the tangled.R file and generate your own copy of the visuals. The "tangle-it.sh" file attempts to automate the generation and publication of the file to the gh-pages branch, which is how you are likely reading this right now.
 

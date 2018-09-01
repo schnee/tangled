@@ -24,7 +24,7 @@ make_graph <- function(tangled) {
       tangled %>% filter(!(type %in% money_types))
     )
   
-  graph <- as_tbl_graph(tangled) %>% mutate(group = as.character(group_walktrap()))
+  graph <- as_tbl_graph(tangled) %>% mutate(group = as.character(group_spinglass()))
   
   # the below few line will find the pagerank for all nodes, and use the 
   # max pagerank as the group label

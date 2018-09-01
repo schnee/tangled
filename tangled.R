@@ -32,7 +32,9 @@ if(file.exists(old_state_fn)){
 # continue on, update the old state.
 tangled %>% write_csv(old_state_fn)
 
-graph <- make_graph(tangled) %>% weight_graph(.5, 0.05)
+graph <- make_graph(tangled) %>% weight_graph(.5, 0.05) %>% 
+  activate(nodes) %>% 
+  mutate(n_tri = local_triangles())
 
 my_pal <- get_palette(graph)
 
@@ -59,6 +61,7 @@ ggraph(the_layout ) +
         axis.text = element_blank(),
         axis.title = element_blank()) +
   labs(
+    title = paste0(graph %>% activate(nodes) %>% as_tibble %>% arrange(desc(centrality)) %>% pull(name) %>% first(),"'s Tangled Web"),
     caption = paste(now("UTC"))
   )
 

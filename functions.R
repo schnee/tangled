@@ -13,16 +13,15 @@ make_graph <- function(tangled) {
   tangled <- tangled %>% mutate(note = if_else(is.na(note), "",note))
   
   # attempt to roll up the payments
-  tangled <- tangled %>% filter(type %in% c("payment", "loan", "investment", "fine")) %>% 
+  money_types <- c("payment", "loan", "investment", "fine")
+  tangled <- tangled %>% filter(type %in% money_types) %>% 
     mutate(amt = as.numeric(note)) %>%
     group_by(from, to, type) %>%
     summarize(date = last(date),
               sum = sum(amt),
               note = if_else(is.na(sum), last(note), format(sum, scientific = F))
     ) %>% bind_rows(
-      tangled %>% filter(type=="association")
-    ) %>% bind_rows(
-      tangled %>% filter(type=="plea")
+      tangled %>% filter(!(type %in% money_types))
     )
   
   graph <- as_tbl_graph(tangled) %>% mutate(group = as.character(group_walktrap()))

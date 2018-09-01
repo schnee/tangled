@@ -27,13 +27,15 @@ node_id <- graph %>% activate(nodes) %>% mutate(node_id = row_number()) %>%
 
 local_graph <- graph %>% to_local_neighborhood(node=node_id, order=2)
 
+the_edge_types <- local_graph %>% activate(edges) %>% pull(type) %>% factor() %>% levels()
+
 
 ggraph(local_graph$neighborhood, layout = "auto" ) +
   geom_edge_fan(aes(linetype=type, color = type, label=note), edge_width=.65,
                 end_cap=circle(3,"mm"), spread = 3, start_cap = circle(3,"mm"), 
                 label_dodge = unit(2,"mm"), label_size = 3,
                 arrow = arrow(type="closed", length = unit(1.25, "mm"))) +
-  scale_edge_linetype_manual(guide = "none", values=c(5,1,1,1,1)) +
+  scale_edge_linetype_manual(guide = "none",values=c(5, rep(1, length(the_edge_types) -1))) +
   scale_edge_color_brewer(name="Relationship", type="qual", palette = "Dark2") +
   geom_node_point(aes(colour = group_label),size = 4) + geom_node_point(color = "white",size = 1)+
   geom_node_label(aes(label=name), size=4, repel = TRUE, alpha=0.75, show.legend = FALSE) + 
@@ -44,7 +46,8 @@ ggraph(local_graph$neighborhood, layout = "auto" ) +
         axis.text = element_blank(),
         axis.title = element_blank()) +
   labs(
-    caption = paste(node_name,now("UTC"),"https://schnee.github.io/tangled",sep='\n')
+    title = paste(node_name, "'s Tangled Web"),
+    caption = paste(now("UTC"),"https://schnee.github.io/tangled",sep='\n')
   )
 
 fn <- tolower(node_name) %>% gsub('[^a-z]', '', .)

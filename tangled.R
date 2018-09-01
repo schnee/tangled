@@ -59,6 +59,7 @@ ggraph(the_layout ) +
         axis.text = element_blank(),
         axis.title = element_blank()) +
   labs(
+    title = paste0(graph %>% activate(nodes) %>% as_tibble %>% arrange(desc(centrality)) %>% pull(name) %>% first(),"'s Tangled Web"),
     caption = paste(now("UTC"))
   )
 

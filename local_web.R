@@ -49,7 +49,7 @@ ggraph(local_graph, layout = "auto" ) +
         axis.text = element_blank(),
         axis.title = element_blank()) +
   labs(
-    title = paste(node_name, "'s Tangled Web"),
+    title = paste0("The ", node_name, " Tangled Web"),
     caption = paste(now("UTC"),"https://schnee.github.io/tangled",sep='\n')
   )
 

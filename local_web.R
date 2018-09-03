@@ -33,7 +33,9 @@ the_edge_types <- local_graph %>% activate(edges) %>% pull(type) %>% factor() %>
 
 #local_graph <- local_graph %>% filter(n_tri > 0)
 
-ggraph(local_graph, layout = "auto" ) +
+the_layout <- create_layout(local_graph, layout = "auto")
+
+ggraph(the_layout ) +
   geom_edge_fan(aes(linetype=type, color = type, label=note), edge_width=.65,
                 end_cap=circle(3,"mm"), spread = 3, start_cap = circle(3,"mm"), 
                 label_dodge = unit(2,"mm"), label_size = 3,

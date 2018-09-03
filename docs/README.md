@@ -12,5 +12,5 @@ A static visual is [available](./tangled.png), as is a [d3.js](./tangled-d3.html
 
 [![A tangled web](./tangled.png)](./tangled.png)
 
-[![Creative Commons License](http://creativecommons.org/licenses/by/4.0/)](https://i.creativecommons.org/l/by/4.0/88x31.png)
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/)

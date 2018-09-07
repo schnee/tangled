@@ -1,14 +1,32 @@
 library(plotly)
 
-network <- plot_ly(type = "scatter",
+source('./functions.R')
+
+# read in the graph, get the palette
+tangled <- read_csv("./data/tangled.csv")
+graph <- make_graph(tangled) %>% weight_graph(.5, 0.05) %>% 
+  activate(nodes) %>% 
+  mutate(n_tri = local_triangles())
+my_pal <- get_palette(graph)
+
+# initialize a newtork with the pallete
+tangled_web <- plot_ly(type = "scatter",
                    colors = my_pal)
 
-g <- attributes(the_layout)$graph
+# create a layout
+the_layout <- create_layout(graph, layout = "igraph", algorithm = "drl", options = igraph::drl_defaults$final)
 
-edges <- g %>% activate(edges) %>% as_tibble()
+# get the edges
+edges <- graph %>% activate(edges) %>% as_tibble()
+
 n_edges <- edges %>% nrow
 
-edge_shapes <- list()
+# this loop does a couple of things, sadly
+# rip through the edges and creates a list of line
+# segments for each edge. Since I want to put annotations on the edges, I need to 
+# synthesize a node in the middle of each edge. The Annotation goes on the synthetic node.
+
+#edge_shapes <- list()
 edge_annotation <- list()
 for (i in 1:n_edges) {
   v0 <- edges[i, ]$from
@@ -24,9 +42,10 @@ for (i in 1:n_edges) {
     link_type = edges[i, ]$type
   )
   
-  edge_shapes[[i]] <- edge_shape
-  
-  network <- network %>%
+#  edge_shapes[[i]] <- edge_shape
+
+  # Add the edges 
+  tangled_web <- tangled_web %>%
     add_trace(
       x = c(edge_shape$x0, edge_shape$x1),
       y = c(edge_shape$y0, edge_shape$y1),
@@ -37,6 +56,7 @@ for (i in 1:n_edges) {
       showlegend = FALSE
     )
   
+  # build the annotation. Some annotations are linkable, some are not
   the_text = if_else(
     is.na(edges[i, ]$source),
     edges[i, ]$note,
@@ -50,14 +70,11 @@ for (i in 1:n_edges) {
   edge_annotation[[i]] <- edge_note
 }
 
+# get all the annotations as a DF
 edge_notes <- edge_annotation %>% purrr::map_df(`[`)
 
-network <- network %>%
-  # add_trace(data = edge_notes, x = ~x, y = ~y, mode = "markers",
-  #           text = ~text,
-  #           hoverinfo = "text",
-  #           hoverlabel = list(bgcolor = 'white'),
-  #           showlegend=FALSE) %>%
+tangled_web <- tangled_web %>%
+  #add the annotations
   add_annotations(
     data = edge_notes,
     x = ~ x,
@@ -66,6 +83,7 @@ network <- network %>%
     showarrow = FALSE,
     showlegend = FALSE
   )  %>%
+  # add all the nodes with labels
   add_trace(
     data = the_layout,
     x = ~ x,
@@ -90,7 +108,7 @@ axis <-
   )
 
 p <- layout(title = "The Tangled Web",
-            network,
+            tangled_web,
             #  shapes = edge_shapes,
             xaxis = axis,
             yaxis = axis)

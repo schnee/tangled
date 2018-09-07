@@ -1,4 +1,6 @@
 library(plotly)
+library(here)
+library(htmlwidgets)
 
 source('./functions.R')
 
@@ -114,3 +116,5 @@ p <- layout(title = "The Tangled Web",
             yaxis = axis)
 
 p
+
+saveWidget(p, here::here("docs","tg.html"))

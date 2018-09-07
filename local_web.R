@@ -8,7 +8,7 @@ args <- commandArgs(trailingOnly=TRUE)
 
 # test if there is at least one argument: if not, return an error
 if (length(args)==0) {
-  node_name <- 'Felix Sater'
+  node_name <- 'Sam Patten'
 } else if (length(args)==1) {
   # default output file
   node_name <- args[1]

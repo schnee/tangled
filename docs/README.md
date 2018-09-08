@@ -8,7 +8,7 @@ The "group" membership is found by using simmulated annealing oh the network, an
 
 The source code is on [Github](https://github.com/schnee/tangled) - if you clone that repo, you can run the tangled.R file and generate your own copy of the visuals. The "tangle-it.sh" file attempts to automate the generation and publication of the file to the gh-pages branch, which is how you are likely reading this right now.
 
-A static visual is [available](./tangled.png), as is an [interactive](./docs/tg.html) version (hover your cursor in the upper-right for the controls; uses [plotly](https://plot.ly/)). I welcome pull requests, especially ones that will allow me to annotate the interactive version. I would especially appreciate help in animating the growth and evolution of the network over time.
+A static visual is [available](./tangled.png), as is an [interactive](./tg.html) version (hover your cursor in the upper-right for the controls; uses [plotly](https://plot.ly/)). I welcome pull requests, especially ones that will allow me to annotate the interactive version. I would especially appreciate help in animating the growth and evolution of the network over time.
 
 [![A tangled web](./tangled.png)](./tangled.png)
 

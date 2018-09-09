@@ -117,4 +117,11 @@ p <- layout(title = "The Tangled Web",
 
 p
 
-saveWidget(p, here::here("docs","tg.html"))
+saveWidget(p, here::here("docs","tg.html"),
+        title = 
+          paste0(graph %>% 
+                   activate(nodes) %>% 
+                   as_tibble %>% 
+                   arrange(desc(centrality)) %>% 
+                   pull(name) %>% first(),"'s Tangled Web")
+)

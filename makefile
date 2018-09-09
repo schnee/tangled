@@ -1,6 +1,8 @@
 data: data/tangled.csv
-png: docs/tangled.png
-plotly: docs/tg.html
+png: data
+	Rscript tangled-local.R
+plotly: data
+	Rscript plotly.R
 
 data/tangled.csv: FORCE
 	Rscript get_edgelist.R

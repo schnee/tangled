@@ -11,7 +11,7 @@ docs/tangled.png: data
 	Rscript tangled-local.R
 	
 docs/tg.html: data
-	Rscript plotly.R
+	Rscript plotly.R 
 
 publish: png plotly
 	git checkout master

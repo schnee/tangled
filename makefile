@@ -13,7 +13,7 @@ docs/tangled.png: data
 docs/tg.html: data
 	Rscript plotly.R 
 
-publish: png plotly
+publish: data/tangled.csv docs/tangled.png docs/tg.html
 	git checkout master
 	git commit -m "updated" ./docs/ ./data/
 	git push

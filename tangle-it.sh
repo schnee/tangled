@@ -4,6 +4,7 @@
 set -e
 git checkout master
 Rscript ./tangled.R
+Rscript plotly.R
 git commit -m "updated" ./docs/ ./data/
 git push
 git checkout gh-pages

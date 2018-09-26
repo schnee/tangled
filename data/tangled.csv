@@ -352,8 +352,8 @@ NA,Jerome Corsi,Ted Malloch,association,edits book,https://www.nbcnews.com/polit
 NA,Ted Malloch,Roger Stone,association,meetings,https://abcnews.go.com/Politics/muellers-agents-asked-roger-stone-trump-supporter/story?id=55450667
 NA,Roger Stone,Donald J Trump,association,so loyal and so wonderful,"https://en.wikipedia.org/wiki/Roger_Stone#2010s:_Libertarian_Party_involvement,_Donald_Trump_campaign_and_media_commentary"
 2010-06-01,Roger Stone,Kristin Davis,association,campaign manager,"https://en.wikipedia.org/wiki/Roger_Stone#2010s:_Libertarian_Party_involvement,_Donald_Trump_campaign_and_media_commentary"
-NA,Roger Stone,Randy Credico,association,backchannel to Assange,https://en.wikipedia.org/wiki/Roger_Stone#Accusations_of_role_in_Russian_interference_in_the_2016_United_States_elections
-NA,Randy Credico,Julian Assange,association,backchannel for Stone,https://en.wikipedia.org/wiki/Roger_Stone#Accusations_of_role_in_Russian_interference_in_the_2016_United_States_elections
+NA,Roger Stone,Randy Credico,association,claims backchannel to Assange,https://en.wikipedia.org/wiki/Roger_Stone#Accusations_of_role_in_Russian_interference_in_the_2016_United_States_elections
+NA,Randy Credico,Julian Assange,association,Stone claims backchannel for Stone,https://en.wikipedia.org/wiki/Roger_Stone#Accusations_of_role_in_Russian_interference_in_the_2016_United_States_elections
 2018-03-18,Julian Assange,Roger Stone,association,Clinton Dirt Phonecall,https://en.wikipedia.org/wiki/Roger_Stone#Accusations_of_role_in_Russian_interference_in_the_2016_United_States_elections
 2010-06-01,Roger Stone,Carl Paladino,association,campaigned for,"https://en.wikipedia.org/wiki/Roger_Stone#2010s:_Libertarian_Party_involvement,_Donald_Trump_campaign_and_media_commentary"
 2010-06-01,Kristin Davis,Carl Paladino,association,competed for Gov,"https://en.wikipedia.org/wiki/Roger_Stone#2010s:_Libertarian_Party_involvement,_Donald_Trump_campaign_and_media_commentary"
@@ -422,7 +422,7 @@ NA,Paul Manafort,Dmitry Firtash,association,pitched Bulgari Tower,https://talkin
 NA,Dmitry Firtash,RosUkrEnergo,association,president of,https://talkingpointsmemo.com/news/why-a-powerful-russian-oligarch-was-furious-with-paul-manafort
 NA,Dmitry Firtash,Paul Manafort,investment,25000000,https://talkingpointsmemo.com/news/why-a-powerful-russian-oligarch-was-furious-with-paul-manafort
 NA,Gazprom,RosUkrEnergo,association,granted monopoly,https://talkingpointsmemo.com/news/why-a-powerful-russian-oligarch-was-furious-with-paul-manafort
-NA,Ilyas Khrapunov,Bayrock,association,bought condos,https://www.bloomberg.com/news/features/2017-12-11/was-trump-soho-used-to-hide-part-of-a-kazakh-bank-s-missing-billions
+NA,Ilyas Khrapunov,Bayrock,payment,3200000,https://www.bloomberg.com/news/features/2017-12-11/was-trump-soho-used-to-hide-part-of-a-kazakh-bank-s-missing-billions
 NA,Mukhtar Ablyazov,Ilyas Khrapunov,association,father-in-law,https://www.bloomberg.com/news/features/2017-12-11/was-trump-soho-used-to-hide-part-of-a-kazakh-bank-s-missing-billions
 NA,Mukhtar Ablyazov,BTA Bank,association,former chairman,https://www.newsweek.com/british-high-court-backs-banks-case-against-kazakhs-who-allegedly-laundered-1088665
 NA,BTA Bank,Ilyas Khrapunov,fine,500000000,https://www.newsweek.com/british-high-court-backs-banks-case-against-kazakhs-who-allegedly-laundered-1088665
@@ -430,3 +430,8 @@ NA,Mukhtar Ablyazov,BTA Bank,association,alleged embezzled $6B,https://www.newsw
 NA,Ilyas Khrapunov,Viktor Khrapunov,association,son,https://www.newsweek.com/british-high-court-backs-banks-case-against-kazakhs-who-allegedly-laundered-1088665
 NA,Viktor Khrapunov,Felix Sater,association,deep business ties,https://www.newsweek.com/british-high-court-backs-banks-case-against-kazakhs-who-allegedly-laundered-1088665
 NA,Ilyas Khrapunov,Trump SoHo,association,bought condos,https://www.bloomberg.com/news/features/2017-12-11/was-trump-soho-used-to-hide-part-of-a-kazakh-bank-s-missing-billions
+NA,Elvira Kudryashova,Trump Soho,association,beneficial owner of condos,https://www.newsweek.com/british-high-court-backs-banks-case-against-kazakhs-who-allegedly-laundered-1088665
+NA,Ilyas Khrapunov,Elvira Kudryashova,association,brother of,NA
+NA,Elvira Kudryashova,Ilyas Khrapunov,association,sister of,NA
+NA,Elvira Kudryashova,Viktor Khrapunov,association,step-daughter,NA
+NA,Randy Credico,Roger Stone,association,denies being backchannel,https://www.motherjones.com/politics/2018/09/roger-stone-offered-to-assist-his-alleged-wikileaks-source-randy-credico-with-legal-expenses/

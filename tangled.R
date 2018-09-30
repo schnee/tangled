@@ -32,7 +32,7 @@ if(file.exists(old_state_fn)){
 # continue on, update the old state.
 tangled %>% write_csv(old_state_fn)
 
-graph <- make_graph(tangled) %>% weight_graph(.5, 0.05) %>% 
+graph <- make_graph(tangled) %>% weight_graph(.4, 0.05) %>% 
   activate(nodes) %>% 
   mutate(n_tri = local_triangles())
 
@@ -46,7 +46,7 @@ the_layout <- create_layout(graph, layout = "igraph", algorithm = "drl", options
 the_edge_types <- graph %>% activate(edges) %>% pull(type) %>% factor() %>% levels()
 
 ggraph(the_layout ) +
-  geom_edge_fan(aes(linetype=type, color = type, label=note), edge_width=.65,
+  geom_edge_fan(aes(linetype=type, color = type, label=note), edge_width=.5,
                 end_cap=circle(3,"mm"), spread = 3, start_cap = circle(3,"mm"), 
                 label_dodge = unit(2,"mm"), label_size = 2,
                 arrow = arrow(type="closed", length = unit(0.05, "inches"))) +

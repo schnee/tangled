@@ -33,13 +33,13 @@ date,from,to,type,note,source
 2017-04-03,Elliott Broidy,Republican National Committee,association,Finance Committee,https://gop.com/rnc-announces-additions-to-rnc-finance-leadership-team/
 1991-01-01,Elliott Broidy,Elliott Broidy Capital Management,association,founded,https://en.wikipedia.org/wiki/Elliott_Broidy
 2001-01-01,Elliott Broidy,Circinus,association,owns,https://www.bloomberg.com/profiles/companies/0136784D:US-circinus-llc
-2017-11-30,Elliot Broidy,REAG (CNB),payment,200000,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
+2017-11-30,Elliott Broidy,REAG (CNB),payment,200000,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
 2017-12-05,REAG (CNB),Stormy Daniels,payment,200000,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
 2017-12-29,Elliot Broidy,REAG (CNB),payment,62500,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
 2018-01-02,REAG (CNB),Essential Consultants,payment,62500,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
-2018-01-31,Elliot Broidy,REAG (CNB),payment,62500,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
+2018-01-31,Elliott Broidy,REAG (CNB),payment,62500,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
 2018-01-31,REAG (CNB),Essential Consultants,payment,62500,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
-2018-03-01,Elliot Broidy,REAG (CNB),payment,62500,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
+2018-03-01,Elliott Broidy,REAG (CNB),payment,62500,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
 2018-03-01,REAG (CNB),Essential Consultants,payment,62500,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
 2017-01-01,Michael D Cohen,Morgan Stanley,association,NA,NA
 2017-07-13,Essential Consultants,Morgan Stanley,payment,505000,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
@@ -75,7 +75,7 @@ date,from,to,type,note,source
 2016-07-14,KCS Outsourcing,Michael D Cohen,payment,700,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
 2017-02-22,KCS Outsourcing,Michael D Cohen,payment,2998,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
 2018-01-01,KOBE EVA KERESKEDELMI,Michael D Cohen,payment,10980,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
-2018-01-01,Michael D Cohen,Elliot Broidy,payment,675,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
+2018-01-01,Michael D Cohen,Elliott Broidy,payment,675,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
 2017-01-20,Steve Bannon,The White House,association,advises,NA
 NA,Elliott Broidy,George Nader,association,conspired to remove TIllerson,https://www.nytimes.com/2018/03/21/us/politics/george-nader-elliott-broidy-uae-saudi-arabia-white-house-influence.html
 NA,George Nader,Elliott Broidy,association,groomed for influence,https://www.nytimes.com/2018/03/21/us/politics/george-nader-elliott-broidy-uae-saudi-arabia-white-house-influence.html
@@ -293,7 +293,7 @@ NA,Elliott Broidy,Steve Wynn,association,influence peddling,https://www.washingt
 1991-06-01,Mikhail Fridman,Alfa Bank,association,founded,https://en.wikipedia.org/wiki/Mikhail_Fridman
 NA,German Khan,Alfa Bank,association,supervises,https://www.businessinsider.com/fbi-alfa-bank-trump-organization-servers-2017-3
 NA,Petr Aven,Alfa Bank,association,president,https://www.businessinsider.com/fbi-alfa-bank-trump-organization-servers-2017-3
-1997-06-01,Renova Corp,TNK-BP,association,joint venture,https://en.wikipedia.org/wiki/Mikhail_Fridman
+1997-06-01,Renova Group,TNK-BP,association,joint venture,https://en.wikipedia.org/wiki/Mikhail_Fridman
 1997-06-01,Alfa Bank,TNK-BP,association,joint venture,https://en.wikipedia.org/wiki/Mikhail_Fridman
 2018-04-01,Mikhail Fridman,Christopher Steele,association,sues for libel,https://en.wikipedia.org/wiki/Mikhail_Fridman
 2016-12-01,Christopher Steele,Trump-Russia Dossier,association,publishes,https://en.wikipedia.org/wiki/Trump%E2%80%93Russia_dossier
@@ -430,7 +430,7 @@ NA,Mukhtar Ablyazov,BTA Bank,association,alleged embezzled $6B,https://www.newsw
 NA,Ilyas Khrapunov,Viktor Khrapunov,association,son,https://www.newsweek.com/british-high-court-backs-banks-case-against-kazakhs-who-allegedly-laundered-1088665
 NA,Viktor Khrapunov,Felix Sater,association,deep business ties,https://www.newsweek.com/british-high-court-backs-banks-case-against-kazakhs-who-allegedly-laundered-1088665
 NA,Ilyas Khrapunov,Trump SoHo,association,bought condos,https://www.bloomberg.com/news/features/2017-12-11/was-trump-soho-used-to-hide-part-of-a-kazakh-bank-s-missing-billions
-NA,Elvira Kudryashova,Trump Soho,association,beneficial owner of condos,https://www.newsweek.com/british-high-court-backs-banks-case-against-kazakhs-who-allegedly-laundered-1088665
+NA,Elvira Kudryashova,Trump SoHo,association,beneficial owner of condos,https://www.newsweek.com/british-high-court-backs-banks-case-against-kazakhs-who-allegedly-laundered-1088665
 NA,Ilyas Khrapunov,Elvira Kudryashova,association,brother of,NA
 NA,Elvira Kudryashova,Ilyas Khrapunov,association,sister of,NA
 NA,Elvira Kudryashova,Viktor Khrapunov,association,step-daughter,NA

@@ -56,6 +56,9 @@ date,from,to,type,note,source
 2017-06-01,Mark S Ko,Michael D Cohen,association,translator,assumed date
 2017-06-01,Mark S Ko,Korea Aerospace,association,translator,assumed date
 1971-01-01,Donald J Trump,Trump Organization,association,executive leader,NA
+2016-12-12,Michael D Cohen,Ahmed al Rumaihi,association,Tower Meeting,NA
+2016-12-12,Michael Flynn,Michael D Cohen,association,Tower Meeting,NA
+2016-12-12,Michael Flynn,Ahmed al Rumaihi,association,Tower Meeting,NA
 2016-12-12,Michael D Cohen,Trump Tower Elevator,association,rode on,NA
 2016-12-12,Michael Flynn,Trump Tower Elevator,association,rode on,NA
 2016-12-12,Ahmed al Rumaihi,Trump Tower Elevator,association,road on,NA
@@ -479,6 +482,7 @@ NA,Alex van der Zwaan,Rick Gates,association,worked for,https://en.wikipedia.org
 NA,Alex van der Zwaan,Yulia Tymoshenko,association,defended imprisonment of,https://en.wikipedia.org/wiki/Alex_van_der_Zwaan
 NA,Alex van der Zwaan,Skadden Law Firm,association,worked for,https://en.wikipedia.org/wiki/Alex_van_der_Zwaan
 2016-12-01,Jared Kushner,Sergey Kislyak,association,proposed secure comms,https://www.businessinsider.com/jared-kushner-wanted-secret-talks-russia-trump-2017-5
+2016-12-01,Jared Kushner,Michael Flynn,association,meeting,https://www.businessinsider.com/jared-kushner-wanted-secret-talks-russia-trump-2017-5
 2016-12-01,Michael Flynn,Sergey Kislyak,association,meeting,https://www.businessinsider.com/jared-kushner-wanted-secret-talks-russia-trump-2017-5
 NA,Sergey Kislyak,Russia,association,amassador to US,https://www.businessinsider.com/jared-kushner-wanted-secret-talks-russia-trump-2017-5
 2016-12-27,Jared Kushner,Sergey Gorkov,association,meets with,https://www.businessinsider.com/jared-kushner-meeting-ceo-russia-bank-2017-3
@@ -500,3 +504,7 @@ NA,MSLGroup,Saudi Arabia,association,lobbying,https://thehill.com/homenews/admin
 NA,Jared Kushner,Mohammed bin Salman,association,classified intel,https://theintercept.com/2018/03/21/jared-kushner-saudi-crown-prince-mohammed-bin-salman/
 NA,Mohammed bin Salman,Jared Kushner,association,"claims ""fits in pocket""",https://theintercept.com/2018/03/21/jared-kushner-saudi-crown-prince-mohammed-bin-salman/
 NA,Cambridge Analytica,Jared Kushner,association,hired by,https://www.forbes.com/sites/stevenbertoni/2016/11/22/exclusive-interview-how-jared-kushner-won-trump-the-white-house/#1d452e833af6
+NA,Abdullah II,Jared Kushner,association,secret meeting,https://www.buzzfeednews.com/article/jasonleopold/trump-advisors-secretly-met-with-jordans-king-while-one-was
+NA,Abdullah II,Michael Flynn,association,secret meeting,https://www.buzzfeednews.com/article/jasonleopold/trump-advisors-secretly-met-with-jordans-king-while-one-was
+NA,Abdullah II,Steve Bannon,association,secret meeting,https://www.buzzfeednews.com/article/jasonleopold/trump-advisors-secretly-met-with-jordans-king-while-one-was
+NA,Abdullah II,Jordan,association,King,https://www.buzzfeednews.com/article/jasonleopold/trump-advisors-secretly-met-with-jordans-king-while-one-was

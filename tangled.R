@@ -52,7 +52,9 @@ ggraph(the_layout ) +
                 arrow = arrow(type="closed", length = unit(0.05, "inches"))) +
   scale_edge_linetype_manual(guide = "none", values=c(5, rep(1, length(the_edge_types) -1))) +
   scale_edge_color_brewer(name="Relationship", type="qual", palette = "Dark2") +
-  geom_node_point(aes(colour = group_label),size = 4) + geom_node_point(color = "white",size = 1)+
+  geom_node_point(color = "black", size = 4.5) +
+  geom_node_point(aes(colour = group_label),size = 3.5) + 
+  geom_node_point(color = "white", size = 1)+
   geom_node_label(aes(label=name), size=2, repel = TRUE, alpha=0.75) + 
   scale_color_manual(name = "Community", values = my_pal) +
   ggthemes::theme_few() +

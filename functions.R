@@ -7,6 +7,7 @@ library(ggthemes)
 library(RColorBrewer)
 library(scales)
 library(lubridate)
+library(randomcoloR)
 
 make_graph <- function(tangled) {
   
@@ -74,14 +75,5 @@ get_palette <- function(graph) {
   # now handle some aesthetics
   n_group <- graph %>% activate(nodes) %>% pull(group) %>% n_distinct()
   
-  my_pal <- c(few_pal(palette = "Dark")(7), 
-              brewer_pal(palette = "Dark2")(8),
-              brewer_pal(type="qual")(8))
-  
-  # ensure I have enough colors for groups
-  while(length(my_pal) < n_group) {
-    my_pal = c(my_pal, my_pal)
-  }
-  
-  my_pal
+  distinctColorPalette(n_group, runTsne = TRUE)
 }

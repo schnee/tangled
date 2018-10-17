@@ -75,5 +75,11 @@ get_palette <- function(graph) {
   # now handle some aesthetics
   n_group <- graph %>% activate(nodes) %>% pull(group) %>% n_distinct()
   
-  distinctColorPalette(n_group, runTsne = TRUE)
+  base_pal <- c("#8AAFDD", "#ECD1FB", "#F48CDC", "#F06B8A", "#529756", "#BB3DD1", 
+              "#D7A4B4", "#E8E1AE", "#9E922A", "#D299F2", "#FEECF2", "#AEF9E1", 
+              "#41BA30", "#5A6AC5", "#6DEAA3", "#D3F79C", "#AFB7B1", "#FEA185", 
+              "#F5FC72", "#86E4FB", few_pal()(8))
+  
+  #distinctColorPalette(n_group, runTsne = TRUE)
+  base_pal
 }

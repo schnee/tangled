@@ -32,7 +32,7 @@ if(file.exists(old_state_fn)){
 # continue on, update the old state.
 tangled %>% write_csv(old_state_fn)
 
-graph <- make_graph(tangled) %>% weight_graph(.4, 0.08) %>% 
+graph <- make_graph(tangled) %>% weight_graph(.56, 0.08) %>% 
   activate(nodes) %>% 
   mutate(n_tri = local_triangles())
 

@@ -34,7 +34,9 @@ tangled %>% write_csv(old_state_fn)
 
 graph <- make_graph(tangled) %>% weight_graph(.56, 0.08) %>% 
   activate(nodes) %>% 
-  mutate(n_tri = local_triangles())
+  mutate(n_tri = local_triangles()) %>%
+ # mutate(the_alpha= rescale(n_tri, to = c(0, 0.75), from = range(n_tri))) %>%
+  mutate(the_alpha = if_else(n_tri > 0, 0.75, 0))
 
 my_pal <- get_palette(graph)
 
@@ -55,7 +57,7 @@ p <- ggraph(the_layout ) +
   geom_node_point(color = "black", size = 4.5) +
   geom_node_point(aes(colour = group_label),size = 3.5) + 
   geom_node_point(color = "white", size = 1)+
-  geom_node_label(aes(label=name), size=2, repel = TRUE, alpha=0.75) + 
+  geom_node_label( aes(label=name, alpha = the_alpha), size=2, repel = TRUE) + 
   scale_color_manual(name = "Community", values = my_pal) +
   ggthemes::theme_few() +
   theme(panel.border = element_blank(),
@@ -65,7 +67,7 @@ p <- ggraph(the_layout ) +
   labs(
     title = paste0(graph %>% activate(nodes) %>% as_tibble %>% arrange(desc(centrality)) %>% pull(name) %>% first(),"'s Tangled Web"),
     caption = paste(now("UTC"))
-  )
+  ) + guides(alpha = FALSE)
 
 ggsave("./docs/tangled.png", plot = p, height=15, width = 20, dpi=200)
 

@@ -10,6 +10,8 @@ The source code is on [Github](https://github.com/schnee/tangled) - if you clone
 
 A static visual is [available](./tangled.png), as is an [interactive](./tg.html) version (hover your cursor in the upper-right for the controls; uses [plotly](https://plot.ly/)). I welcome pull requests, especially ones that will allow me to annotate the interactive version. I would especially appreciate help in animating the growth and evolution of the network over time.
 
+In an effort to cleanup the visual, I suppressed the labels for nodes that are not part of any network triangles, and therefore unlikely to participate in communities. You can still read (some of) the suppressed labels as they have merely been lightened. If you head to the aforementioned visualizer, you'll be able access everything.
+
 [![A tangled web](./tangled.png)](./tangled.png)
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)

@@ -58,6 +58,7 @@ p <- ggraph(the_layout ) +
   geom_node_point(aes(colour = group_label),size = 3.5) + 
   geom_node_point(color = "white", size = 1)+
   geom_node_label( aes(label=name, alpha = the_alpha), size=2, repel = TRUE) + 
+  scale_alpha(range = c(0.1,0.75)) +
   scale_color_manual(name = "Community", values = my_pal) +
   ggthemes::theme_few() +
   theme(panel.border = element_blank(),

@@ -33,8 +33,10 @@ make_graph <- function(tangled) {
     mutate(centrality = centrality_pagerank()) %>% activate(nodes) %>% 
     group_by(group) %>% mutate(g_max =  max(centrality))
   
+  the_edge_types <- g %>% activate(edges) %>% pull(type) %>% unique() %>% sort()
   
-  max_cent_df <- g %>% activate(nodes) %>% as_tibble() %>% group_by(group) %>% summarize(g_max = max(centrality))
+  max_cent_df <- g %>% activate(nodes) %>% as_tibble() %>% group_by(group) %>% summarize(g_max = max(centrality)) %>%
+    ungroup()
   
   # the last summarize there handles ties
   max_cent <- g %>% activate(nodes) %>% as_tibble()%>% 
@@ -47,7 +49,8 @@ make_graph <- function(tangled) {
   graph <- g  %>% activate(nodes) %>%
     inner_join(max_cent, by = c("group" = "group", 
                                 "g_max" = "centrality")) %>% 
-    select(-g_max.y)
+    select(-g_max.y) %>% activate(edges) %>%
+    mutate(type = factor(type, levels = the_edge_types))
   
 
   

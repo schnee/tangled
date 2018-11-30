@@ -43,12 +43,17 @@ my_pal <- get_palette(graph)
 num_nodes <- graph %>% activate(nodes) %>% as_tibble() %>% summarize(n=n()) %>% pull(n)
 #the_layout <- create_layout(graph, layout = "igraph", algorithm="lgl", maxiter = 200*num_nodes)
 
-the_layout <- create_layout(graph, layout = "igraph", algorithm = "drl", options = igraph::drl_defaults$final)#, maxiter = 200*num_nodes)
 
 the_edge_types <- graph %>% activate(edges) %>% pull(type) %>% factor() %>% levels()
 
+graph <- graph %>% activate(edges) %>% mutate(type = factor(type, levels=the_edge_types))
+
+the_layout <- create_layout(graph, layout = "igraph", algorithm = "drl", options = igraph::drl_defaults$final)#, maxiter = 200*num_nodes)
+
+
 p <- ggraph(the_layout ) +
-  geom_edge_fan(aes(linetype=type, color = type, label=note), edge_width=.5,
+  geom_edge_fan(aes(linetype=type, color = type, 
+                    label=note), edge_width=.5,
                 end_cap=circle(3,"mm"), spread = 3, start_cap = circle(3,"mm"), 
                 label_dodge = unit(2,"mm"), label_size = 2,
                 arrow = arrow(type="closed", length = unit(0.05, "inches"))) +

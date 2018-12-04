@@ -44,15 +44,15 @@ num_nodes <- graph %>% activate(nodes) %>% as_tibble() %>% summarize(n=n()) %>% 
 #the_layout <- create_layout(graph, layout = "igraph", algorithm="lgl", maxiter = 200*num_nodes)
 
 
-the_edge_types <- graph %>% activate(edges) %>% pull(type) %>% factor() %>% levels()
+the_edge_types <- graph %>% activate(edges) %>% pull(e_type) %>% factor() %>% levels()
 
-graph <- graph %>% activate(edges) %>% mutate(type = factor(type, levels=the_edge_types))
+graph <- graph %>% activate(edges) %>% mutate(e_type = factor(e_type, levels=the_edge_types))
 
 the_layout <- create_layout(graph, layout = "igraph", algorithm = "drl", options = igraph::drl_defaults$final)#, maxiter = 200*num_nodes)
 
 
 p <- ggraph(the_layout ) +
-  geom_edge_fan(aes(linetype=type, color = type, 
+  geom_edge_fan(aes(linetype=e_type, color = e_type, 
                     label=note), edge_width=.5,
                 end_cap=circle(3,"mm"), spread = 3, start_cap = circle(3,"mm"), 
                 label_dodge = unit(2,"mm"), label_size = 2,
@@ -79,7 +79,7 @@ ggsave("./docs/tangled.png", plot = p, height=15, width = 20, dpi=200)
 
 links <- graph %>% activate(edges) %>% as_tibble() %>% 
   mutate(from = from -1, to = to -1) %>% 
-  mutate(lc = if_else(type == "payment", "red", "blue"))
+  mutate(lc = if_else(e_type == "payment", "red", "blue"))
 nodes <- graph %>% activate(nodes) %>% as_tibble() 
 
 gd3 <- list(links = links, nodes = nodes)

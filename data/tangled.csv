@@ -1,4 +1,4 @@
-date,from,to,type,note,source
+date,from,to,e_type,note,source
 2016-10-27,Essential Consultants,Stormy Daniels,payment,130000,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
 2017-01-15,Columbus Nova,Essential Consultants,payment,62500,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
 2017-02-15,Columbus Nova,Essential Consultants,payment,62500,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
@@ -113,7 +113,7 @@ NA,George Nader,Jared Kushner,association,NA,NA
 2017-02-07,Dept of Education,Betsy DeVos,association,headed by,NA
 2017-02-07,Betsy DeVos,Donald J Trump,association,reports to,NA
 2018-05-14,Metallurgical Corporation of China,MNC Land,loan,500000000,https://www.nationalreview.com/news/china-contributing-500-million-trump-linked-project-indonesia/
-2018-05-14,Trump Organization,MNC Land,association,branding,NA
+2018-05-14,Trump Organization,MNC Land,association,business partner,https://www.nationalreview.com/news/china-contributing-500-million-trump-linked-project-indonesia/
 2018-05-14,Metallurgical Corporation of China,China,association,state-owned,NA
 2017-06-01,Petro Poroshenko,Donald J Trump,association,photo-op,NA
 2017-05-01,Petro Poroshenko,Ukranian Aid,payment,400000,http://www.bbc.com/news/world-us-canada-44215656
@@ -606,3 +606,5 @@ NA,Inspiration,Israel,association,located in,https://www.haaretz.com/us-news/.pr
 2015-10-13,Felix Sater,Michael D Cohen,association,Trump Tower letter of intent,https://www.vox.com/world/2018/11/29/18117910/michael-cohen-trump-tower-moscow-mueller
 2015-10-28,Michael D Cohen,Donald J Trump,association,get Trump Tower Moscow LoI signed,https://www.vox.com/world/2018/11/29/18117910/michael-cohen-trump-tower-moscow-mueller
 2014-07-29,US Govt,VTB Bank,association,sanctions,https://en.m.wikipedia.org/wiki/VTB_Bank
+2018-09-10,MNC Land,POSCO E&C,association,$120M development,https://www.citizensforethics.org/trump-organization-business-partner-signed-a-deal-with-saudi-backed-fund-weeks-before-journalist-disappeared/
+2018-09-10,POSCO E&C,Saudi Arabia,association,large stake owned by,https://www.citizensforethics.org/trump-organization-business-partner-signed-a-deal-with-saudi-backed-fund-weeks-before-journalist-disappeared/

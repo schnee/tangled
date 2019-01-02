@@ -582,7 +582,7 @@ NA,Inspiration,Israel,association,located in,https://www.haaretz.com/us-news/.pr
 2016-12-01,Rosneft,Russia,association,state owned oil giant,https://www.reuters.com/article/us-rosneft-privatisation-exclusive/exclusive-russian-state-bank-secretly-financed-rosneft-sale-after-foreign-buyers-balked-idUSKCN1NE132
 2016-12-01,Rosneft,Qatari Investment Authority,association,19.5% stake,https://www.reuters.com/article/us-rosneft-privatisation-exclusive/exclusive-russian-state-bank-secretly-financed-rosneft-sale-after-foreign-buyers-balked-idUSKCN1NE132
 2017-10-25,George Nader,Donald J Trump,association,photographed,https://www.businessinsider.com/george-nader-elliot-broidy-photo-with-trump-2018-5
-2017-10-25,Elliot Broidy,Donald J Trump,association,arranged Nader photograph,https://www.businessinsider.com/george-nader-elliot-broidy-photo-with-trump-2018-5
+2017-10-25,Elliott Broidy,Donald J Trump,association,arranged Nader photograph,https://www.businessinsider.com/george-nader-elliot-broidy-photo-with-trump-2018-5
 2003-05-01,Czech Republic,George Nader,verdict,convicted of pedophilia,https://www.businessinsider.com/a-witness-cooperating-with-mueller-is-a-convicted-pedophile-2018-3
 2016-06-01,Tom Barrack,United Arab Emirates,association,emailed with promise of US inside info,https://www.aljazeera.com/news/2018/06/mee-reveals-trump-confidant-shared-information-uae-180628155309210.html
 2016-06-01,Tom Barrack,Donald J Trump,association,long time friend,https://en.wikipedia.org/wiki/Thomas_J._Barrack_Jr.
@@ -635,9 +635,9 @@ NA,Inspiration,Israel,association,located in,https://www.haaretz.com/us-news/.pr
 NA,Len Blavatnik,Mitch McConnell,payment,3500000,https://www.dallasnews.com/opinion/commentary/2017/12/15/putins-proxies-helped-funnel-millions-gop-campaigns
 NA,Len Blavatnik,Marco Rubio,payment,1500000,https://www.dallasnews.com/opinion/commentary/2017/12/15/putins-proxies-helped-funnel-millions-gop-campaigns
 NA,Len Blavatnik,Lindsey Graham,payment,800000,https://www.dallasnews.com/opinion/commentary/2017/12/15/putins-proxies-helped-funnel-millions-gop-campaigns
-NA,Mitch McConnell,US Senate,association,Senator,NA
-NA,Marco Rubio,US Senate,association,Senator,NA
-NA,Lindsey Graham,US Senate,association,Senator,NA
+1985-01-01,Mitch McConnell,US Senate,association,Senator,https://en.wikipedia.org/wiki/Mitch_McConnell#Tenure
+2011-01-01,Marco Rubio,US Senate,association,Senator,https://en.wikipedia.org/wiki/Marco_Rubio#U.S._Senate
+2003-01-01,Lindsey Graham,US Senate,association,Senator,https://en.wikipedia.org/wiki/Lindsey_Graham#U.S._Senate
 NA,Oleg Deripaska,Rusal,association,owner,https://www.dallasnews.com/opinion/commentary/2017/12/15/putins-proxies-helped-funnel-millions-gop-campaigns
 NA,Viktor Vekselberg,Rusal,association,owner,https://www.dallasnews.com/opinion/commentary/2017/12/15/putins-proxies-helped-funnel-millions-gop-campaigns
 NA,Len Blavatnik,Rusal,association,owner,https://www.dallasnews.com/opinion/commentary/2017/12/15/putins-proxies-helped-funnel-millions-gop-campaigns
@@ -646,3 +646,5 @@ NA,US Senate,US Govt,association,part of,http://constitutionus.com/
 NA,The Supreme Court,US Govt,association,part of,http://constitutionus.com/
 NA,Executive Branch,US Govt,association,part of,http://constitutionus.com/
 2017-01-20,Donald J Trump,Executive Branch,association,President of,https://en.wikipedia.org/wiki/Donald_Trump
+2014-06-14,Maria Butina,Wayne LaPierre,association,policy,https://www.thetrace.org/rounds/maria-butina-nra-russian-government-photos/
+1991-01-01,Wayne LaPierre,NRA,association,exec VP,https://en.wikipedia.org/wiki/Wayne_LaPierre#National_Rifle_Association_activity

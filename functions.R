@@ -25,6 +25,16 @@ make_graph <- function(tangled) {
       tangled %>% filter(!(e_type %in% money_types))
     )
   
+  # make a new type that summarizes the original types
+  
+  display_types <- tibble(
+    e_type = c("payment", "association", "investment", "loan", "fine", "verdict" ),
+    d_type = c("money", "contact", "money", "money", "verdict", "verdict")
+  )
+  
+  tangled <- tangled %>%
+    full_join(display_types, by = c("e_type" = "e_type"))
+  
   graph <- as_tbl_graph(tangled) %>% mutate(group = as.character(group_spinglass()))
   
   # the below few line will find the pagerank for all nodes, and use the 

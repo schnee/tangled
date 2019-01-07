@@ -25,6 +25,16 @@ make_graph <- function(tangled) {
       tangled %>% filter(!(e_type %in% money_types))
     )
   
+  # make a new type that summarizes the original types
+  
+  display_types <- tibble(
+    e_type = c("payment", "association", "investment", "loan", "fine", "verdict" ),
+    d_type = c("money", "contact", "money", "money", "verdict", "verdict")
+  )
+  
+  tangled <- tangled %>%
+    full_join(display_types, by = c("e_type" = "e_type"))
+  
   graph <- as_tbl_graph(tangled) %>% mutate(group = as.character(group_spinglass()))
   
   # the below few line will find the pagerank for all nodes, and use the 
@@ -35,16 +45,22 @@ make_graph <- function(tangled) {
   
   the_edge_types <- g %>% activate(edges) %>% pull(type) %>% unique() %>% sort()
   
-  max_cent_df <- g %>% activate(nodes) %>% as_tibble() %>% group_by(group) %>% summarize(g_max = max(centrality)) %>%
-    ungroup()
+  max_cent_df <- g %>% activate(nodes) %>% 
+    as_tibble() %>% 
+    group_by(group) %>% 
+    summarize(g_max = max(centrality))
   
   # the last summarize there handles ties
   max_cent <- g %>% activate(nodes) %>% as_tibble()%>% 
     filter(centrality %in% max_cent_df$g_max)  %>% 
     rename(group_label = name) %>% ungroup() %>%
-    group_by(group) %>% arrange(g_max, desc(centrality), group_label) %>% summarize(group_label = first(group_label),
-                                                                                    centrality = first(centrality),
-                                                                                    g_max = first(g_max))
+    group_by(group) %>% 
+    arrange(g_max, desc(centrality), group_label) %>% 
+    summarize(
+      group_label = first(group_label),
+      centrality = first(centrality),
+      g_max = first(g_max)
+    )
   
   graph <- g  %>% activate(nodes) %>%
     inner_join(max_cent, by = c("group" = "group", 

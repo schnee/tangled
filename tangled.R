@@ -32,7 +32,7 @@ if(file.exists(old_state_fn)){
 # continue on, update the old state.
 tangled %>% write_csv(old_state_fn)
 
-graph <- make_graph(tangled) %>% weight_graph(.56, 0.08) %>% 
+graph <- make_graph(tangled) %>% weight_graph(.50, 0.08) %>% 
   activate(nodes) %>% 
   mutate(n_tri = local_triangles()) %>%
  # mutate(the_alpha= rescale(n_tri, to = c(0, 0.75), from = range(n_tri))) %>%
@@ -44,21 +44,21 @@ num_nodes <- graph %>% activate(nodes) %>% as_tibble() %>% summarize(n=n()) %>% 
 #the_layout <- create_layout(graph, layout = "igraph", algorithm="lgl", maxiter = 200*num_nodes)
 
 
-the_edge_types <- graph %>% activate(edges) %>% pull(e_type) %>% factor() %>% levels()
+the_edge_types <- graph %>% activate(edges) %>% pull(d_type) %>% factor() %>% levels()
 
-graph <- graph %>% activate(edges) %>% mutate(e_type = factor(e_type, levels=the_edge_types))
+graph <- graph %>% activate(edges) %>% mutate(d_type = factor(d_type, levels=the_edge_types))
 
 the_layout <- create_layout(graph, layout = "igraph", algorithm = "drl", options = igraph::drl_defaults$final)#, maxiter = 200*num_nodes)
 
 
 p <- ggraph(the_layout ) +
-  geom_edge_fan(aes(edge_linetype=e_type, edge_color = e_type, 
+  geom_edge_fan(aes(edge_linetype=d_type, edge_colour = d_type,
                     label=note), edge_width=.5,
                 end_cap=circle(3,"mm"), spread = 3, start_cap = circle(3,"mm"), 
                 label_dodge = unit(2,"mm"), label_size = 2,
                 arrow = arrow(type="closed", length = unit(0.05, "inches"))) +
   scale_edge_linetype_manual(guide = "none", values=c(5, rep(1, length(the_edge_types) -1))) +
-  scale_edge_color_brewer(name="Relationship", type="qual", palette = "Dark2") +
+  scale_edge_colour_brewer(name="Relationship", type="qual", palette = "Dark2") +
   geom_node_point(color = "black", size = 4.5) +
   geom_node_point(aes(colour = group_label),size = 3.5) +
   geom_node_point(color = "white", size = 1)+
@@ -79,7 +79,7 @@ ggsave("./docs/tangled.png", plot = p, height=15, width = 20, dpi=200)
 
 links <- graph %>% activate(edges) %>% as_tibble() %>% 
   mutate(from = from -1, to = to -1) %>% 
-  mutate(lc = if_else(e_type == "payment", "red", "blue"))
+  mutate(lc = if_else(e_type == "money", "red", "blue"))
 nodes <- graph %>% activate(nodes) %>% as_tibble() 
 
 gd3 <- list(links = links, nodes = nodes)

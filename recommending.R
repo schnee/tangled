@@ -7,7 +7,7 @@ rrm_adj <- as(adj, "realRatingMatrix")
 # but only have a 1 if there's a link and a zero if not (ignore multiple links)
 b_adj <- binarize(rrm_adj, minRating=1)
 # build a recommender
-r <- Recommender(b_adj, method = "POPULAR")
+r <- Recommender(b_adj, method = "ALS")
 recom <- predict(r, b_adj, n=50)
 as(recom, "list")$`Federal Court`
 top30 <- as(bestN(recom, n=30), "list")$`Federal Court`

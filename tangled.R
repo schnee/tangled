@@ -35,7 +35,6 @@ tangled %>% write_csv(old_state_fn)
 graph <- make_graph(tangled) %>% weight_graph(.50, 0.08) %>% 
   activate(nodes) %>% 
   mutate(n_tri = local_triangles()) %>%
- # mutate(the_alpha= rescale(n_tri, to = c(0, 0.75), from = range(n_tri))) %>%
   mutate(the_alpha = if_else(n_tri > 0, 0.75, 0))
 
 my_pal <- get_palette(graph)
@@ -52,16 +51,14 @@ fed_ct <- graph %>% activate(nodes) %>% as_tibble %>% mutate(row_num = row_numbe
   filter(name == "Federal Court") %>% pull(row_num)
 
 local_neighborhood <-
-  graph %>% to_local_neighborhood(node = fed_ct, 3)
-
-l_graph <- local_neighborhood$neighborhood
+  graph %>% convert(to_local_neighborhood, node = fed_ct, 3)
 
 the_layout <- create_layout(graph, layout = "igraph", algorithm = "drl", options = igraph::drl_defaults$final)#, maxiter = 200*num_nodes)
 
 
 p <- ggraph( the_layout ) +
   geom_edge_fan(aes(linetype=d_type, colour = d_type,
-                    label=stringr::str_wrap(note, width=20)), edge_width=.25,
+                    label=stringr::str_wrap(note, width=20)), edge_width=.35,
                 end_cap=circle(3,"mm"), spread = 3, start_cap = circle(3,"mm"), 
                 label_dodge = unit(2,"mm"), label_size = 2,
                 arrow = arrow(type="closed", length = unit(0.05, "inches"))) +

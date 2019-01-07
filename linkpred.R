@@ -4,7 +4,8 @@ library(igraph)
 fed_ct <- graph %>% activate(nodes) %>% as_tibble %>% mutate(row_num = row_number()) %>%
   filter(name == "Federal Court") %>% pull(row_num)
 
-mat <- proxfun(graph = igraph::as.undirected(graph), method="cn")
+# Preferential Attachment = 'pa' (Barabasi and Albert 1999)
+mat <- proxfun(graph = igraph::as.undirected(graph), method="pa")
 
 V(graph)[as.numeric(names(sort(mat[,fed_ct], decreasing=TRUE)))]
 

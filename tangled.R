@@ -60,8 +60,8 @@ the_layout <- create_layout(graph, layout = "igraph", algorithm = "drl", options
 
 
 p <- ggraph( the_layout ) +
-  geom_edge_fan(aes(edge_linetype=d_type, edge_colour = d_type,
-                    label=note), edge_width=.25,
+  geom_edge_fan(aes(linetype=d_type, colour = d_type,
+                    label=stringr::str_wrap(note, width=20)), edge_width=.25,
                 end_cap=circle(3,"mm"), spread = 3, start_cap = circle(3,"mm"), 
                 label_dodge = unit(2,"mm"), label_size = 2,
                 arrow = arrow(type="closed", length = unit(0.05, "inches"))) +

@@ -1,6 +1,7 @@
 library(ggraph)
 library(tidygraph)
 library(stringr)
+library(dplyr)
 
 g <- readRDS("./data/graph.RDS")
 

@@ -8,8 +8,10 @@ g <- readRDS(gzcon(url("https://github.com/schnee/tangled/blob/master/data/graph
 fed_ct <- g %>% activate(nodes) %>% as_tibble %>% mutate(row_num = row_number()) %>%
   filter(name == "Federal Court") %>% pull(row_num)
 
+neigh_size = 2
+
 l_g <-
-  g %>% convert(to_local_neighborhood, node = fed_ct, 5)
+  g %>% convert(to_local_neighborhood, node = fed_ct, neigh_size)
 
 p <- ggraph( l_g ) +
   geom_node_point(size = 3.5) +

@@ -9,7 +9,7 @@ fed_ct <- g %>% activate(nodes) %>% as_tibble %>% mutate(row_num = row_number())
   filter(name == "Federal Court") %>% pull(row_num)
 
 l_g <-
-  g %>% convert(to_local_neighborhood, node = fed_ct, 2)
+  g %>% convert(to_local_neighborhood, node = fed_ct, 3)
 
 p <- ggraph( l_g ) +
   geom_edge_fan(aes(linetype=d_type, colour = d_type,

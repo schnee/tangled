@@ -3,7 +3,7 @@ library(tidygraph)
 library(stringr)
 library(dplyr)
 
-g <- readRDS("./data/graph.RDS")
+g <- readRDS(gzcon(url("https://github.com/schnee/tangled/blob/master/data/graph.RDS?raw=true")))
 
 fed_ct <- g %>% activate(nodes) %>% as_tibble %>% mutate(row_num = row_number()) %>%
   filter(name == "Federal Court") %>% pull(row_num)

@@ -1,16 +1,34 @@
 library(recommenderlab)
 
+graph <- readRDS(gzcon(url("https://github.com/schnee/tangled/blob/master/data/graph.RDS?raw=true")))
+
+fed_ct <- graph %>% activate(nodes) %>% as_tibble %>% mutate(row_num = row_number()) %>%
+  filter(name == "Federal Court") %>% pull(row_num)
+
 # get the adjacency matrix
 adj <- igraph::as_adj(graph)
 # and treat it as a rating matrix
-rrm_adj <- as(adj, "realRatingMatrix")
+rrm_adj <- adj %>% as("realRatingMatrix")
 # but only have a 1 if there's a link and a zero if not (ignore multiple links)
-b_adj <- binarize(rrm_adj, minRating=1)
+b_adj <- rrm_adj %>% binarize(minRating=1)
 # build a recommender
-r <- Recommender(b_adj, method = "ALS")
-recom <- predict(r, b_adj, n=50)
-as(recom, "list")$`Federal Court`
-top30 <- as(bestN(recom, n=30), "list")$`Federal Court`
+r <- b_adj %>% 
+  Recommender(method = "ALS")
+
+# predict for fed_ct
+recom <- r %>% 
+  predict( b_adj[fed_ct,], n=50)
+
+as(recom, "list")
+
+# just chaining everything together...
+top30 <- igraph::as_adj(graph) %>% 
+  as("realRatingMatrix") %>% 
+  binarize(minRating=1) %>% 
+  Recommender(method = "ALS") %>% 
+  predict( b_adj[fed_ct,], n=50) %>% 
+  bestN(n=30) %>% 
+  as("list")
 
 recommenderRegistry$get_entry_names()
 

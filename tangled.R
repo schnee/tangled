@@ -37,6 +37,8 @@ graph <- make_graph(tangled) %>% weight_graph(.50, 0.08) %>%
   mutate(n_tri = local_triangles()) %>%
   mutate(the_alpha = if_else(n_tri > 0, 0.75, 0))
 
+graph %>% saveRDS(file = "./data/graph.RDS")
+
 my_pal <- get_palette(graph)
 
 num_nodes <- graph %>% activate(nodes) %>% as_tibble() %>% summarize(n=n()) %>% pull(n)

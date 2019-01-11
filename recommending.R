@@ -1,11 +1,12 @@
 library(recommenderlab)
+library(dplyr)
 
 graph <- readRDS(gzcon(url("https://github.com/schnee/tangled/blob/master/data/graph.RDS?raw=true")))
 
 fed_ct <- graph %>% activate(nodes) %>% as_tibble %>% mutate(row_num = row_number()) %>%
   filter(name == "Federal Court") %>% pull(row_num)
 
-# get the adjacency matrix
+# get the adjacency matrix1
 adj <- igraph::as_adj(graph)
 # and treat it as a rating matrix
 rrm_adj <- adj %>% as("realRatingMatrix")

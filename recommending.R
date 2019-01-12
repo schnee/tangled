@@ -1,5 +1,6 @@
 library(recommenderlab)
 library(dplyr)
+library(igraph)
 
 graph <- readRDS(gzcon(url("https://github.com/schnee/tangled/blob/master/data/graph.RDS?raw=true")))
 
@@ -11,10 +12,11 @@ fed_ct <- graph %>%
   pull(row_num)
 
 # just chaining everything together...
-b_adj <- igraph::as_adj(graph) %>% 
+
+topReqs <- graph %>% as_adj() %>% 
   as("realRatingMatrix") %>% 
-  binarize(minRating=1)
-topReqs <- b_adj %>%
+  binarize(minRating=1) %>% 
+  assign("b_adj", ., envir = .GlobalEnv) %>%
   Recommender(method = "ALS") %>% 
   predict( b_adj[fed_ct,], n=50) %>% 
   bestN(n=30) 

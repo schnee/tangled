@@ -4,7 +4,7 @@ library(igraph)
 
 graph <- readRDS(gzcon(url("https://github.com/schnee/tangled/blob/master/data/graph.RDS?raw=true")))
 
-the_node<- graph %>% 
+the_node <- graph %>% 
   activate(nodes) %>% 
   as_tibble %>% 
   mutate(row_num = row_number()) %>%
@@ -18,8 +18,7 @@ topReqs <- graph %>% as_adj() %>%
   binarize(minRating=1) %>% 
   assign("b_adj", ., envir = .GlobalEnv) %>%
   Recommender(method = "ALS") %>% 
-  predict( b_adj[the_node
-                ,], n=50) %>% 
+  predict( b_adj[the_node,], n=50) %>% 
   bestN(n=30) 
 
 

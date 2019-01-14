@@ -4,11 +4,11 @@ library(igraph)
 
 graph <- readRDS(gzcon(url("https://github.com/schnee/tangled/blob/master/data/graph.RDS?raw=true")))
 
-fed_ct <- graph %>% 
+the_node <- graph %>% 
   activate(nodes) %>% 
   as_tibble %>% 
   mutate(row_num = row_number()) %>%
-  filter(name == "Federal Court") %>% 
+  filter(name == "Vladimir Putin") %>% 
   pull(row_num)
 
 # just chaining everything together...
@@ -18,7 +18,7 @@ topReqs <- graph %>% as_adj() %>%
   binarize(minRating=1) %>% 
   assign("b_adj", ., envir = .GlobalEnv) %>%
   Recommender(method = "ALS") %>% 
-  predict( b_adj[fed_ct,], n=50) %>% 
+  predict( b_adj[the_node,], n=50) %>% 
   bestN(n=30) 
 
 

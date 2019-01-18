@@ -1,6 +1,9 @@
 library(recommenderlab)
 library(dplyr)
+library(tidygraph)
 library(igraph)
+
+set.seed(1492)
 
 graph <- readRDS(gzcon(url("https://github.com/schnee/tangled/blob/master/data/graph.RDS?raw=true")))
 
@@ -8,7 +11,7 @@ the_node <- graph %>%
   activate(nodes) %>% 
   as_tibble %>% 
   mutate(row_num = row_number()) %>%
-  filter(name == "Vladimir Putin") %>% 
+  filter(name == "Federal Court") %>% 
   pull(row_num)
 
 # just chaining everything together...
@@ -31,7 +34,7 @@ topN_tib <- tibble(
     unlist
 )
 
-topN_tib
+topN_tib %>% knitr::kable()
 # 
 # recommenderRegistry$get_entry_names()
 # 

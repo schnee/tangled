@@ -65,7 +65,7 @@ p <- ggraph( the_layout ) +
                 label_dodge = unit(2,"mm"), label_size = 2,
                 arrow = arrow(type="closed", length = unit(0.05, "inches"))) +
   scale_edge_linetype_manual(guide = "none", values=c(5, rep(1, length(the_edge_types) -1))) +
-  scale_edge_colour_manual(name="Relationship", values = c("#60BD68", "#F15854", "#FAA43A")) +
+  scale_edge_colour_manual(name="Relationship", values = c("#60BD68", "#F15854", "#FAA43A", "#FF0000")) +
   geom_node_point(color = "black", size = 4.5) +
   geom_node_point(aes(colour = group_label),size = 3.5) +
   geom_node_point(color = "white", size = 1)+

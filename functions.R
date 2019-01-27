@@ -28,8 +28,8 @@ make_graph <- function(tangled) {
   # make a new type that summarizes the original types
   
   display_types <- tibble(
-    e_type = c("payment", "association", "investment", "loan", "fine", "verdict" ),
-    d_type = c("money", "contact", "money", "money", "verdict", "verdict")
+    e_type = c("payment", "association", "investment", "loan", "fine", "verdict", "indictment" ),
+    d_type = c("money", "contact", "money", "money", "verdict", "verdict", "indictment")
   )
   
   tangled <- tangled %>%

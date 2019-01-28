@@ -118,7 +118,7 @@ title_txt <- paste0(graph %>% activate(nodes) %>%
                       as_tibble %>% arrange(desc(centrality)) %>% 
                       pull(name) %>% first(),"'s Tangled Web")
 
-l <- layout_with_drl(g, options = igraph::drl_defaults$final)
+l <- igraph::layout_with_drl(g, options = igraph::drl_defaults$final)
 
 png(filename = "./docs/tangled.png", width = 4000, height = 3000)
 par(ps = 12, cex = 1, cex.main = 8)

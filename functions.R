@@ -29,7 +29,7 @@ make_graph <- function(tangled) {
   
   display_types <- tibble(
     e_type = c("payment", "association", "investment", "loan", "fine", "verdict", "indictment" ),
-    d_type = c("money", "contact", "money", "money", "verdict", "verdict", "indictment")
+    d_type = c("money", "contact", "money", "money", "money", "verdict", "indictment")
   )
   
   tangled <- tangled %>%

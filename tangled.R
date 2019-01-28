@@ -112,15 +112,17 @@ g <- graph %>% activate(edges) %>%
          size = 3,
          frame.color = "NA",
          label.cex = 2) %>%
-  weight_graph(1, 0.5)
+  weight_graph(.5, 0.08)
 
 title_txt <- paste0(graph %>% activate(nodes) %>% 
                       as_tibble %>% arrange(desc(centrality)) %>% 
                       pull(name) %>% first(),"'s Tangled Web")
 
+l <- igraph::layout_with_drl(g, options = igraph::drl_defaults$final)
+
 png(filename = "./docs/tangled.png", width = 4000, height = 3000)
 par(ps = 12, cex = 1, cex.main = 8)
-plot(g, layout = igraph::layout_with_drl,  options = igraph::drl_defaults$final)
+plot(g, layout = l)
 title(title_txt, line = -3)
 legend("topright", legend = the_edge_types, 
        col = edge_pal, lty = 1, cex = 4,

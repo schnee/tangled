@@ -86,7 +86,7 @@ local_neighborhood <-
 
 
 edge_pal <- c("#C0C0C0", "#FFA500", "#00B300", "#FF0000")
-node_pal <- get_palette(graph)
+node_pal <- c(few_pal("Dark")(8), brewer_pal(type="qual", palette = 3)(8))
 
 the_edge_types <- graph %>% activate(edges) %>% 
   pull(d_type) %>% factor() %>% levels()
@@ -106,13 +106,13 @@ g <- graph %>% activate(edges) %>%
          width = 5) %>%
   activate(nodes) %>%
   mutate(color = node_pal[match(group_label, the_cluster_lab)],
-         alpha_hex = if_else(n_tri > 0, "aa", "88"),
+         alpha_hex = if_else(n_tri > 0, "bb", "88"),
          label.color = if_else(n_tri > 0, "#000000FF", "#00000022"),
          color = paste0(color, alpha_hex),
          size = 3,
          frame.color = "NA",
          label.cex = 2) %>%
-  weight_graph(1, 0.4)
+  weight_graph(1, 0.5)
 
 title_txt <- paste0(graph %>% activate(nodes) %>% 
                       as_tibble %>% arrange(desc(centrality)) %>% 

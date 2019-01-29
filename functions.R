@@ -118,8 +118,8 @@ get_node_recommendations <- function(graph, node_name) {
   
   topReqs <- graph %>% as_adj() %>% 
     as("realRatingMatrix") %>% 
-    normalize() %>%
-    binarize(minRating=-2) %>% 
+    recommenderlab::normalize() %>%
+    recommenderlab::binarize(minRating=-2) %>% 
     assign("b_adj", ., envir = .GlobalEnv) %>%
     Recommender(method = "ALS") %>% 
     predict( b_adj[the_node,], n=50) %>% 

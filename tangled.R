@@ -84,6 +84,8 @@ local_neighborhood <-
 # 
 # ggsave("./docs/tangled.png", plot = p, height=15, width = 20, dpi=200)
 
+rec_target_node <- "Federal Court"
+recommendations <- get_node_recommendations(graph, rec_target_node)
 
 edge_pal <- c("#C0C0C0", "#FFA500", "#00B300", "#FF0000")
 node_pal <- c(few_pal("Dark")(8), brewer_pal(type="qual", palette = 3)(8))
@@ -129,6 +131,10 @@ legend("topright", legend = the_edge_types,
        lwd = 8, title = "Relationship")
 legend("bottomright", legend = the_cluster_lab, fill = node_pal, cex =4,
        title = "Group")
+legend("bottomleft", legend = recommendations %>% pull(nodes),
+       cex = 2, 
+       title = paste("Most recommended for", rec_target_node, sep="\n"),
+       col = "FFFFFFaa")
 dev.off()
 
 

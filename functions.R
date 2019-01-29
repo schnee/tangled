@@ -8,6 +8,8 @@ library(RColorBrewer)
 library(scales)
 library(lubridate)
 library(randomcoloR)
+library(recommenderlab)
+library(igraph)
 
 make_graph <- function(tangled) {
   
@@ -101,4 +103,37 @@ get_palette <- function(graph) {
   
   #distinctColorPalette(n_group, runTsne = TRUE)
   base_pal
+}
+
+
+get_node_recommendations <- function(graph, node_name) {
+  set.seed(1492)
+  
+  the_node <- graph %>% 
+    activate(nodes) %>% 
+    as_tibble %>% 
+    mutate(row_num = row_number()) %>%
+    filter(name == node_name) %>% 
+    pull(row_num)
+  
+  # just chaining everything together...
+  
+  topReqs <- graph %>% as_adj() %>% 
+    as("realRatingMatrix") %>% 
+    recommenderlab::normalize() %>%
+    recommenderlab::binarize(minRating=-2) %>% 
+    assign("b_adj", ., envir = .GlobalEnv) %>%
+    Recommender(method = "ALS") %>% 
+    predict( b_adj[the_node,], n=50) %>% 
+    bestN(n=30) 
+  
+  
+  topN_tib <- tibble(
+    nodes = topReqs %>% 
+      as("list") %>%
+      unlist,
+    ratings = topReqs %>%
+      getRatings() %>%
+      unlist
+  )
 }

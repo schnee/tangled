@@ -3,36 +3,42 @@ library(dplyr)
 library(tidygraph)
 library(igraph)
 
-set.seed(1492)
+get_node_recommendations <- function(graph, node_name) {
+  set.seed(1492)
+  
+  the_node <- graph %>% 
+    activate(nodes) %>% 
+    as_tibble %>% 
+    mutate(row_num = row_number()) %>%
+    filter(name == node_name) %>% 
+    pull(row_num)
+  
+  # just chaining everything together...
+  
+  topReqs <- graph %>% as_adj() %>% 
+    as("realRatingMatrix") %>% 
+    normalize() %>%
+    binarize(minRating=-2) %>% 
+    assign("b_adj", ., envir = .GlobalEnv) %>%
+    Recommender(method = "ALS") %>% 
+    predict( b_adj[the_node,], n=50) %>% 
+    bestN(n=30) 
+  
+  
+  topN_tib <- tibble(
+    nodes = topReqs %>% 
+      as("list") %>%
+      unlist,
+    ratings = topReqs %>%
+      getRatings() %>%
+      unlist
+  )
+}
+
 
 graph <- readRDS(gzcon(url("https://github.com/schnee/tangled/blob/master/data/graph.RDS?raw=true")))
 
-the_node <- graph %>% 
-  activate(nodes) %>% 
-  as_tibble %>% 
-  mutate(row_num = row_number()) %>%
-  filter(name == "Federal Court") %>% 
-  pull(row_num)
-
-# just chaining everything together...
-
-topReqs <- graph %>% as_adj() %>% 
-  as("realRatingMatrix") %>% 
-  binarize(minRating=1) %>% 
-  assign("b_adj", ., envir = .GlobalEnv) %>%
-  Recommender(method = "ALS") %>% 
-  predict( b_adj[the_node,], n=50) %>% 
-  bestN(n=30) 
-
-
-topN_tib <- tibble(
-  nodes = topReqs %>% 
-    as("list") %>%
-    unlist,
-  ratings = topReqs %>%
-    getRatings() %>%
-    unlist
-)
+topN_tib <- get_node_recommendations(graph, "Federal Court")
 
 topN_tib %>% knitr::kable()
 # 

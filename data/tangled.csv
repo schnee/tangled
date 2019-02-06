@@ -13,12 +13,12 @@ date,from,to,e_type,note,source
 2016-01-20,Columbus Nova,Gawker Media,investment,15000000,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
 2000-01-15,Andrew Intrater,Columbus Nova,association,runs,https://web.archive.org/web/20180509003139/http://www.columbusnova.com/andrew_intrater.html
 2017-01-09,Andrew Intrater,Michael D Cohen,association,met,https://themoscowproject.org/collusion/new-york-times-reveals-meeting-between-cohen-vekselberg-intrater/
-2016-01-01,Andrew Intrater,Trump Inaguration,payment,250000,NA
+2016-01-01,Andrew Intrater,Trump Inauguration,payment,250000,NA
 1990-01-01,Viktor Vekselberg,Renova Group,association,owner,https://en.wikipedia.org/wiki/Renova_Group
 2017-01-01,Andrew Intrater,Viktor Vekselberg,association,cousin,NA
 2017-01-01,Viktor Vekselberg,Andrew Intrater,association,cousin,NA
-2017-01-20,Viktor Vekselberg,Trump Inaguration,association,attended,https://www.nbcnews.com/politics/donald-trump/meet-nice-russian-oligarch-linked-trump-lawyer-michael-cohen-n872716
-2017-01-20,Andrew Intrater,Trump Inaguration,association,attended,https://nypost.com/2018/05/11/mueller-probing-foreign-donations-to-trumps-inauguration-committee/
+2017-01-20,Viktor Vekselberg,Trump Inauguration,association,attended,https://www.nbcnews.com/politics/donald-trump/meet-nice-russian-oligarch-linked-trump-lawyer-michael-cohen-n872716
+2017-01-20,Andrew Intrater,Trump Inauguration,association,attended,https://nypost.com/2018/05/11/mueller-probing-foreign-donations-to-trumps-inauguration-committee/
 2018-04-06,US Govt,Viktor Vekselberg,association,sanctioned for meddling,http://time.com/5271000/michael-cohen-essential-consultants-novartis-vekselberg-att/
 2006-06-01,Michael D Cohen,Donald J Trump,association,works for,https://www.usnews.com/news/national-news/articles/2018-04-16/10-things-you-didnt-know-about-michael-cohen
 2017-10-05,Novartis,Essential Consultants,payment,99980,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
@@ -170,7 +170,7 @@ NA,George Nader,Jared Kushner,association,NA,NA
 2005-01-01,Justin Kennedy,Donald J Trump,loan,1000000000,https://www.vanityfair.com/news/2018/06/donald-trump-justice-anthony-kennedy-retirement
 2017-01-31,US and UK Gov'ts,Deutsche Bank,fine,630000000,https://www.theguardian.com/business/2017/jan/31/deutsche-bank-fined-630m-over-russia-money-laundering-claims
 2017-01-21,Donald J Trump,The Supreme Court,association,appoints justices,http://constitutionus.com/
-2017-01-21,Abbott Laboratories,Trump Inaguration,payment,100000,https://www.spectrumnews.org/news/health-companies-gave-generously-president-trumps-inauguration/
+2017-01-21,Abbott Laboratories,Trump Inauguration,payment,100000,https://www.spectrumnews.org/news/health-companies-gave-generously-president-trumps-inauguration/
 2018-06-15,Abbott Laboratories,The White House,association,pressures breast feeding,https://www.theguardian.com/us-news/2018/jul/08/trump-administration-opposes-breastfeeding-resolution-report
 2018-06-15,World Health Organization,The White House,association,breastfeeding browbeaten by,https://www.theguardian.com/us-news/2018/jul/08/trump-administration-opposes-breastfeeding-resolution-report
 2018-06-15,Russia,World Health Organization,association,introduces good breast feeding,https://www.theguardian.com/us-news/2018/jul/08/trump-administration-opposes-breastfeeding-resolution-report
@@ -316,9 +316,9 @@ NA,Sam Patten,Federal Court,verdict,pleaded guilty,https://www.bloomberg.com/new
 NA,Konstantin Kilimnik,Begemot Ventures International,association,principal,https://www.washingtonpost.com/local/public-safety/washington-consultant-for-ukraine-party-set-to-plead-guilty-to-violating-lobbyist-disclosure-law/2018/08/31/172cf2c8-ad23-11e8-a8d7-0f63ab8b1370_story.html?utm_term=.a4b412b5de41
 NA,Sam Patten,Begemot Ventures International,association,executive,https://www.washingtonpost.com/local/public-safety/washington-consultant-for-ukraine-party-set-to-plead-guilty-to-violating-lobbyist-disclosure-law/2018/08/31/172cf2c8-ad23-11e8-a8d7-0f63ab8b1370_story.html?utm_term=.a4b412b5de41
 NA,Begemot Ventures International,US Citizen,payment,50000,https://www.bloomberg.com/news/articles/2018-08-31/patten-caused-foreign-money-to-be-paid-to-inaugural-committee
-NA,US Citizen,Trump Inaguration,payment,50000,https://www.bloomberg.com/news/articles/2018-08-31/patten-caused-foreign-money-to-be-paid-to-inaugural-committee
-NA,Foreigner B,Trump Inaguration,association,attends with Patten,https://www.washingtonpost.com/local/public-safety/washington-consultant-for-ukraine-party-set-to-plead-guilty-to-violating-lobbyist-disclosure-law/2018/08/31/172cf2c8-ad23-11e8-a8d7-0f63ab8b1370_story.html?utm_term=.a4b412b5de41
-NA,Sam Patten,Trump Inaguration,association,attends with Foreigner B,https://www.washingtonpost.com/local/public-safety/washington-consultant-for-ukraine-party-set-to-plead-guilty-to-violating-lobbyist-disclosure-law/2018/08/31/172cf2c8-ad23-11e8-a8d7-0f63ab8b1370_story.html?utm_term=.a4b412b5de41
+NA,US Citizen,Trump Inauguration,payment,50000,https://www.bloomberg.com/news/articles/2018-08-31/patten-caused-foreign-money-to-be-paid-to-inaugural-committee
+NA,Foreigner B,Trump Inauguration,association,attends with Patten,https://www.washingtonpost.com/local/public-safety/washington-consultant-for-ukraine-party-set-to-plead-guilty-to-violating-lobbyist-disclosure-law/2018/08/31/172cf2c8-ad23-11e8-a8d7-0f63ab8b1370_story.html?utm_term=.a4b412b5de41
+NA,Sam Patten,Trump Inauguration,association,attends with Foreigner B,https://www.washingtonpost.com/local/public-safety/washington-consultant-for-ukraine-party-set-to-plead-guilty-to-violating-lobbyist-disclosure-law/2018/08/31/172cf2c8-ad23-11e8-a8d7-0f63ab8b1370_story.html?utm_term=.a4b412b5de41
 2015-01-01,Cambridge Analytica,Steve Bannon,association,founded by,https://en.wikipedia.org/wiki/Cambridge_Analytica
 2015-01-01,Cambridge Analytica,Robert Mercer,association,founded by,https://en.wikipedia.org/wiki/Cambridge_Analytica
 2018-05-01,Cambridge Analytica,Data Propria,association,becomes,https://en.wikipedia.org/wiki/Cambridge_Analytica
@@ -453,7 +453,7 @@ NA,Foreign Ministry,Russia,association,Inside of,https://www.theguardian.com/us-
 NA,German Khan,TNK-BP,association,ex-board,https://www.theguardian.com/us-news/2018/sep/28/russian-us-tycoon-boasted-of-active-involvement-in-trump-election-campaign-simon-kukes
 NA,Mikhail Fridman,TNK-BP,association,ex-board,https://www.theguardian.com/us-news/2018/sep/28/russian-us-tycoon-boasted-of-active-involvement-in-trump-election-campaign-simon-kukes
 NA,Len Blavatnik,TNK-BP,association,ex-board,https://www.theguardian.com/us-news/2018/sep/28/russian-us-tycoon-boasted-of-active-involvement-in-trump-election-campaign-simon-kukes
-NA,Len Blavatnik,Trump Inaguration,payment,1000000,https://www.theguardian.com/us-news/2018/sep/28/russian-us-tycoon-boasted-of-active-involvement-in-trump-election-campaign-simon-kukes
+NA,Len Blavatnik,Trump Inauguration,payment,1000000,https://www.theguardian.com/us-news/2018/sep/28/russian-us-tycoon-boasted-of-active-involvement-in-trump-election-campaign-simon-kukes
 NA,Len Blavatnik,Republican National Committee,payment,113600,https://www.theguardian.com/us-news/2018/sep/28/russian-us-tycoon-boasted-of-active-involvement-in-trump-election-campaign-simon-kukes
 NA,Justin Kennedy,LNR Property LLC,association,co-CEO,https://medium.com/@gaberusk/the-kennedy-kushner-and-trump-connection-a-curious-conversation-and-a-business-deal-c81dd578ce83
 NA,Tobin Cobb,LNR Property LLC,association,co-CEO,https://medium.com/@gaberusk/the-kennedy-kushner-and-trump-connection-a-curious-conversation-and-a-business-deal-c81dd578ce83
@@ -629,9 +629,9 @@ NA,Inspiration,Israel,association,located in,https://www.haaretz.com/us-news/.pr
 2018-12-10,Russia,Trump Organization,association,Comms Channel through NRA,https://www.salon.com/2018/12/12/maria-butinas-boyfriend-claimed-he-set-up-trump-russia-nra-conduit-as-campaign-funds-flowed
 2018-12-10,Paul Erickson,NRA,association,created comms channel between Russia and Trump Org via NRA,https://www.salon.com/2018/12/12/maria-butinas-boyfriend-claimed-he-set-up-trump-russia-nra-conduit-as-campaign-funds-flowed
 2018-12-10,Alexander Torshin,Russia,association,created comms channel between Russia and Trump Org via NRA,https://www.salon.com/2018/12/12/maria-butinas-boyfriend-claimed-he-set-up-trump-russia-nra-conduit-as-campaign-funds-flowed
-2017-12-17,Trump Inaguration,Trump Organization,payment,800000,https://www.propublica.org/article/trump-inc-podcast-trumps-inauguration-paid-trumps-company-with-ivanka-in-the-middle
-2017-12-17,Trump Inaguration,Ivanka Trump,association,asks about auditability,https://www.propublica.org/article/trump-inc-podcast-trumps-inauguration-paid-trumps-company-with-ivanka-in-the-middle
-2017-12-17,Ivanka Trump,Trump Inaguration,association,approves payment,https://www.propublica.org/article/trump-inc-podcast-trumps-inauguration-paid-trumps-company-with-ivanka-in-the-middle
+2017-12-17,Trump Inauguration,Trump Organization,payment,800000,https://www.propublica.org/article/trump-inc-podcast-trumps-inauguration-paid-trumps-company-with-ivanka-in-the-middle
+2017-12-17,Trump Inauguration,Ivanka Trump,association,asks about auditability,https://www.propublica.org/article/trump-inc-podcast-trumps-inauguration-paid-trumps-company-with-ivanka-in-the-middle
+2017-12-17,Ivanka Trump,Trump Inauguration,association,approves payment,https://www.propublica.org/article/trump-inc-podcast-trumps-inauguration-paid-trumps-company-with-ivanka-in-the-middle
 NA,Len Blavatnik,Mitch McConnell,payment,3500000,https://www.dallasnews.com/opinion/commentary/2017/12/15/putins-proxies-helped-funnel-millions-gop-campaigns
 NA,Len Blavatnik,Marco Rubio,payment,1500000,https://www.dallasnews.com/opinion/commentary/2017/12/15/putins-proxies-helped-funnel-millions-gop-campaigns
 NA,Len Blavatnik,Lindsey Graham,payment,800000,https://www.dallasnews.com/opinion/commentary/2017/12/15/putins-proxies-helped-funnel-millions-gop-campaigns
@@ -682,7 +682,7 @@ NA,Andrew Stettner,Jerome Corsi,association,step-son,https://abcnews.go.com/beta
 2017-01-01,Deutsche Bank,Donald J Trump,loan,130000000,https://www.reuters.com/article/us-usa-trump-deutsche-bank/trump-deutsche-bank-links-in-sights-of-u-s-house-investigators-idUSKCN1PC123
 2017-01-01,Deutsche Bank,Russia,association,laundered 10B$ Russian money,https://www.bloomberg.com/news/articles/2018-08-03/deutsche-bank-says-money-laundering-controls-still-too-complex
 NA,Robert Foreseman,UBS,association,Russia Investment Fund,https://abcnews.go.com/beta-story-container/Politics/us-banker-ties-putins-circle-sought-access-trump/story?id=60521702
-NA,Robert Foresman,Mark Burnett,association,Trump Inaguration Meetings,https://abcnews.go.com/beta-story-container/Politics/us-banker-ties-putins-circle-sought-access-trump/story?id=60521702
+NA,Robert Foresman,Mark Burnett,association,Trump Inauguration Meetings,https://abcnews.go.com/beta-story-container/Politics/us-banker-ties-putins-circle-sought-access-trump/story?id=60521702
 NA,Mark Burnett,The Apprentice,association,Exec Producer,https://abcnews.go.com/beta-story-container/Politics/us-banker-ties-putins-circle-sought-access-trump/story?id=60521702
 NA,Donald J Trump,The Apprentice,association,star talent,https://abcnews.go.com/beta-story-container/Politics/us-banker-ties-putins-circle-sought-access-trump/story?id=60521702
 2016-12-15,Robert Foreseman,Sergey Gorkov,association,Meeting,https://abcnews.go.com/beta-story-container/Politics/us-banker-ties-putins-circle-sought-access-trump/story?id=60521702
@@ -760,7 +760,7 @@ NA,Qatar Investment Authority,Brookfield Properties,investment,major shareholder
 2017-07-01,Steven Mnuchin,Len Blavatnik,payment,RatPac-Dune Shares,https://www.hollywoodreporter.com/news/hollywood-film-financiers-a-torrid-love-affair-hits-a-rocky-road-1023140
 2019-01-27,US Treasury Department,Rusal,association,Lifts sanctions,https://www.cnn.com/2019/01/27/politics/trump-admin-lifts-sanctions-oleg-deripaska/index.html
 2019-01-08,Federal Court,Natalia Veselnitskaya,indictment,Money Laundering,https://www.bna.com/russian-five-five-b57982095809/
-2016-11-09,Tom Barrack,Trump Inaguration,association,head of,https://abcnews.go.com/Politics/york-prosecutors-seek-records-trump-inauguration-committee-sources/story
+2016-11-09,Tom Barrack,Trump Inauguration,association,head of,https://abcnews.go.com/Politics/york-prosecutors-seek-records-trump-inauguration-committee-sources/story
 2016-11-09,Rick Gates,Tom Barrack,association,reports to (inauguration cmte),https://en.wikipedia.org/wiki/Thomas_J._Barrack_Jr.#Political_activity
 2010-06-01,Tom Barrack,Jared Kushner,loan,70000000,https://en.wikipedia.org/wiki/Thomas_J._Barrack_Jr.#Political_activity
 2010-06-01,Jared Kushner,Tom Barrack,payment,debt in 666,https://www.nytimes.com/2018/06/13/world/middleeast/trump-tom-barrack-saudi.html
@@ -768,4 +768,10 @@ NA,Qatar Investment Authority,Brookfield Properties,investment,major shareholder
 1985-06-01,Robert Lighthizer,Skadden Law Firm,association,joins,https://en.wikipedia.org/wiki/Robert_Lighthizer
 2017-05-15,Robert Lighthizer,Donald J Trump,association,reports to,https://en.wikipedia.org/wiki/Robert_Lighthizer
 2017-05-15,Robert Lighthizer,US Trade Rep,association,cabinet level,https://en.wikipedia.org/wiki/Robert_Lighthizer
-2016-11-09,Steve Wynn,Trump Inaguration,association,vice chair,https://en.wikipedia.org/wiki/Steve_Wynn#Political_activities
+2016-11-09,Steve Wynn,Trump Inauguration,association,vice chair,https://en.wikipedia.org/wiki/Steve_Wynn#Political_activities
+2017-01-18,Devin Nunes,Michael Flynn,association,Inaugural breakfast,https://www.thedailybeast.com/mueller-probes-an-event-with-nunes-flynn-and-foreign-officials-at-trumps-dc-hotel
+2017-01-18,Imaad Zuberi,Trump Inauguration,association,Source of guests,https://www.thedailybeast.com/feds-eye-imaad-zuberi-financier-with-alleged-ties-to-cohen-nunes-and-qatar
+2017-01-21,Sheldon G Adelson,Trump Inauguration,payment,5000000,https://www.opensecrets.org/trump/inauguration-donors
+2017-01-21,Imaad Zuberi,Trump Inauguration,payment,900000,https://www.opensecrets.org/trump/inauguration-donors
+2017-01-21,Robert Mercer,Trump Inauguration,payment,1000000,https://www.opensecrets.org/trump/inauguration-donors
+2017-01-01,Imaad Zuberi,Michael D Cohen,association,pitched for access,https://www.thedailybeast.com/feds-eye-imaad-zuberi-financier-with-alleged-ties-to-cohen-nunes-and-qatar

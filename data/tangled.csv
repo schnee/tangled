@@ -155,12 +155,12 @@ NA,George Nader,Jared Kushner,association,NA,NA
 2016-06-09,Rinat Akhmetshin,Trump Tower,association,meeting,https://medium.com/@wsiegelman/us-person-2-in-the-case-of-alleged-russian-agent-maria-butina-is-george-o-neill-his-daughter-bb569202cf06
 2016-06-09,Natalia Veselnitskaya,Trump Tower,association,meeting,NA
 2018-04-27,Natalia Veselnitskaya,Russia,association,informant,https://www.nbcnews.com/nightly-news/video/russian-lawyer-who-met-with-kushner-don-jr-admits-to-being-an-informant-1221063235886
-1905-07-04,Viktor Yanukovych,Paul Manafort,payment,12700000,http://www.newsweek.com/paul-manafort-indictment-timeline-russia-probe-charges-696226
-1905-07-04,Viktor Yanukovych,Ukraine,association,Former President,NA
-1905-07-07,Oleg Deripaska,Paul Manafort,loan,10000000,http://www.businessinsider.com/court-document-shows-oleg-deripaska-loaned-paul-manafort-10-million-2018-6
-1905-07-07,Oleg Deripaska,Russia,association,close ties,NA
-1905-07-08,Paul Manafort,Konstantin Kilimnik,association,emails re: campaign,http://www.businessinsider.com/court-document-shows-oleg-deripaska-loaned-paul-manafort-10-million-2018-6
-1905-07-08,Konstantin Kilimnik,Oleg Deripaska,association,emails re: campaign,http://www.businessinsider.com/court-document-shows-oleg-deripaska-loaned-paul-manafort-10-million-2018-6
+2017-07-04,Viktor Yanukovych,Paul Manafort,payment,12700000,http://www.newsweek.com/paul-manafort-indictment-timeline-russia-probe-charges-696226
+2017-07-04,Viktor Yanukovych,Ukraine,association,Former President,NA
+2017-07-07,Oleg Deripaska,Paul Manafort,loan,10000000,http://www.businessinsider.com/court-document-shows-oleg-deripaska-loaned-paul-manafort-10-million-2018-6
+2017-07-07,Oleg Deripaska,Russia,association,close ties,NA
+2017-07-08,Paul Manafort,Konstantin Kilimnik,association,emails re: campaign,http://www.businessinsider.com/court-document-shows-oleg-deripaska-loaned-paul-manafort-10-million-2018-6
+2017-07-08,Konstantin Kilimnik,Oleg Deripaska,association,emails re: campaign,http://www.businessinsider.com/court-document-shows-oleg-deripaska-loaned-paul-manafort-10-million-2018-6
 2018-06-25,Donald J Trump,Chuck Rettig,association,nominates for IRS,https://www.rawstory.com/2018/06/trumps-irs-nominee-failed-disclose-crucial-information-report/
 2006-01-01,Chuck Rettig,Trump Organization,association,owns branded property,https://www.marketwatch.com/story/trumps-irs-nominee-owns-units-at-trump-branded-property-in-hawaii-2018-06-27
 2018-06-20,Michael D Cohen,Republican National Committee,association,resigns,https://www.politico.com/story/2018/06/20/michael-cohen-resigns-from-rnc-657334
@@ -655,7 +655,7 @@ NA,Executive Branch,US Govt,association,part of,http://constitutionus.com/
 2017-11-15,Mohammed bin Salman,Mohammed bin Zayed al-Nahyan,association,overbid for Salvator Mundi,https://narativ.org/2019/01/02/salvator-mundi-art-of-the-deal-the-lost-davinci/
 2018-11-09,Dmitry Rybolovlev,Yury Trutnev,association,manages affairs,http://www.spiegel.de/international/world/as-monaco-dmitry-rybolovlev-and-his-influence-in-monaco-a-1238822.html
 NA,Yury Trutnev,Russia,association,Natural Resources Minister,http://www.spiegel.de/international/world/as-monaco-dmitry-rybolovlev-and-his-influence-in-monaco-a-1238822.html
-2016-06-01,Paul Manafort,Konstantin Kilimnik,association,shares polling data,https://www.washingtonpost.com/local/legal-issues/paul-manafort-shared-2016-polling-data-with-russian-employee-according-to-court-filing/2019/01/08/3f562ad8-12b0-11e9-803c-4ef28312c8b9_story.html
+2016-08-02,Paul Manafort,Konstantin Kilimnik,association,shares polling data,https://www.washingtonpost.com/local/legal-issues/paul-manafort-shared-2016-polling-data-with-russian-employee-according-to-court-filing/2019/01/08/3f562ad8-12b0-11e9-803c-4ef28312c8b9_story.html
 NA,Ron DeSantis,Florida,association,Governor,NA
 NA,Susan Wiles,Lanny Wiles,association,married,NA
 NA,Lanny Wiles,Susan Wiles,association,married,NA
@@ -796,3 +796,11 @@ NA,Wynn Resorts,Steve Wynn,association,run by,https://en.wikipedia.org/wiki/Wynn
 2017-04-01,Jared Kushner,Michael Corbat,association,Finance and trade meetings,https://www.nytimes.com/2018/02/28/business/jared-kushner-apollo-citigroup-loans.html?module=inline
 2017-04-01,Michael Corbat,Citigroup,association,CEO,https://www.nytimes.com/2018/02/28/business/jared-kushner-apollo-citigroup-loans.html?module=inline
 2017-03-15,Citigroup,Jared Kushner,loan,325000000,https://www.nytimes.com/2018/02/28/business/jared-kushner-apollo-citigroup-loans.html?module=inline
+2016-08-02,Konstantin Kilimnik,Paul Manafort,association,Grand Havana Room Meeting,https://www.washingtonpost.com/politics/how-manaforts-2016-meeting-with-a-russian-employee-at-new-york-cigar-club-goes-to-the-heart-of-muellers-probe/2019/02/12/655f84dc-2d67-11e9-8ad3-9a5b113ecd3c_story.html
+2016-08-02,Konstantin Kilimnik,Rick Gates,association,Grand Havana Room Meeting,https://www.washingtonpost.com/politics/how-manaforts-2016-meeting-with-a-russian-employee-at-new-york-cigar-club-goes-to-the-heart-of-muellers-probe/2019/02/12/655f84dc-2d67-11e9-8ad3-9a5b113ecd3c_story.html
+2016-08-02,Rick Gates,Konstantin Kilimnik,association,Grand Havana Room Meeting,https://www.washingtonpost.com/politics/how-manaforts-2016-meeting-with-a-russian-employee-at-new-york-cigar-club-goes-to-the-heart-of-muellers-probe/2019/02/12/655f84dc-2d67-11e9-8ad3-9a5b113ecd3c_story.html
+2016-08-02,Paul Manafort,Konstantin Kilimnik,association,Grand Havana Room Meeting,https://www.washingtonpost.com/politics/how-manaforts-2016-meeting-with-a-russian-employee-at-new-york-cigar-club-goes-to-the-heart-of-muellers-probe/2019/02/12/655f84dc-2d67-11e9-8ad3-9a5b113ecd3c_story.html
+2016-08-02,Paul Manafort,Rick Gates,association,Grand Havana Room Meeting,https://www.washingtonpost.com/politics/how-manaforts-2016-meeting-with-a-russian-employee-at-new-york-cigar-club-goes-to-the-heart-of-muellers-probe/2019/02/12/655f84dc-2d67-11e9-8ad3-9a5b113ecd3c_story.html
+2016-08-02,Rick Gates,Paul Manafort,association,Grand Havana Room Meeting,https://www.washingtonpost.com/politics/how-manaforts-2016-meeting-with-a-russian-employee-at-new-york-cigar-club-goes-to-the-heart-of-muellers-probe/2019/02/12/655f84dc-2d67-11e9-8ad3-9a5b113ecd3c_story.html
+2016-08-09,Oleg Deripaska,Yevgeny Prigozhin,association,Meeting,https://www.gettyimages.com/detail/news-photo/rusal-president-oleg-deripaska-and-concord-catering-general-news-photo/587757080
+2016-08-09,Yevgeny Prigozhin,Oleg Deripaska,association,Meeting,https://www.gettyimages.com/detail/news-photo/rusal-president-oleg-deripaska-and-concord-catering-general-news-photo/587757080

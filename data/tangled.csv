@@ -317,7 +317,7 @@ NA,Konstantin Kilimnik,Begemot Ventures International,association,principal,http
 NA,Sam Patten,Begemot Ventures International,association,executive,https://www.washingtonpost.com/local/public-safety/washington-consultant-for-ukraine-party-set-to-plead-guilty-to-violating-lobbyist-disclosure-law/2018/08/31/172cf2c8-ad23-11e8-a8d7-0f63ab8b1370_story.html?utm_term=.a4b412b5de41
 NA,Begemot Ventures International,US Citizen,payment,50000,https://www.bloomberg.com/news/articles/2018-08-31/patten-caused-foreign-money-to-be-paid-to-inaugural-committee
 NA,US Citizen,Trump Inauguration,payment,50000,https://www.bloomberg.com/news/articles/2018-08-31/patten-caused-foreign-money-to-be-paid-to-inaugural-committee
-NA,Foreigner B,Trump Inauguration,association,attends with Patten,https://www.washingtonpost.com/local/public-safety/washington-consultant-for-ukraine-party-set-to-plead-guilty-to-violating-lobbyist-disclosure-law/2018/08/31/172cf2c8-ad23-11e8-a8d7-0f63ab8b1370_story.html?utm_term=.a4b412b5de41
+NA,Serhiy Lovochkin,Trump Inauguration,association,attends with Patten,https://www.washingtonpost.com/local/public-safety/washington-consultant-for-ukraine-party-set-to-plead-guilty-to-violating-lobbyist-disclosure-law/2018/08/31/172cf2c8-ad23-11e8-a8d7-0f63ab8b1370_story.html?utm_term=.a4b412b5de41
 NA,Sam Patten,Trump Inauguration,association,attends with Foreigner B,https://www.washingtonpost.com/local/public-safety/washington-consultant-for-ukraine-party-set-to-plead-guilty-to-violating-lobbyist-disclosure-law/2018/08/31/172cf2c8-ad23-11e8-a8d7-0f63ab8b1370_story.html?utm_term=.a4b412b5de41
 2015-01-01,Cambridge Analytica,Steve Bannon,association,founded by,https://en.wikipedia.org/wiki/Cambridge_Analytica
 2015-01-01,Cambridge Analytica,Robert Mercer,association,founded by,https://en.wikipedia.org/wiki/Cambridge_Analytica
@@ -787,7 +787,7 @@ NA,Wynn Resorts,Steve Wynn,association,run by,https://en.wikipedia.org/wiki/Wynn
 2017-01-21,Keith Schiller,Donald J Trump,association,Hired as Director of Oval Office,https://www.cnbc.com/2019/02/08/firm-owned-by-trumps-longtime-bodyguard-has-received-225000-from-rnc.html
 2017-08-15,Woodlawn LLC,Paul Manafort,loan,1000000,https://thehill.com/policy/national-security/429189-mueller-looking-into-1-million-loan-made-to-paul-manafort-after-fbi
 2017-08-15,Joey Rappa,Woodlawn LLC,association,Managing member,https://thehill.com/policy/national-security/429189-mueller-looking-into-1-million-loan-made-to-paul-manafort-after-fbi
-2017-06-01,Joshua Harris,The Whitehouse,association,advisor,https://www.nytimes.com/2018/02/28/business/jared-kushner-apollo-citigroup-loans.html?module=inline
+2017-06-01,Joshua Harris,The White House,association,advisor,https://www.nytimes.com/2018/02/28/business/jared-kushner-apollo-citigroup-loans.html?module=inline
 2017-06-01,Joshua Harris,Apollo Group,association,co-founder,https://www.nytimes.com/2018/02/28/business/jared-kushner-apollo-citigroup-loans.html?module=inline
 2017-06-01,Joshua Harris,Jared Kusher,association,Infrastructure meetings,https://www.nytimes.com/2018/02/28/business/jared-kushner-apollo-citigroup-loans.html?module=inline
 2017-06-01,Jared Kushner,Joshua Harris,association,Infrastructure meetings,https://www.nytimes.com/2018/02/28/business/jared-kushner-apollo-citigroup-loans.html?module=inline
@@ -847,7 +847,26 @@ NA,Jones Day Law Firm,Oleg Deripaska,association,Represented,https://en.m.wikipe
 NA,Jones Day Law Firm,Viktor Vekselberg,association,Represented,https://en.m.wikipedia.org/wiki/Don_McGahn
 NA,Corey Lewandowski,Donald J Trump,association,Campaign Manager,https://en.m.wikipedia.org/wiki/Corey_Lewandowski
 NA,George Papadopoulos,Corey Lewandowski,association,“Campaign Official One”,https://en.m.wikipedia.org/wiki/Corey_Lewandowski
-2016-07-09,Alan Garten,Donald Trump Jr,association,Coordinated messaging,https://www.cnn.com/2018/05/16/politics/trump-tower-meeting-response/index.html
-2016-07-09,Alan Garten,Rob Goldstone,association,Coordinated messaging,https://www.cnn.com/2018/05/16/politics/trump-tower-meeting-response/index.html
-2016-07-09,Alan Garten,Emin Agalarov,association,Coordinated messaging,https://www.cnn.com/2018/05/16/politics/trump-tower-meeting-response/index.html
-2016-07-09,Alan Garten,Irakly Kaveladze,association,Coordinated messaging,https://www.cnn.com/2018/05/16/politics/trump-tower-meeting-response/index.html
+2017-07-09,Alan Garten,Donald Trump Jr,association,Coordinated messaging,https://www.cnn.com/2018/05/16/politics/trump-tower-meeting-response/index.html
+2017-07-09,Alan Garten,Rob Goldstone,association,Coordinated messaging,https://www.cnn.com/2018/05/16/politics/trump-tower-meeting-response/index.html
+2017-07-09,Alan Garten,Emin Agalarov,association,Coordinated messaging,https://www.cnn.com/2018/05/16/politics/trump-tower-meeting-response/index.html
+2017-07-09,Alan Garten,Irakly Kaveladze,association,Coordinated messaging,https://www.cnn.com/2018/05/16/politics/trump-tower-meeting-response/index.html
+NA,Len Blavatnik,Sual Partners,association,Co-owner,https://www.buzzfeednews.com/article/emmaloop/steven-mnuchin-deripaska-russia-sanctions-jackie-speier
+NA,Viktor Vekselberg,Sual Partners,association,Co-owner,https://www.buzzfeednews.com/article/emmaloop/steven-mnuchin-deripaska-russia-sanctions-jackie-speier
+NA,Sual Partners,Rusal,association,Owns 26.5%,https://www.bloomberg.com/news/articles/2018-04-25/tangled-rusal-ownership-thwarts-easy-end-to-sanctions-quicktake
+NA,Dylan Howard,AMI,association,VP,https://en.wikipedia.org/wiki/Dylan_Howard
+NA,Jason Maloni,Paul Manafort,association,former spokesman,https://www.cnn.com/2017/09/15/politics/paul-manafort-spokesman-jason-maloni/index.html
+NA,Jay Sekulow,Donald J Trump,association,personal lawyer,https://en.wikipedia.org/wiki/Jay_Sekulow
+2017-02-27,Jay Sekulow,Michael D Cohen,association,alleges to change statement,https://en.wikipedia.org/wiki/Jay_Sekulow
+NA,KT McFarland,Michael Flynn,association,discussed sanctions,http://fortune.com/2018/09/22/mcfarland-revised-statement/
+NA,Mark Corallo,Donald J Trump,association,former legal spokesman,https://www.bustle.com/p/who-is-mark-corallo-trumps-former-legal-spokesperson-could-be-the-key-to-the-russia-investigation-8085736
+NA,Mark Corallo,Hope Hicks,association,possible knowledge of obstruction,https://www.bustle.com/p/who-is-mark-corallo-trumps-former-legal-spokesperson-could-be-the-key-to-the-russia-investigation-8085736
+NA,Hope Hicks,Donald J Trump,association,former comms director,https://en.wikipedia.org/wiki/Hope_Hicks
+NA,Matthew Calamari,Donald J Trump,association,long time body guard,https://www.washingtonpost.com/nation/2019/02/28/matthew-calamari-went-viral-after-cohen-hearing-hes-real-he-loves-trump/?utm_term=.27cf2574876a
+NA,Rhona Graff,Donald J Trump,association,exec assistant,https://en.wikipedia.org/wiki/Rhona_Graff
+NA,Rhona Graff,Trump Organization,association,senior vice president,https://en.wikipedia.org/wiki/Rhona_Graff
+NA,Ronald Lieberman,Trump Organization,association,exec vice president,https://www.businessinsider.com/trump-organization-executives-and-top-employees-2018-3#ron-lieberman-8
+NA,Ronald Lieberman,Michael D Cohen,association,"named as ""finance knowledge""",http://fortune.com/2019/02/28/trump-business-aides-michael-cohen/
+NA,Sam Nunberg,Donald J Trump,association,political advisor,https://en.wikipedia.org/wiki/Sam_Nunberg
+NA,Stefan Passantino,Trump Organization,association,legal advisor,https://www.cnn.com/2019/01/11/politics/trump-organization-oversight-passantino/index.html
+NA,Stefan Passantino,The White House,association,ex-ethics advisor,https://www.cnn.com/2019/01/11/politics/trump-organization-oversight-passantino/index.html

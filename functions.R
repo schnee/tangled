@@ -7,7 +7,7 @@ library(ggthemes)
 library(RColorBrewer)
 library(scales)
 library(lubridate)
-library(randomcoloR)
+#library(randomcoloR)
 library(recommenderlab)
 library(igraph)
 

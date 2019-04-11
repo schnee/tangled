@@ -411,15 +411,15 @@ NA,Rob Goldstone,Emin Agalarov,association,represents,https://www.buzzfeednews.c
 2012-10-01,Paul Manafort,Israeli Official,association,anti-semetic accusation,https://www.cnn.com/2018/09/14/politics/paul-manafort-plea/index.html
 2012-10-01,Israeli Official,Paul Manafort,association,anti-semetic accusation,https://www.cnn.com/2018/09/14/politics/paul-manafort-plea/index.html
 2012-10-29,Media,Sr Obama Official,association,accused of anti semitism,https://www.breitbart.com/national-security/2012/10/29/clinton-ukraine-tymoshenko-anti-semitism/
-2012-10-01,Paul Manafort,Skadden Law Firm,association,solicited to write report,https://www.cnn.com/2018/09/14/politics/greg-craig-foreign-agent-registration-investigation/index.html
-2012-10-01,Skadden Law Firm,Greg Craig,association,employs,https://www.cnn.com/2018/09/14/politics/greg-craig-foreign-agent-registration-investigation/index.html
+2012-10-01,Paul Manafort,Skadden Arps,association,solicited to write report,https://www.cnn.com/2018/09/14/politics/greg-craig-foreign-agent-registration-investigation/index.html
+2012-10-01,Skadden Arps,Greg Craig,association,employs,https://www.cnn.com/2018/09/14/politics/greg-craig-foreign-agent-registration-investigation/index.html
 2012-10-01,Greg Craig,Yulia Tymoshenko,association,wrote critical report of,https://www.cnn.com/2018/09/14/politics/greg-craig-foreign-agent-registration-investigation/index.html
 NA,Yulia Tymoshenko,Ukraine,association,former PM,https://www.cnn.com/2018/09/14/politics/greg-craig-foreign-agent-registration-investigation/index.html
 NA,Viktor Yanukovych,Yulia Tymoshenko,association,bitter rivals,https://www.cnn.com/2018/09/14/politics/greg-craig-foreign-agent-registration-investigation/index.html
 NA,Yulia Tymoshenko,Viktor Yanukovych,association,bitter rivals,https://www.cnn.com/2018/09/14/politics/greg-craig-foreign-agent-registration-investigation/index.html
 2012-10-01,Greg Craig,Media,association,promotes report,https://www.cnn.com/2018/09/14/politics/greg-craig-foreign-agent-registration-investigation/index.html
-2012-10-01,Paul Manafort,Skadden Law Firm,payment,4600000,https://www.cnn.com/2018/09/14/politics/greg-craig-foreign-agent-registration-investigation/index.html
-2012-10-01,Paul Manafort,Skadden Law Firm,association,hidden payments,https://www.cnn.com/2018/09/14/politics/greg-craig-foreign-agent-registration-investigation/index.html
+2012-10-01,Paul Manafort,Skadden Arps,payment,4600000,https://www.cnn.com/2018/09/14/politics/greg-craig-foreign-agent-registration-investigation/index.html
+2012-10-01,Paul Manafort,Skadden Arps,association,hidden payments,https://www.cnn.com/2018/09/14/politics/greg-craig-foreign-agent-registration-investigation/index.html
 NA,Dmitry Firtash,Semion Mogilevich,association,front man for,https://talkingpointsmemo.com/news/why-a-powerful-russian-oligarch-was-furious-with-paul-manafort
 NA,Paul Manafort,Dmitry Firtash,association,pitched Bulgari Tower,https://talkingpointsmemo.com/news/why-a-powerful-russian-oligarch-was-furious-with-paul-manafort
 NA,Dmitry Firtash,RosUkrEnergo,association,president of,https://talkingpointsmemo.com/news/why-a-powerful-russian-oligarch-was-furious-with-paul-manafort
@@ -480,7 +480,7 @@ NA,Alex van der Zwaan,Konstantin Kilimnik,association,emails,https://en.wikipedi
 NA,Alex van der Zwaan,Paul Manafort,association,worked for,https://en.wikipedia.org/wiki/Alex_van_der_Zwaan
 NA,Alex van der Zwaan,Rick Gates,association,worked for,https://en.wikipedia.org/wiki/Alex_van_der_Zwaan
 NA,Alex van der Zwaan,Yulia Tymoshenko,association,defended imprisonment of,https://en.wikipedia.org/wiki/Alex_van_der_Zwaan
-NA,Alex van der Zwaan,Skadden Law Firm,association,worked for,https://en.wikipedia.org/wiki/Alex_van_der_Zwaan
+NA,Alex van der Zwaan,Skadden Arps,association,worked for,https://en.wikipedia.org/wiki/Alex_van_der_Zwaan
 2016-12-01,Jared Kushner,Sergey Kislyak,association,proposed secure comms,https://www.businessinsider.com/jared-kushner-wanted-secret-talks-russia-trump-2017-5
 2016-12-01,Jared Kushner,Michael Flynn,association,meeting,https://www.businessinsider.com/jared-kushner-wanted-secret-talks-russia-trump-2017-5
 2016-12-01,Michael Flynn,Sergey Kislyak,association,meeting,https://www.businessinsider.com/jared-kushner-wanted-secret-talks-russia-trump-2017-5
@@ -765,7 +765,7 @@ NA,Qatar Investment Authority,Brookfield Asset Management,investment,major share
 2010-06-01,Tom Barrack,Jared Kushner,loan,70000000,https://en.wikipedia.org/wiki/Thomas_J._Barrack_Jr.#Political_activity
 2010-06-01,Jared Kushner,Tom Barrack,payment,debt in 666,https://www.nytimes.com/2018/06/13/world/middleeast/trump-tom-barrack-saudi.html
 2010-06-01,Tom Barrack,Donald J Trump,association,friends,https://www.nytimes.com/2018/06/13/world/middleeast/trump-tom-barrack-saudi.html
-1985-06-01,Robert Lighthizer,Skadden Law Firm,association,joins,https://en.wikipedia.org/wiki/Robert_Lighthizer
+1985-06-01,Robert Lighthizer,Skadden Arps,association,joins,https://en.wikipedia.org/wiki/Robert_Lighthizer
 2017-05-15,Robert Lighthizer,Donald J Trump,association,reports to,https://en.wikipedia.org/wiki/Robert_Lighthizer
 2017-05-15,Robert Lighthizer,US Trade Rep,association,cabinet level,https://en.wikipedia.org/wiki/Robert_Lighthizer
 2016-11-09,Steve Wynn,Trump Inauguration,association,vice chair,https://en.wikipedia.org/wiki/Steve_Wynn#Political_activities
@@ -894,3 +894,5 @@ NA,Vnesheconombank,Evgeny Buryakov,association,employed,https://en.wikipedia.org
 NA,Stephen Moore,Citizens for the Republic,association,co-founded,https://www.theguardian.com/business/2019/mar/22/stephen-moore-federal-reserve-paul-erickson-maria-butina
 NA,Paul Erickson,Citizens for the Republic,association,co-founded,https://www.theguardian.com/business/2019/mar/22/stephen-moore-federal-reserve-paul-erickson-maria-butina
 NA,Stephen Moore,Donald J Trump,association,nominated by for Fed Reserve,https://www.theguardian.com/business/2019/mar/22/stephen-moore-federal-reserve-paul-erickson-maria-butina
+2019-04-10,Federal Court,Gregory B Craig,indictment,False statements re: FARA,https://www.nytimes.com/2019/04/10/us/politics/ex-obama-counsel-expects-to-be-charged-soon-in-mueller-related-case.html
+NA,Gregoy B Craig,Skadden Arps,association,former partner,https://www.nytimes.com/2019/04/10/us/politics/ex-obama-counsel-expects-to-be-charged-soon-in-mueller-related-case.html

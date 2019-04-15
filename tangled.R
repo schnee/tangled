@@ -7,6 +7,7 @@ library(ggthemes)
 library(RColorBrewer)
 library(scales)
 library(lubridate)
+library(viridis)
 
 source("./functions.R")
 
@@ -88,7 +89,6 @@ rec_target_node <- "Federal Court"
 recommendations <- get_node_recommendations(graph, rec_target_node)
 
 edge_pal <- c("#C0C0C0", "#FFA500", "#00B300", "#FF0000")
-node_pal <- c(few_pal("Dark")(8), brewer_pal(type="qual", palette = 3)(8))
 
 the_edge_types <- graph %>% activate(edges) %>% 
   pull(d_type) %>% factor() %>% levels()
@@ -101,6 +101,7 @@ the_clusters <- graph %>% activate(nodes) %>%
 the_cluster_lab <- graph %>% activate(nodes) %>% 
   pull(group_label) %>% factor() %>% levels()
 
+node_pal <- viridis(length(the_clusters))
 
 g <- graph %>% activate(edges) %>%
   mutate(color = edge_pal[match(d_type, the_edge_types)],
@@ -108,9 +109,8 @@ g <- graph %>% activate(edges) %>%
          width = 5) %>%
   activate(nodes) %>%
   mutate(color = node_pal[match(group_label, the_cluster_lab)],
-         alpha_hex = if_else(n_tri > 0, "bb", "88"),
+         color = if_else(n_tri > 0, str_replace(color, "FF$","bb"), str_replace(color,"FF$","11")),
          label.color = if_else(n_tri > 0, "#000000FF", "#00000022"),
-         color = paste0(color, alpha_hex),
          size = 3,
          frame.color = "NA",
          label.cex = 2) %>%

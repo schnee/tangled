@@ -8,6 +8,7 @@ library(RColorBrewer)
 library(scales)
 library(lubridate)
 library(viridis)
+library(stringr)
 
 source("./functions.R")
 

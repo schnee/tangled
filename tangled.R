@@ -7,8 +7,6 @@ library(ggthemes)
 library(RColorBrewer)
 library(scales)
 library(lubridate)
-library(viridis)
-library(stringr)
 
 source("./functions.R")
 
@@ -102,7 +100,16 @@ the_clusters <- graph %>% activate(nodes) %>%
 the_cluster_lab <- graph %>% activate(nodes) %>% 
   pull(group_label) %>% factor() %>% levels()
 
-node_pal <- viridis(length(the_clusters))
+node_pal <- c("#3588d1", "#88cc1f", 
+              "#ab39f9", "#687f39", 
+              "#ee3597", "#12d388", 
+              "#6e1f1f", "#05aec0", 
+              "#f7393a", "#048a37", 
+              "#fc99d5", "#04451b", 
+              "#faa566", "#3f1ba1", 
+              "#9ac48a", "#a958ab", 
+              "#00d618", "#273b61", 
+              "#a06c32", "#2d6df9")
 
 g <- graph %>% activate(edges) %>%
   mutate(color = edge_pal[match(d_type, the_edge_types)],
@@ -110,7 +117,7 @@ g <- graph %>% activate(edges) %>%
          width = 5) %>%
   activate(nodes) %>%
   mutate(color = node_pal[match(group_label, the_cluster_lab)],
-         color = if_else(n_tri > 0, str_replace(color, "FF$","bb"), str_replace(color,"FF$","11")),
+         color = if_else(n_tri > 0, paste0(color,"bb"), paste0(color,11)),
          label.color = if_else(n_tri > 0, "#000000FF", "#00000022"),
          size = 3,
          frame.color = "NA",

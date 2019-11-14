@@ -4,7 +4,7 @@ The source of the visual is on a [data.world workspace](https://data.world/schne
 
 The main rule _was_ that it has to link through Cohen somehow, but that's no longer in force (see the Tucker Carlson branch for example). I sort of expect that everything will tie in through Cohen in the end. If you want to contribute to the project, going through the [tangled spreadsheet](https://docs.google.com/spreadsheets/d/119L80r1ZVgBgN0qDI-ovMb6s40iVFg3TWW15uqsxfBk/edit#gid=0) and checking dates would be awesome, as would ensuring consistency in edge directions. That is, keeping a consistent sense of "pleaded guilty" versus "convicted by jury", if that makes sense (it is important for group names). I could also use help visualizing the temporal nature of the graph, since dates _are_ attached.
 
-The "group" membership is found by using simmulated annealing on the network, and applying the ["spin glass"](http://arxiv.org/abs/cond-mat/0603718) algorithm. Group names are the name of the node in the group with the greatest [pagerank](http://infolab.stanford.edu/~backrub/google.html) over the whole network.
+The "group" membership is found by using simulated annealing on the network, and applying the ["spin glass"](http://arxiv.org/abs/cond-mat/0603718) algorithm. Group names are the name of the node in the group with the greatest [pagerank](http://infolab.stanford.edu/~backrub/google.html) over the whole network.
 
 The source code is on [Github](https://github.com/schnee/tangled) - if you clone that repo, you can run the tangled.R file and generate your own copy of the visuals. The "tangle-it.sh" file attempts to automate the generation and publication of the file to the gh-pages branch, which is how you are likely reading this right now.
 

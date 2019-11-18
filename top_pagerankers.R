@@ -70,7 +70,7 @@ get_tangler <- function(fraction, tangled) {
     mutate(frac = fraction)
 }
 
-the_fractions <- seq(from = 0.1, to = 1.0, by = 0.05)
+the_fractions <- seq(from = 0.05, to = 1.0, by = 0.05)
 the_df <- the_fractions %>% map_df(get_tangler, tangled)
 
 # annotate the_df to create a bump chart
@@ -101,7 +101,7 @@ plot_df <- the_df %>% right_join(dummies, by=c("name" = "name", "frac" = "frac")
          ranking = ranking.x) %>% 
   arrange(frac, ranking) 
 
-final_order <- plot_df %>% filter(frac == 1.0) %>%
+final_order <- plot_df %>% filter(frac == max(frac)) %>%
   arrange(desc(centrality)) %>%
   pull(name)
 
@@ -116,11 +116,12 @@ rank_pal <- c(ggthemes::few_pal("Dark")(8),
 ggplot(data = plot_df, aes(x = frac, y = ranking, group = name)) +
   geom_line(aes(color = name), size = 2) +
   geom_point(aes(color = name), size = 4) +
+  geom_point(color = "#FFFFFF", size = 1) +
   scale_y_reverse(breaks = 1:show.top.n)  +
   geom_text(data = plot_df %>% filter(frac == min(frac)),
-            aes(label = name, x = 0.09) , hjust = 0, nudge_y = 0.2, fontface = "bold", color = "#555555", size = 4) +
+            aes(label = name, x = 0.04) , hjust = 0, nudge_y = 0.2, fontface = "bold", color = "#555555", size = 4) +
   geom_text(data = plot_df %>% filter(frac == max(frac)),
-            aes(label = name, x = 1.01) , hjust = 1, nudge_y = 0.2, fontface = "bold", color = "#555555", size = 4) +
+            aes(label = name, x = 1.0) , hjust = 1, nudge_y = 0.2, fontface = "bold", color = "#555555", size = 4) +
   coord_cartesian(ylim = c(1,show.top.n)) + 
   scale_color_manual(values = rank_pal) +
   theme(legend.position = "none") +

@@ -50,7 +50,7 @@ my_theme <- function() {
     theme(strip.text       = element_text(face = "bold")) +
     
     # Plot margins
-    theme(plot.margin = unit(c(0.35, 0.2, 0.3, 0.2), "cm"))
+    theme(plot.margin = unit(c(0.35, .2, 0.3, .2), "cm"))
 }
 
 
@@ -111,22 +111,23 @@ show.top.n <- 10
 
 rank_pal <- c(ggthemes::few_pal("Dark")(8), 
               brewer.pal(8, name="Accent"),
-              rep("#555555", length(the_names) - 8 - 8))
+              rep("#aaaaaa", length(the_names) - 8 - 8))
 
 ggplot(data = plot_df, aes(x = frac, y = ranking, group = name)) +
   geom_line(aes(color = name), size = 2) +
   geom_point(aes(color = name), size = 4) +
   scale_y_reverse(breaks = 1:show.top.n)  +
-  geom_text(data = plot_df %>% filter(frac == 0.1),
-            aes(label = name, x = 0.09) , hjust = 1, fontface = "bold", color = "#888888", size = 4) +
-  geom_text(data = plot_df %>% filter(frac == 1.0),
-            aes(label = name, x = 1.02) , hjust = 0.15, fontface = "bold", color = "#888888", size = 4) +
+  geom_text(data = plot_df %>% filter(frac == min(frac)),
+            aes(label = name, x = 0.09) , hjust = 0, nudge_y = 0.2, fontface = "bold", color = "#555555", size = 4) +
+  geom_text(data = plot_df %>% filter(frac == max(frac)),
+            aes(label = name, x = 1.01) , hjust = 1, nudge_y = 0.2, fontface = "bold", color = "#555555", size = 4) +
   coord_cartesian(ylim = c(1,show.top.n)) + 
   scale_color_manual(values = rank_pal) +
   theme(legend.position = "none") +
   labs(x = "Fraction of data",
        y = "Rank",
-       title = "Tangled Web Top 10 Nodes") +
+       title = "The Tangled Web's Most Important Names",
+       caption = "Ordered by Pagerank") +
   my_theme()
 
 ggsave("rankings.png", width=16, height = 9)

@@ -16,7 +16,7 @@ make_graph <- function(tangled) {
   tangled <- tangled %>% mutate(note = if_else(is.na(note), "",note))
   
   # attempt to roll up the payments
-  money_types <- c("payment", "loan", "investment", "fine")
+  money_types <- c("payment", "loan", "investment", "fine", "contribution")
   tangled <- tangled %>% filter(e_type %in% money_types) %>% 
     mutate(amt = as.numeric(note)) %>%
     group_by(from, to, e_type) %>%
@@ -30,8 +30,8 @@ make_graph <- function(tangled) {
   # make a new type that summarizes the original types
   
   display_types <- tibble(
-    e_type = c("payment", "association", "investment", "loan", "fine", "verdict", "indictment" ),
-    d_type = c("money", "contact", "money", "money", "money", "verdict", "indictment")
+    e_type = c("payment", "association", "investment", "loan", "fine", "verdict", "indictment", "contribution" ),
+    d_type = c("money", "contact", "money", "money", "money", "verdict", "indictment", "money")
   )
   
   tangled <- tangled %>%

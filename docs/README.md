@@ -13,6 +13,12 @@ The source code is on [Github](https://github.com/schnee/tangled) - if you clone
 
 In an effort to cleanup the visual, I suppressed the labels for nodes that are not part of any network triangles, and therefore unlikely to participate in communities. You can still read (some of) the suppressed labels as they have merely been lightened. If you head to the aforementioned visualizer, you'll be able access everything. I took care to map edge colors to edge types: contacts are grey, money moving is green, indictments are orange, and verdicts are red.
 
+## The Ranking Plot
+
+As the network grows, the nodes/names at the top of the pagerank centrality change. This plot attempts to show that as a fraction of network size (ordered by the entry date of the edges in the spreadsheet, not the event date).
+
+[![The Top Ten](./rankings.png)](./rankings.png)
+
 ## Presentation
 
 I told a story about this project in Nov 2019; the presentation is [available](presentations/Tangled-Web-20191119.pdf).

@@ -94,7 +94,7 @@ make_ranking_plot <- function(tangled, show_top_n) {
   }
   
   the_fractions <- seq(from = 0.05, to = 1.0, by = 0.05)
-  the_df <- the_fractions %>% map_df(get_tangler, tangled, show.top.n)
+  the_df <- the_fractions %>% map_df(get_tangler, tangled, show_top_n)
   
   # annotate the_df to create a bump chart
   
@@ -108,7 +108,7 @@ make_ranking_plot <- function(tangled, show_top_n) {
   dummies <- data.frame(
     name = rep(the_names, length(the_fractions)),
     frac = the_fractions,
-    ranking = rep(show.top.n + 1L, length(the_fractions) * length(the_names)),
+    ranking = rep(show_top_n + 1L, length(the_fractions) * length(the_names)),
     centrality = rep(0.0, length(the_fractions) * length(the_names))
   ) %>% tidyr::expand(name, frac, ranking, centrality)
   
@@ -144,7 +144,7 @@ make_ranking_plot <- function(tangled, show_top_n) {
     geom_line(aes(color = name), size = 2) +
     geom_point(aes(color = name), size = 4) +
     geom_point(color = "#FFFFFF", size = 1) +
-    scale_y_reverse(breaks = 1:show.top.n)  +
+    scale_y_reverse(breaks = 1:show_top_n)  +
     geom_label(
       data = plot_df %>% filter(frac == min(frac)),
       aes(label = name, x = 0.04) ,
@@ -163,7 +163,7 @@ make_ranking_plot <- function(tangled, show_top_n) {
       color = "#555555",
       size = 4
     ) +
-    coord_cartesian(ylim = c(1, show.top.n)) +
+    coord_cartesian(ylim = c(1, show_top_n)) +
     scale_color_manual(values = rank_pal) +
     theme(legend.position = "none") +
     labs(

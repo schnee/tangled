@@ -9,7 +9,7 @@ library(scales)
 library(lubridate)
 
 source("./functions.R")
-
+source("./top_pagerankers.R")
 
 
 tangled <- read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSosbIjCD2KyWJCm712HsEHCkSOdR75Gba5DbobZxlgNSeHjNutef7KkNHRiPU861sA10RfJwyQujuK/pub?gid=0&single=true&output=csv")
@@ -145,6 +145,9 @@ legend("bottomleft", legend = recommendations %>% pull(nodes),
        col = "FFFFFFaa")
 dev.off()
 
+
+# make the ranking plot
+make_ranking_plot(tangled, 10L)
 
 
 

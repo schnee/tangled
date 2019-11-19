@@ -11,7 +11,7 @@ library(purrr)
 
 source("./functions.R")
 
-show.top.n <- 16L
+show.top.n <- 10L
 
 tangled <-
   read_csv(
@@ -22,7 +22,7 @@ tangled <-
 my_theme <- function() {
   
   # Colors
-  color.background = "white"
+  color.background = "#fffbf0ff"
   color.text = "#22211d"
   
   # Begin construction of chart
@@ -119,17 +119,18 @@ ggplot(data = plot_df, aes(x = frac, y = ranking, group = name)) +
   geom_point(aes(color = name), size = 4) +
   geom_point(color = "#FFFFFF", size = 1) +
   scale_y_reverse(breaks = 1:show.top.n)  +
-  geom_text(data = plot_df %>% filter(frac == min(frac)),
+  geom_label(data = plot_df %>% filter(frac == min(frac)),
             aes(label = name, x = 0.04) , hjust = 0, nudge_y = 0.3, fontface = "bold", color = "#555555", size = 4) +
-  geom_text(data = plot_df %>% filter(frac == max(frac)),
+  geom_label(data = plot_df %>% filter(frac == max(frac)),
             aes(label = name, x = 1.0) , hjust = 1, nudge_y = 0.3, fontface = "bold", color = "#555555", size = 4) +
   coord_cartesian(ylim = c(1,show.top.n)) + 
   scale_color_manual(values = rank_pal) +
   theme(legend.position = "none") +
-  labs(x = "Fraction of data",
-       y = "Rank",
+  labs(x = "Fraction of data (5%, 10%, 15%, ... 100%)",
+       y = "Page Rank",
        title = "The Tangled Web's Most Important Names",
-       caption = "Ordered by Pagerank") +
+       caption = "Data ordered by entry date, not event date"
+       ) +
   my_theme()
 
 ggsave("docs/rankings.png", width=16, height = 9)

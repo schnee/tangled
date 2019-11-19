@@ -11,6 +11,7 @@ library(purrr)
 
 source("./functions.R")
 
+show.top.n <- 16L
 
 tangled <-
   read_csv(
@@ -66,7 +67,7 @@ get_tangler <- function(fraction, tangled) {
   
   graph %>% activate(nodes) %>% as_tibble() %>%
     arrange(desc(centrality)) %>%
-    dplyr::top_n(10, centrality) %>% select(name, centrality) %>%
+    dplyr::top_n(show.top.n, centrality) %>% select(name, centrality) %>%
     mutate(frac = fraction)
 }
 
@@ -85,7 +86,7 @@ the_names <- the_df %>% select(name) %>% unique() %>% pull(name)
 dummies <- data.frame(
   name = rep(the_names, length(the_fractions)),
   frac = the_fractions,
-  ranking = rep(11L, length(the_fractions) * length(the_names)),
+  ranking = rep(show.top.n + 1L, length(the_fractions) * length(the_names)),
   centrality = rep(0.0, length(the_fractions) * length(the_names))
 ) %>% tidyr::expand(name, frac, ranking, centrality)
 
@@ -107,7 +108,7 @@ final_order <- plot_df %>% filter(frac == max(frac)) %>%
 
 plot_df <- plot_df %>% mutate(name = factor(name, levels = final_order))
 
-show.top.n <- 10
+
 
 rank_pal <- c(ggthemes::few_pal("Dark")(8), 
               brewer.pal(8, name="Accent"),
@@ -119,9 +120,9 @@ ggplot(data = plot_df, aes(x = frac, y = ranking, group = name)) +
   geom_point(color = "#FFFFFF", size = 1) +
   scale_y_reverse(breaks = 1:show.top.n)  +
   geom_text(data = plot_df %>% filter(frac == min(frac)),
-            aes(label = name, x = 0.04) , hjust = 0, nudge_y = 0.2, fontface = "bold", color = "#555555", size = 4) +
+            aes(label = name, x = 0.04) , hjust = 0, nudge_y = 0.3, fontface = "bold", color = "#555555", size = 4) +
   geom_text(data = plot_df %>% filter(frac == max(frac)),
-            aes(label = name, x = 1.0) , hjust = 1, nudge_y = 0.2, fontface = "bold", color = "#555555", size = 4) +
+            aes(label = name, x = 1.0) , hjust = 1, nudge_y = 0.3, fontface = "bold", color = "#555555", size = 4) +
   coord_cartesian(ylim = c(1,show.top.n)) + 
   scale_color_manual(values = rank_pal) +
   theme(legend.position = "none") +
@@ -131,4 +132,4 @@ ggplot(data = plot_df, aes(x = frac, y = ranking, group = name)) +
        caption = "Ordered by Pagerank") +
   my_theme()
 
-ggsave("rankings.png", width=16, height = 9)
+ggsave("docs/rankings.png", width=16, height = 9)

@@ -1,5 +1,6 @@
 
 [![A tangled web](./tangled.png)](./tangled.png)
+(click me, I know you want to. and then zoom in)
 
 ## Introduction
 

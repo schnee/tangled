@@ -108,7 +108,7 @@ p <- ggraph( the_layout ) +
 ggsave("./docs/tangled.png", plot = p, height=15, width = 20, dpi=200)
 
 # make the ranking plot
-make_ranking_plot(tangled, 10L)
+make_ranking_plot(tangled, 16L, start = 0.02, step = 0.02)
 
 
 

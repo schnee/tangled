@@ -20,7 +20,7 @@ suppressPackageStartupMessages({
 #     "https://docs.google.com/spreadsheets/d/e/2PACX-1vSosbIjCD2KyWJCm712HsEHCkSOdR75Gba5DbobZxlgNSeHjNutef7KkNHRiPU861sA10RfJwyQujuK/pub?gid=0&single=true&output=csv"
 #   )
 
-make_ranking_plot <- function(tangled, show_top_n) {
+make_ranking_plot <- function(tangled, show_top_n, start = 0.5, step = 0.5) {
   my_theme <- function() {
     # Colors
     color.background = "#fffbf0ff"
@@ -93,7 +93,12 @@ make_ranking_plot <- function(tangled, show_top_n) {
       mutate(frac = fraction)
   }
   
-  the_fractions <- seq(from = 0.05, to = 1.0, by = 0.05)
+  the_fractions <- seq(from = start, to = 1.0, by = step)
+  
+  if(the_fractions[length(the_fractions)] != 1.0) {
+         the_fractions <- c(the_fractions, 1)
+  }
+  
   the_df <- the_fractions %>% map_df(get_tangler, tangled, show_top_n)
   
   # annotate the_df to create a bump chart
@@ -167,7 +172,7 @@ make_ranking_plot <- function(tangled, show_top_n) {
     scale_color_manual(values = rank_pal) +
     theme(legend.position = "none") +
     labs(
-      x = "Fraction of data (5%, 10%, 15%, ... 100%)",
+      x = "Fraction of data",
       y = "Page Rank",
       title = "The Tangled Web's Most Important Names",
       caption = "Data ordered by entry date, not event date"

@@ -62,11 +62,13 @@ recommendations <- get_node_recommendations(graph, rec_target_node) %>%
 the_rec_table_grob <- ggtexttable(recommendations, 
                               rows = NULL,
                               cols = c("Name", "Strength"),
-                              theme = ttheme("mBlueWhite", base_size = 6,
+                              theme = ttheme("mBlackWhite", base_size = 6,
                                              padding = unit(c(1.5,1.5), "mm"))
                               )
 
+arranged <- ggarrange(the_rec_table_grob, ncol = 1, nrow = 1)
 
+entitled <- annotate_figure(arranged, top = text_grob(paste("Best Recommendations for\n", rec_target_node)))
 
 edge_pal <- c("#C0C0C0", "#FFA500", "#00B300", "#FF0000")
 
@@ -92,8 +94,7 @@ p <- ggraph( the_layout ) +
   geom_node_label( aes(label=name, alpha = the_alpha), size=2, repel = TRUE) +
   scale_alpha(range = c(0.1,0.75)) +
   scale_color_manual(name = "Community", values = my_pal) +
-  annotate("text", x=0.95*xmax, y=0.35*ymin, label=paste("Best Recommendations for\n", rec_target_node)) +
-  annotation_custom(grob = ggplotGrob(the_rec_table_grob), xmin = 0.9 * xmax , xmax= xmax, ymin = 0.9*ymin, ymax = 0.6 * ymin) +
+  annotation_custom(grob = ggplotGrob(entitled), xmin = 0.9 * xmax , xmax= xmax, ymin = 0.9*ymin, ymax = 0.2 * ymin) +
   ggthemes::theme_few() +
   theme(panel.border = element_blank(),
         axis.ticks = element_blank(),

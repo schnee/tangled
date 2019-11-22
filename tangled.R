@@ -1,5 +1,6 @@
 library(readr)
 library(ggraph)
+library(ggpubr)
 library(dplyr)
 library(tidygraph)
 library(networkD3)
@@ -42,8 +43,6 @@ graph %>% saveRDS(file = "./data/graph.RDS")
 my_pal <- get_palette(graph)
 
 num_nodes <- graph %>% activate(nodes) %>% as_tibble() %>% summarize(n=n()) %>% pull(n)
-#the_layout <- create_layout(graph, layout = "igraph", algorithm="lgl", maxiter = 200*num_nodes)
-
 
 the_edge_types <- graph %>% activate(edges) %>% pull(d_type) %>% factor() %>% levels()
 
@@ -56,13 +55,28 @@ local_neighborhood <-
   graph %>% convert(to_local_neighborhood, node = fed_ct, 3)
 
 rec_target_node <- "Federal Court"
-recommendations <- get_node_recommendations(graph, rec_target_node)
+recommendations <- get_node_recommendations(graph, rec_target_node) %>% 
+  rename(Node = nodes,
+         Strenth = ratings)
+
+the_rec_table_grob <- ggtexttable(recommendations, 
+                              rows = NULL,
+                              cols = c("Name", "Strength"),
+                              theme = ttheme("mBlueWhite", base_size = 6,
+                                             padding = unit(c(1.5,1.5), "mm"))
+                              )
+
 
 
 edge_pal <- c("#C0C0C0", "#FFA500", "#00B300", "#FF0000")
 
 the_layout <- create_layout(graph, layout = "igraph", algorithm = "drl", options = igraph::drl_defaults$final)#, maxiter = 200*num_nodes)
 
+# get the extents of the layout, so we can place the table
+xmin <- the_layout$x %>% min()
+xmax <- the_layout$x %>% max()
+ymin <- the_layout$y %>% min()
+ymax <- the_layout$y %>% max()
 
 p <- ggraph( the_layout ) +
   geom_edge_fan(aes(linetype=d_type, colour = d_type,
@@ -78,6 +92,8 @@ p <- ggraph( the_layout ) +
   geom_node_label( aes(label=name, alpha = the_alpha), size=2, repel = TRUE) +
   scale_alpha(range = c(0.1,0.75)) +
   scale_color_manual(name = "Community", values = my_pal) +
+  annotate("text", x=0.95*xmax, y=0.35*ymin, label=paste("Best Recommendations for\n", rec_target_node)) +
+  annotation_custom(grob = ggplotGrob(the_rec_table_grob), xmin = 0.9 * xmax , xmax= xmax, ymin = 0.9*ymin, ymax = 0.6 * ymin) +
   ggthemes::theme_few() +
   theme(panel.border = element_blank(),
         axis.ticks = element_blank(),
@@ -85,7 +101,7 @@ p <- ggraph( the_layout ) +
         axis.title = element_blank()) +
   labs(
     title = paste0(graph %>% activate(nodes) %>% as_tibble %>% arrange(desc(centrality)) %>% pull(name) %>% first(),"'s Tangled Web"),
-    caption = paste(now("UTC"))
+    caption = paste("https://schnee.github.com/tangled", now("UTC"))
   ) + guides(alpha = FALSE)
 
 ggsave("./docs/tangled.png", plot = p, height=15, width = 20, dpi=200)

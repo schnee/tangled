@@ -13,10 +13,10 @@ date,from,to,e_type,note,source
 2016-01-20,Columbus Nova,Gawker Media,investment,15000000,https://www.vox.com/2018/5/16/17363242/michael-cohen-trump-avenatti-leaks-financial-records
 2000-01-15,Andrew Intrater,Columbus Nova,association,runs,https://web.archive.org/web/20180509003139/http://www.columbusnova.com/andrew_intrater.html
 2017-01-09,Andrew Intrater,Michael D Cohen,association,met,https://themoscowproject.org/collusion/new-york-times-reveals-meeting-between-cohen-vekselberg-intrater/
-2016-01-01,Andrew Intrater,Trump Inauguration,payment,250000,NA
+2016-01-01,Andrew Intrater,Trump Inauguration,payment,250000,https://www.bloomberg.com/news/features/2018-12-07/viktor-vekselberg-met-michael-cohen-then-he-lost-billions
 1990-01-01,Viktor Vekselberg,Renova Group,association,owner,https://en.wikipedia.org/wiki/Renova_Group
-2017-01-01,Andrew Intrater,Viktor Vekselberg,association,cousin,NA
-2017-01-01,Viktor Vekselberg,Andrew Intrater,association,cousin,NA
+2017-01-01,Andrew Intrater,Viktor Vekselberg,association,cousin,https://www.bloomberg.com/news/features/2018-12-07/viktor-vekselberg-met-michael-cohen-then-he-lost-billions
+2017-01-01,Viktor Vekselberg,Andrew Intrater,association,cousin,https://www.bloomberg.com/news/features/2018-12-07/viktor-vekselberg-met-michael-cohen-then-he-lost-billions
 2017-01-20,Viktor Vekselberg,Trump Inauguration,association,attended,https://www.nbcnews.com/politics/donald-trump/meet-nice-russian-oligarch-linked-trump-lawyer-michael-cohen-n872716
 2017-01-20,Andrew Intrater,Trump Inauguration,association,attended,https://nypost.com/2018/05/11/mueller-probing-foreign-donations-to-trumps-inauguration-committee/
 2018-04-06,US Govt,Viktor Vekselberg,association,sanctioned for meddling,http://time.com/5271000/michael-cohen-essential-consultants-novartis-vekselberg-att/
@@ -1031,3 +1031,7 @@ NA,Gregory B Craig,Skadden Arps,association,former partner,https://www.nytimes.c
 2016-09-01,Trump Organization,Federal Court,verdict,improper contribution to Bondi,https://www.washingtonpost.com/news/post-politics/wp/2016/09/01/trump-pays-irs-a-penalty-for-his-foundation-violating-rules-with-gift-to-florida-attorney-general/
 2019-10-17,Mick Mulvany,Volodymyr Zelensky,association,"""quid pro quo""",https://www.politifact.com/truth-o-meter/article/2019/oct/18/context-mick-mulvaney-quid-pro-quo/
 2019-04-01,Sean Hannity,Mike Pompeo,association,call re: Yovanovitch,https://www.salon.com/2019/11/19/third-official-testifies-that-mike-pompeo-called-fox-news-host-sean-hannity-about-marie-yovanovitch/
+2019-03-29,Mike Pompeo,Rudy Guiliani,association,phone call,https://www.americanoversight.org/document/state-department-records-of-giuliani-and-ukraine-related-communications-with-department-officials-including-secretary-pompeo
+2019-03-29,Mike Pompeo,Devin Nunes,association,phone call,https://www.americanoversight.org/document/state-department-records-of-giuliani-and-ukraine-related-communications-with-department-officials-including-secretary-pompeo
+2018-12-01,Devin Nunes,Viktor Shokin,association,meet chat re: Burisma,https://www.rollingstone.com/politics/politics-news/lev-parnas-devin-nunes-ukraine-prosecutor-917329/
+2015-02-10,Viktor Shokin,Petro Poroshenko,association,reports to Prosecutor General,https://en.wikipedia.org/wiki/Viktor_Shokin

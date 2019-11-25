@@ -68,7 +68,7 @@ the_rec_table_grob <- ggtexttable(recommendations,
 
 arranged <- ggarrange(the_rec_table_grob, ncol = 1, nrow = 1)
 
-entitled <- annotate_figure(arranged, top = textGrob(paste("Best Recommendations for\n", rec_target_node)))
+entitled <- annotate_figure(arranged, top = text_grob(paste("Best Recommendations for\n", rec_target_node)))
 
 edge_pal <- c("#C0C0C0", "#FFA500", "#00B300", "#FF0000")
 

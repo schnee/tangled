@@ -68,17 +68,11 @@ the_rec_table_grob <- ggtexttable(recommendations,
 
 arranged <- ggarrange(the_rec_table_grob, ncol = 1, nrow = 1)
 
-entitled <- annotate_figure(arranged, top = text_grob(paste("Best Recommendations for\n", rec_target_node)))
+entitled <- annotate_figure(arranged, top = textGrob(paste("Best Recommendations for\n", rec_target_node)))
 
 edge_pal <- c("#C0C0C0", "#FFA500", "#00B300", "#FF0000")
 
 the_layout <- create_layout(graph, layout = "igraph", algorithm = "drl", options = igraph::drl_defaults$final)#, maxiter = 200*num_nodes)
-
-# get the extents of the layout, so we can place the table
-xmin <- the_layout$x %>% min()
-xmax <- the_layout$x %>% max()
-ymin <- the_layout$y %>% min()
-ymax <- the_layout$y %>% max()
 
 p <- ggraph( the_layout ) +
   geom_edge_fan(aes(linetype=d_type, colour = d_type,
@@ -94,7 +88,6 @@ p <- ggraph( the_layout ) +
   geom_node_label( aes(label=name, alpha = the_alpha), size=2, repel = TRUE) +
   scale_alpha(range = c(0.1,0.75)) +
   scale_color_manual(name = "Community", values = my_pal) +
-  annotation_custom(grob = ggplotGrob(entitled), xmin = 0.9 * xmax , xmax= xmax, ymin = 0.9*ymin, ymax = 0.2 * ymin) +
   ggthemes::theme_few() +
   theme(panel.border = element_blank(),
         axis.ticks = element_blank(),
@@ -105,7 +98,9 @@ p <- ggraph( the_layout ) +
     caption = paste("https://schnee.github.com/tangled", now("UTC"))
   ) + guides(alpha = FALSE)
 
-ggsave("./docs/tangled.png", plot = p, height=15, width = 20, dpi=200)
+composed <- ggarrange( p, entitled, ncol = 2, widths = c(9,1))
+
+ggsave("./docs/tangled.png", plot = composed, height=15, width = 22, dpi=200)
 
 # make the ranking plot
 make_ranking_plot(tangled, 16L, start = 0.02, step = 0.02)

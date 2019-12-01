@@ -63,7 +63,7 @@ tangled %>% pull(source) %>% url_parse() %>% pull(domain)  %>%
   geom_vline(xintercept = the_bias_breaks, color = "#555555", linetype=2) +
   labs(
     title = "The Tangled Web Bias Chart",
-    subtitle = "h/t Ad Fontes Media",
+    caption = "h/t Ad Fontes Media",
     xlab = "Bias",
     ylab = "Quality"
   )

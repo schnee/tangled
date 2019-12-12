@@ -33,7 +33,7 @@ if(file.exists(old_state_fn)){
 # continue on, update the old state.
 tangled %>% write_csv(old_state_fn)
 
-graph <- make_graph(tangled) %>% weight_graph(.50, 0.08) %>% 
+graph <- make_graph(tangled) %>% weight_graph(.70, 0.08) %>% 
   activate(nodes) %>% 
   mutate(n_tri = local_triangles()) %>%
   mutate(the_alpha = if_else(n_tri > 0, 0.75, 0))
@@ -95,7 +95,7 @@ p <- ggraph( the_layout ) +
         axis.title = element_blank()) +
   labs(
     title = paste0(graph %>% activate(nodes) %>% as_tibble %>% arrange(desc(centrality)) %>% pull(name) %>% first(),"'s Tangled Web"),
-    caption = paste("https://schnee.github.com/tangled", now("UTC"))
+    caption = paste("https://schnee.github.io/tangled", now("UTC"))
   ) + guides(alpha = FALSE)
 
 composed <- ggarrange( p, entitled, ncol = 2, widths = c(9,1))

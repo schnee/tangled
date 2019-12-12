@@ -95,7 +95,7 @@ p <- ggraph( the_layout ) +
         axis.title = element_blank()) +
   labs(
     title = paste0(graph %>% activate(nodes) %>% as_tibble %>% arrange(desc(centrality)) %>% pull(name) %>% first(),"'s Tangled Web"),
-    caption = paste("https://schnee.github.com/tangled", now("UTC"))
+    caption = paste("https://schnee.github.io/tangled", now("UTC"))
   ) + guides(alpha = FALSE)
 
 composed <- ggarrange( p, entitled, ncol = 2, widths = c(9,1))
